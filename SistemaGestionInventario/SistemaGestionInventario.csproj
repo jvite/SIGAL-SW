@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9384F720-4C40-4513-A23A-9F54569CE26F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SistemaGestionInventario</RootNamespace>
+    <AssemblyName>SistemaGestionInventario</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Facturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion.Designer.cs">
+      <DependentUpon>Facturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdministrador.Designer.cs">
+      <DependentUpon>frmAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlmacen.Designer.cs">
+      <DependentUpon>frmAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicioDeSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicioDeSesion.Designer.cs">
+      <DependentUpon>frmInicioDeSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfil.Designer.cs">
+      <DependentUpon>frmPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedores.Designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolicitudes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolicitudes.Designer.cs">
+      <DependentUpon>frmSolicitudes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserAdmin.Designer.cs">
+      <DependentUpon>frmUserAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuario.Designer.cs">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarContrasena.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Facturacion.resx">
+      <DependentUpon>Facturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdministrador.resx">
+      <DependentUpon>frmAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlmacen.resx">
+      <DependentUpon>frmAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicioDeSesion.resx">
+      <DependentUpon>frmInicioDeSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfil.resx">
+      <DependentUpon>frmPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedores.resx">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolicitudes.resx">
+      <DependentUpon>frmSolicitudes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserAdmin.resx">
+      <DependentUpon>frmUserAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuario.resx">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile [#1335].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile [#1335].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard [#671].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop [#232].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_system [#1797].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car [#646].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_fill [#1291].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money [#1183].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_double [#1695].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stats [#1366].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shut_down [#1431].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_left [#271].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sigal-sw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sigal-sw1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sigal-sw2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_in_right [#385].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_plus [#1682].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_circle [#1425].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete [#1487].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_item [#1411].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_right [#1505].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sigal-sw3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_repeat [#242].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_repeat [#236].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_circle_close [#701].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_open_round [#708].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_open_round [#708].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie_curva21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile_image_plus_round [#1327].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information [#1446].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit [#1479].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_cover [#1481].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit [#1483].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_round [#647].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_round [#641].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_round [#657].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file [#1677].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile_round [#1345].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linea-vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_round [#1184].png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
