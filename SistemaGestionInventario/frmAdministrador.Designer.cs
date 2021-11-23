@@ -36,32 +36,34 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.plMenuContactos = new System.Windows.Forms.Panel();
             this.plMenuLateral = new System.Windows.Forms.Panel();
-            this.btnAcercaDe = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnAdministradorUsuarios = new System.Windows.Forms.Button();
-            this.btnEstadisticas = new System.Windows.Forms.Button();
-            this.btnFacturas = new System.Windows.Forms.Button();
-            this.btnReportes = new System.Windows.Forms.Button();
-            this.btnPagos = new System.Windows.Forms.Button();
-            this.btnProveedores = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnAlmacen = new System.Windows.Forms.Button();
-            this.btnEscritorio = new System.Windows.Forms.Button();
-            this.btnCuenta = new System.Windows.Forms.Button();
-            this.pbxSeparador = new System.Windows.Forms.PictureBox();
+            this.rbtAcercaDe = new System.Windows.Forms.RadioButton();
+            this.rbtAdminDeUsuarios = new System.Windows.Forms.RadioButton();
+            this.rbtEstadisticas = new System.Windows.Forms.RadioButton();
+            this.rbtFacturas = new System.Windows.Forms.RadioButton();
+            this.rbtPagos = new System.Windows.Forms.RadioButton();
+            this.rbtReportes = new System.Windows.Forms.RadioButton();
+            this.rbtClientes = new System.Windows.Forms.RadioButton();
+            this.rbtProveedores = new System.Windows.Forms.RadioButton();
+            this.rbtAlmacen = new System.Windows.Forms.RadioButton();
+            this.rbtEscritorio = new System.Windows.Forms.RadioButton();
+            this.rbtCuenta = new System.Windows.Forms.RadioButton();
+            this.pbxSeparador4 = new System.Windows.Forms.PictureBox();
+            this.pbxSeparador3 = new System.Windows.Forms.PictureBox();
+            this.pbxSeparador2 = new System.Windows.Forms.PictureBox();
             this.lblEstado = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbxEstado = new System.Windows.Forms.PictureBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.pbxImagenPerfil = new System.Windows.Forms.PictureBox();
-            this.btnClientes = new System.Windows.Forms.Button();
+            this.pbxSeparador1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSIGALSW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.plMenuLateral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEstado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenPerfil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador1)).BeginInit();
             this.SuspendLayout();
             // 
             // plContenedor
@@ -104,7 +106,7 @@
             this.btnCerrarSesion.Location = new System.Drawing.Point(200, 1);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(50, 51);
-            this.btnCerrarSesion.TabIndex = 3;
+            this.btnCerrarSesion.TabIndex = 11;
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
@@ -117,7 +119,7 @@
             this.btnCerrar.Location = new System.Drawing.Point(898, 1);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(50, 51);
-            this.btnCerrar.TabIndex = 2;
+            this.btnCerrar.TabIndex = 12;
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
@@ -132,22 +134,23 @@
             // plMenuLateral
             // 
             this.plMenuLateral.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color1;
-            this.plMenuLateral.Controls.Add(this.btnClientes);
-            this.plMenuLateral.Controls.Add(this.btnAcercaDe);
-            this.plMenuLateral.Controls.Add(this.pictureBox4);
-            this.plMenuLateral.Controls.Add(this.btnAdministradorUsuarios);
-            this.plMenuLateral.Controls.Add(this.btnEstadisticas);
-            this.plMenuLateral.Controls.Add(this.btnFacturas);
-            this.plMenuLateral.Controls.Add(this.btnReportes);
-            this.plMenuLateral.Controls.Add(this.btnPagos);
-            this.plMenuLateral.Controls.Add(this.btnProveedores);
-            this.plMenuLateral.Controls.Add(this.pictureBox2);
-            this.plMenuLateral.Controls.Add(this.btnAlmacen);
-            this.plMenuLateral.Controls.Add(this.btnEscritorio);
-            this.plMenuLateral.Controls.Add(this.btnCuenta);
-            this.plMenuLateral.Controls.Add(this.pbxSeparador);
+            this.plMenuLateral.Controls.Add(this.pbxSeparador1);
+            this.plMenuLateral.Controls.Add(this.rbtAcercaDe);
+            this.plMenuLateral.Controls.Add(this.rbtAdminDeUsuarios);
+            this.plMenuLateral.Controls.Add(this.rbtEstadisticas);
+            this.plMenuLateral.Controls.Add(this.rbtFacturas);
+            this.plMenuLateral.Controls.Add(this.rbtPagos);
+            this.plMenuLateral.Controls.Add(this.rbtReportes);
+            this.plMenuLateral.Controls.Add(this.rbtClientes);
+            this.plMenuLateral.Controls.Add(this.rbtProveedores);
+            this.plMenuLateral.Controls.Add(this.rbtAlmacen);
+            this.plMenuLateral.Controls.Add(this.rbtEscritorio);
+            this.plMenuLateral.Controls.Add(this.rbtCuenta);
+            this.plMenuLateral.Controls.Add(this.pbxSeparador4);
+            this.plMenuLateral.Controls.Add(this.pbxSeparador3);
+            this.plMenuLateral.Controls.Add(this.pbxSeparador2);
             this.plMenuLateral.Controls.Add(this.lblEstado);
-            this.plMenuLateral.Controls.Add(this.pictureBox1);
+            this.plMenuLateral.Controls.Add(this.pbxEstado);
             this.plMenuLateral.Controls.Add(this.lblNombre);
             this.plMenuLateral.Controls.Add(this.pbxImagenPerfil);
             this.plMenuLateral.Location = new System.Drawing.Point(0, 0);
@@ -155,243 +158,282 @@
             this.plMenuLateral.Size = new System.Drawing.Size(191, 645);
             this.plMenuLateral.TabIndex = 0;
             // 
-            // btnAcercaDe
+            // rbtAcercaDe
             // 
-            this.btnAcercaDe.BackColor = System.Drawing.Color.Transparent;
-            this.btnAcercaDe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAcercaDe.FlatAppearance.BorderSize = 0;
-            this.btnAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAcercaDe.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcercaDe.ForeColor = System.Drawing.Color.Silver;
-            this.btnAcercaDe.Image = global::SistemaGestionInventario.Properties.Resources.information___1446_;
-            this.btnAcercaDe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAcercaDe.Location = new System.Drawing.Point(0, 577);
-            this.btnAcercaDe.Name = "btnAcercaDe";
-            this.btnAcercaDe.Size = new System.Drawing.Size(192, 29);
-            this.btnAcercaDe.TabIndex = 14;
-            this.btnAcercaDe.Text = "Acerca de...";
-            this.btnAcercaDe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAcercaDe.UseVisualStyleBackColor = false;
-            this.btnAcercaDe.MouseEnter += new System.EventHandler(this.btnAcercaDe_MouseEnter);
-            this.btnAcercaDe.MouseLeave += new System.EventHandler(this.btnAcercaDe_MouseLeave);
+            this.rbtAcercaDe.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtAcercaDe.BackColor = System.Drawing.Color.Transparent;
+            this.rbtAcercaDe.FlatAppearance.BorderSize = 0;
+            this.rbtAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtAcercaDe.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtAcercaDe.ForeColor = System.Drawing.Color.White;
+            this.rbtAcercaDe.Image = global::SistemaGestionInventario.Properties.Resources.information___1446_;
+            this.rbtAcercaDe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtAcercaDe.Location = new System.Drawing.Point(1, 591);
+            this.rbtAcercaDe.Name = "rbtAcercaDe";
+            this.rbtAcercaDe.Size = new System.Drawing.Size(191, 29);
+            this.rbtAcercaDe.TabIndex = 10;
+            this.rbtAcercaDe.Text = "Acerca de...";
+            this.rbtAcercaDe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtAcercaDe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtAcercaDe.UseVisualStyleBackColor = false;
+            this.rbtAcercaDe.CheckedChanged += new System.EventHandler(this.rbtAcercaDe_CheckedChanged);
+            this.rbtAcercaDe.MouseEnter += new System.EventHandler(this.rbtAcercaDe_MouseEnter);
+            this.rbtAcercaDe.MouseLeave += new System.EventHandler(this.rbtAcercaDe_MouseLeave);
             // 
-            // pictureBox4
+            // rbtAdminDeUsuarios
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::SistemaGestionInventario.Properties.Resources.linea;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 526);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(192, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 13;
-            this.pictureBox4.TabStop = false;
+            this.rbtAdminDeUsuarios.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtAdminDeUsuarios.BackColor = System.Drawing.Color.Transparent;
+            this.rbtAdminDeUsuarios.FlatAppearance.BorderSize = 0;
+            this.rbtAdminDeUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtAdminDeUsuarios.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtAdminDeUsuarios.ForeColor = System.Drawing.Color.White;
+            this.rbtAdminDeUsuarios.Image = global::SistemaGestionInventario.Properties.Resources.profile_image_plus_round___1327_;
+            this.rbtAdminDeUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtAdminDeUsuarios.Location = new System.Drawing.Point(1, 190);
+            this.rbtAdminDeUsuarios.Name = "rbtAdminDeUsuarios";
+            this.rbtAdminDeUsuarios.Size = new System.Drawing.Size(191, 29);
+            this.rbtAdminDeUsuarios.TabIndex = 9;
+            this.rbtAdminDeUsuarios.Text = "Admin. de usuarios";
+            this.rbtAdminDeUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtAdminDeUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtAdminDeUsuarios.UseVisualStyleBackColor = false;
+            this.rbtAdminDeUsuarios.CheckedChanged += new System.EventHandler(this.rbtAdminDeUsuarios_CheckedChanged);
+            this.rbtAdminDeUsuarios.MouseEnter += new System.EventHandler(this.rbtAdminDeUsuarios_MouseEnter);
+            this.rbtAdminDeUsuarios.MouseLeave += new System.EventHandler(this.rbtAdminDeUsuarios_MouseLeave);
             // 
-            // btnAdministradorUsuarios
+            // rbtEstadisticas
             // 
-            this.btnAdministradorUsuarios.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdministradorUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdministradorUsuarios.FlatAppearance.BorderSize = 0;
-            this.btnAdministradorUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdministradorUsuarios.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdministradorUsuarios.ForeColor = System.Drawing.Color.Silver;
-            this.btnAdministradorUsuarios.Image = global::SistemaGestionInventario.Properties.Resources.profile_image_plus_round___1327_;
-            this.btnAdministradorUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdministradorUsuarios.Location = new System.Drawing.Point(0, 549);
-            this.btnAdministradorUsuarios.Name = "btnAdministradorUsuarios";
-            this.btnAdministradorUsuarios.Size = new System.Drawing.Size(192, 29);
-            this.btnAdministradorUsuarios.TabIndex = 12;
-            this.btnAdministradorUsuarios.Text = "Admin. de usuarios";
-            this.btnAdministradorUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAdministradorUsuarios.UseVisualStyleBackColor = false;
-            this.btnAdministradorUsuarios.Click += new System.EventHandler(this.btnAdministradorUsuarios_Click);
-            this.btnAdministradorUsuarios.MouseEnter += new System.EventHandler(this.btnAdministradorUsuarios_MouseEnter);
-            this.btnAdministradorUsuarios.MouseLeave += new System.EventHandler(this.btnAdministradorUsuarios_MouseLeave);
+            this.rbtEstadisticas.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtEstadisticas.BackColor = System.Drawing.Color.Transparent;
+            this.rbtEstadisticas.FlatAppearance.BorderSize = 0;
+            this.rbtEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtEstadisticas.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtEstadisticas.ForeColor = System.Drawing.Color.White;
+            this.rbtEstadisticas.Image = global::SistemaGestionInventario.Properties.Resources.stats___1366_;
+            this.rbtEstadisticas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtEstadisticas.Location = new System.Drawing.Point(1, 526);
+            this.rbtEstadisticas.Name = "rbtEstadisticas";
+            this.rbtEstadisticas.Size = new System.Drawing.Size(191, 29);
+            this.rbtEstadisticas.TabIndex = 8;
+            this.rbtEstadisticas.Text = "Estadisticas";
+            this.rbtEstadisticas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtEstadisticas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtEstadisticas.UseVisualStyleBackColor = false;
+            this.rbtEstadisticas.CheckedChanged += new System.EventHandler(this.rbtEstadisticas_CheckedChanged);
+            this.rbtEstadisticas.MouseEnter += new System.EventHandler(this.rbtEstadisticas_MouseEnter);
+            this.rbtEstadisticas.MouseLeave += new System.EventHandler(this.rbtEstadisticas_MouseLeave);
             // 
-            // btnEstadisticas
+            // rbtFacturas
             // 
-            this.btnEstadisticas.BackColor = System.Drawing.Color.Transparent;
-            this.btnEstadisticas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEstadisticas.FlatAppearance.BorderSize = 0;
-            this.btnEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstadisticas.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstadisticas.ForeColor = System.Drawing.Color.Silver;
-            this.btnEstadisticas.Image = global::SistemaGestionInventario.Properties.Resources.stats___1366_;
-            this.btnEstadisticas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstadisticas.Location = new System.Drawing.Point(0, 494);
-            this.btnEstadisticas.Name = "btnEstadisticas";
-            this.btnEstadisticas.Size = new System.Drawing.Size(192, 29);
-            this.btnEstadisticas.TabIndex = 11;
-            this.btnEstadisticas.Text = "Estadisticas";
-            this.btnEstadisticas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEstadisticas.UseVisualStyleBackColor = false;
-            this.btnEstadisticas.MouseEnter += new System.EventHandler(this.btnEstadisticas_MouseEnter);
-            this.btnEstadisticas.MouseLeave += new System.EventHandler(this.btnEstadisticas_MouseLeave);
+            this.rbtFacturas.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtFacturas.BackColor = System.Drawing.Color.Transparent;
+            this.rbtFacturas.FlatAppearance.BorderSize = 0;
+            this.rbtFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtFacturas.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtFacturas.ForeColor = System.Drawing.Color.White;
+            this.rbtFacturas.Image = global::SistemaGestionInventario.Properties.Resources.file_double___1695_;
+            this.rbtFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtFacturas.Location = new System.Drawing.Point(1, 496);
+            this.rbtFacturas.Name = "rbtFacturas";
+            this.rbtFacturas.Size = new System.Drawing.Size(191, 29);
+            this.rbtFacturas.TabIndex = 7;
+            this.rbtFacturas.Text = "Facturas";
+            this.rbtFacturas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtFacturas.UseVisualStyleBackColor = false;
+            this.rbtFacturas.CheckedChanged += new System.EventHandler(this.rbtFacturas_CheckedChanged);
+            this.rbtFacturas.MouseEnter += new System.EventHandler(this.rbtFacturas_MouseEnter);
+            this.rbtFacturas.MouseLeave += new System.EventHandler(this.rbtFacturas_MouseLeave);
             // 
-            // btnFacturas
+            // rbtPagos
             // 
-            this.btnFacturas.BackColor = System.Drawing.Color.Transparent;
-            this.btnFacturas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFacturas.FlatAppearance.BorderSize = 0;
-            this.btnFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFacturas.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFacturas.ForeColor = System.Drawing.Color.Silver;
-            this.btnFacturas.Image = global::SistemaGestionInventario.Properties.Resources.file_double___1695_;
-            this.btnFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFacturas.Location = new System.Drawing.Point(0, 465);
-            this.btnFacturas.Name = "btnFacturas";
-            this.btnFacturas.Size = new System.Drawing.Size(192, 29);
-            this.btnFacturas.TabIndex = 10;
-            this.btnFacturas.Text = "Facturas";
-            this.btnFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFacturas.UseVisualStyleBackColor = false;
-            this.btnFacturas.MouseEnter += new System.EventHandler(this.btnFacturas_MouseEnter);
-            this.btnFacturas.MouseLeave += new System.EventHandler(this.btnFacturas_MouseLeave);
+            this.rbtPagos.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtPagos.BackColor = System.Drawing.Color.Transparent;
+            this.rbtPagos.FlatAppearance.BorderSize = 0;
+            this.rbtPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtPagos.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtPagos.ForeColor = System.Drawing.Color.White;
+            this.rbtPagos.Image = global::SistemaGestionInventario.Properties.Resources.money___1183_;
+            this.rbtPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtPagos.Location = new System.Drawing.Point(0, 466);
+            this.rbtPagos.Name = "rbtPagos";
+            this.rbtPagos.Size = new System.Drawing.Size(191, 29);
+            this.rbtPagos.TabIndex = 6;
+            this.rbtPagos.Text = "Pagos";
+            this.rbtPagos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtPagos.UseVisualStyleBackColor = false;
+            this.rbtPagos.CheckedChanged += new System.EventHandler(this.rbtPagos_CheckedChanged);
+            this.rbtPagos.MouseEnter += new System.EventHandler(this.rbtPagos_MouseEnter);
+            this.rbtPagos.MouseLeave += new System.EventHandler(this.rbtPagos_MouseLeave);
             // 
-            // btnReportes
+            // rbtReportes
             // 
-            this.btnReportes.BackColor = System.Drawing.Color.Transparent;
-            this.btnReportes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnReportes.FlatAppearance.BorderSize = 0;
-            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReportes.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportes.ForeColor = System.Drawing.Color.Silver;
-            this.btnReportes.Image = global::SistemaGestionInventario.Properties.Resources.chart_fill___1291_;
-            this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 405);
-            this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(192, 29);
-            this.btnReportes.TabIndex = 9;
-            this.btnReportes.Text = "Reportes";
-            this.btnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReportes.UseVisualStyleBackColor = false;
-            this.btnReportes.MouseEnter += new System.EventHandler(this.btnReportes_MouseEnter);
-            this.btnReportes.MouseLeave += new System.EventHandler(this.btnReportes_MouseLeave);
+            this.rbtReportes.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtReportes.BackColor = System.Drawing.Color.Transparent;
+            this.rbtReportes.FlatAppearance.BorderSize = 0;
+            this.rbtReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtReportes.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtReportes.ForeColor = System.Drawing.Color.White;
+            this.rbtReportes.Image = global::SistemaGestionInventario.Properties.Resources.chart_fill___1291_;
+            this.rbtReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtReportes.Location = new System.Drawing.Point(0, 436);
+            this.rbtReportes.Name = "rbtReportes";
+            this.rbtReportes.Size = new System.Drawing.Size(191, 29);
+            this.rbtReportes.TabIndex = 5;
+            this.rbtReportes.Text = "Reportes";
+            this.rbtReportes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtReportes.UseVisualStyleBackColor = false;
+            this.rbtReportes.CheckedChanged += new System.EventHandler(this.rbtReportes_CheckedChanged);
+            this.rbtReportes.MouseEnter += new System.EventHandler(this.rbtReportes_MouseEnter);
+            this.rbtReportes.MouseLeave += new System.EventHandler(this.rbtReportes_MouseLeave);
             // 
-            // btnPagos
+            // rbtClientes
             // 
-            this.btnPagos.BackColor = System.Drawing.Color.Transparent;
-            this.btnPagos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPagos.FlatAppearance.BorderSize = 0;
-            this.btnPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPagos.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPagos.ForeColor = System.Drawing.Color.Silver;
-            this.btnPagos.Image = global::SistemaGestionInventario.Properties.Resources.money___1183_;
-            this.btnPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPagos.Location = new System.Drawing.Point(0, 433);
-            this.btnPagos.Name = "btnPagos";
-            this.btnPagos.Size = new System.Drawing.Size(192, 32);
-            this.btnPagos.TabIndex = 10;
-            this.btnPagos.Text = "Pagos";
-            this.btnPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPagos.UseVisualStyleBackColor = false;
-            this.btnPagos.MouseEnter += new System.EventHandler(this.btnPagos_MouseEnter);
-            this.btnPagos.MouseLeave += new System.EventHandler(this.btnPagos_MouseLeave);
+            this.rbtClientes.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtClientes.BackColor = System.Drawing.Color.Transparent;
+            this.rbtClientes.FlatAppearance.BorderSize = 0;
+            this.rbtClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtClientes.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtClientes.ForeColor = System.Drawing.Color.White;
+            this.rbtClientes.Image = global::SistemaGestionInventario.Properties.Resources.profile___1335_1;
+            this.rbtClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtClientes.Location = new System.Drawing.Point(1, 406);
+            this.rbtClientes.Name = "rbtClientes";
+            this.rbtClientes.Size = new System.Drawing.Size(190, 29);
+            this.rbtClientes.TabIndex = 4;
+            this.rbtClientes.Text = "Clientes";
+            this.rbtClientes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtClientes.UseVisualStyleBackColor = false;
+            this.rbtClientes.CheckedChanged += new System.EventHandler(this.rbtClientes_CheckedChanged);
+            this.rbtClientes.MouseEnter += new System.EventHandler(this.rbtClientes_MouseEnter);
+            this.rbtClientes.MouseLeave += new System.EventHandler(this.rbtClientes_MouseLeave);
             // 
-            // btnProveedores
+            // rbtProveedores
             // 
-            this.btnProveedores.BackColor = System.Drawing.Color.Transparent;
-            this.btnProveedores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnProveedores.FlatAppearance.BorderSize = 0;
-            this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProveedores.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProveedores.ForeColor = System.Drawing.Color.Silver;
-            this.btnProveedores.Image = global::SistemaGestionInventario.Properties.Resources.car___646_;
-            this.btnProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProveedores.Location = new System.Drawing.Point(0, 339);
-            this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Size = new System.Drawing.Size(192, 29);
-            this.btnProveedores.TabIndex = 8;
-            this.btnProveedores.Text = "Proveedores";
-            this.btnProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnProveedores.UseVisualStyleBackColor = false;
-            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
-            this.btnProveedores.MouseEnter += new System.EventHandler(this.btnProveedores_MouseEnter);
-            this.btnProveedores.MouseLeave += new System.EventHandler(this.btnProveedores_MouseLeave);
+            this.rbtProveedores.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtProveedores.BackColor = System.Drawing.Color.Transparent;
+            this.rbtProveedores.FlatAppearance.BorderSize = 0;
+            this.rbtProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtProveedores.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtProveedores.ForeColor = System.Drawing.Color.White;
+            this.rbtProveedores.Image = global::SistemaGestionInventario.Properties.Resources.car___646_;
+            this.rbtProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtProveedores.Location = new System.Drawing.Point(0, 376);
+            this.rbtProveedores.Name = "rbtProveedores";
+            this.rbtProveedores.Size = new System.Drawing.Size(191, 29);
+            this.rbtProveedores.TabIndex = 3;
+            this.rbtProveedores.Text = "Proveedores";
+            this.rbtProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtProveedores.UseVisualStyleBackColor = false;
+            this.rbtProveedores.CheckedChanged += new System.EventHandler(this.rbtProveedores_CheckedChanged);
+            this.rbtProveedores.MouseEnter += new System.EventHandler(this.rbtProveedores_MouseEnter);
+            this.rbtProveedores.MouseLeave += new System.EventHandler(this.rbtProveedores_MouseLeave);
             // 
-            // pictureBox2
+            // rbtAlmacen
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::SistemaGestionInventario.Properties.Resources.linea;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 288);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(192, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.rbtAlmacen.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtAlmacen.BackColor = System.Drawing.Color.Transparent;
+            this.rbtAlmacen.FlatAppearance.BorderSize = 0;
+            this.rbtAlmacen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtAlmacen.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtAlmacen.ForeColor = System.Drawing.Color.White;
+            this.rbtAlmacen.Image = global::SistemaGestionInventario.Properties.Resources.database_system___1797_;
+            this.rbtAlmacen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtAlmacen.Location = new System.Drawing.Point(0, 346);
+            this.rbtAlmacen.Name = "rbtAlmacen";
+            this.rbtAlmacen.Size = new System.Drawing.Size(191, 29);
+            this.rbtAlmacen.TabIndex = 2;
+            this.rbtAlmacen.Text = "Almacen";
+            this.rbtAlmacen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtAlmacen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtAlmacen.UseVisualStyleBackColor = false;
+            this.rbtAlmacen.CheckedChanged += new System.EventHandler(this.rbtAlmacen_CheckedChanged);
+            this.rbtAlmacen.MouseEnter += new System.EventHandler(this.rbtAlmacen_MouseEnter);
+            this.rbtAlmacen.MouseLeave += new System.EventHandler(this.rbtAlmacen_MouseLeave);
             // 
-            // btnAlmacen
+            // rbtEscritorio
             // 
-            this.btnAlmacen.BackColor = System.Drawing.Color.Transparent;
-            this.btnAlmacen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAlmacen.FlatAppearance.BorderSize = 0;
-            this.btnAlmacen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlmacen.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlmacen.ForeColor = System.Drawing.Color.Silver;
-            this.btnAlmacen.Image = global::SistemaGestionInventario.Properties.Resources.database_system___1797_;
-            this.btnAlmacen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlmacen.Location = new System.Drawing.Point(0, 309);
-            this.btnAlmacen.Name = "btnAlmacen";
-            this.btnAlmacen.Size = new System.Drawing.Size(192, 29);
-            this.btnAlmacen.TabIndex = 7;
-            this.btnAlmacen.Text = "Almacén";
-            this.btnAlmacen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAlmacen.UseVisualStyleBackColor = false;
-            this.btnAlmacen.Click += new System.EventHandler(this.btnAlmacen_Click);
-            this.btnAlmacen.MouseEnter += new System.EventHandler(this.btnAlmacen_MouseEnter);
-            this.btnAlmacen.MouseLeave += new System.EventHandler(this.btnAlmacen_MouseLeave);
+            this.rbtEscritorio.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtEscritorio.BackColor = System.Drawing.Color.Transparent;
+            this.rbtEscritorio.Checked = true;
+            this.rbtEscritorio.FlatAppearance.BorderSize = 0;
+            this.rbtEscritorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtEscritorio.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtEscritorio.ForeColor = System.Drawing.Color.DimGray;
+            this.rbtEscritorio.Image = global::SistemaGestionInventario.Properties.Resources.desktop___232_;
+            this.rbtEscritorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtEscritorio.Location = new System.Drawing.Point(0, 292);
+            this.rbtEscritorio.Name = "rbtEscritorio";
+            this.rbtEscritorio.Size = new System.Drawing.Size(191, 29);
+            this.rbtEscritorio.TabIndex = 1;
+            this.rbtEscritorio.TabStop = true;
+            this.rbtEscritorio.Text = "Escritorio";
+            this.rbtEscritorio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtEscritorio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtEscritorio.UseVisualStyleBackColor = false;
+            this.rbtEscritorio.CheckedChanged += new System.EventHandler(this.rbtEscritorio_CheckedChanged);
+            this.rbtEscritorio.MouseEnter += new System.EventHandler(this.rbtEscritorio_MouseEnter);
+            this.rbtEscritorio.MouseLeave += new System.EventHandler(this.rbtEscritorio_MouseLeave);
             // 
-            // btnEscritorio
+            // rbtCuenta
             // 
-            this.btnEscritorio.BackColor = System.Drawing.Color.Transparent;
-            this.btnEscritorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEscritorio.FlatAppearance.BorderSize = 0;
-            this.btnEscritorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEscritorio.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEscritorio.ForeColor = System.Drawing.Color.Silver;
-            this.btnEscritorio.Image = global::SistemaGestionInventario.Properties.Resources.desktop___232_;
-            this.btnEscritorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEscritorio.Location = new System.Drawing.Point(0, 257);
-            this.btnEscritorio.Name = "btnEscritorio";
-            this.btnEscritorio.Size = new System.Drawing.Size(192, 29);
-            this.btnEscritorio.TabIndex = 6;
-            this.btnEscritorio.Text = "Escritorio";
-            this.btnEscritorio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEscritorio.UseVisualStyleBackColor = false;
-            this.btnEscritorio.Click += new System.EventHandler(this.btnEscritorio_Click);
-            this.btnEscritorio.MouseEnter += new System.EventHandler(this.btnEscritorio_MouseEnter);
-            this.btnEscritorio.MouseLeave += new System.EventHandler(this.btnEscritorio_MouseLeave);
+            this.rbtCuenta.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtCuenta.BackColor = System.Drawing.Color.Transparent;
+            this.rbtCuenta.FlatAppearance.BorderSize = 0;
+            this.rbtCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtCuenta.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtCuenta.ForeColor = System.Drawing.Color.White;
+            this.rbtCuenta.Image = global::SistemaGestionInventario.Properties.Resources.profile___1335_1;
+            this.rbtCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtCuenta.Location = new System.Drawing.Point(0, 246);
+            this.rbtCuenta.Name = "rbtCuenta";
+            this.rbtCuenta.Size = new System.Drawing.Size(191, 29);
+            this.rbtCuenta.TabIndex = 0;
+            this.rbtCuenta.Text = "Cuenta";
+            this.rbtCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtCuenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtCuenta.UseVisualStyleBackColor = false;
+            this.rbtCuenta.CheckedChanged += new System.EventHandler(this.rbtCuenta_CheckedChanged);
+            this.rbtCuenta.MouseEnter += new System.EventHandler(this.rbtCuenta_MouseEnter);
+            this.rbtCuenta.MouseLeave += new System.EventHandler(this.rbtCuenta_MouseLeave);
             // 
-            // btnCuenta
+            // pbxSeparador4
             // 
-            this.btnCuenta.BackColor = System.Drawing.Color.Transparent;
-            this.btnCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCuenta.FlatAppearance.BorderSize = 0;
-            this.btnCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCuenta.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCuenta.ForeColor = System.Drawing.Color.Silver;
-            this.btnCuenta.Image = global::SistemaGestionInventario.Properties.Resources.profile___1335_1;
-            this.btnCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCuenta.Location = new System.Drawing.Point(0, 213);
-            this.btnCuenta.Name = "btnCuenta";
-            this.btnCuenta.Size = new System.Drawing.Size(191, 29);
-            this.btnCuenta.TabIndex = 5;
-            this.btnCuenta.Text = "Cuenta";
-            this.btnCuenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCuenta.UseVisualStyleBackColor = false;
-            this.btnCuenta.Click += new System.EventHandler(this.btnCuenta_Click);
-            this.btnCuenta.MouseEnter += new System.EventHandler(this.btnCuenta_MouseEnter);
-            this.btnCuenta.MouseLeave += new System.EventHandler(this.btnCuenta_MouseLeave);
+            this.pbxSeparador4.BackColor = System.Drawing.Color.Transparent;
+            this.pbxSeparador4.Image = global::SistemaGestionInventario.Properties.Resources.linea;
+            this.pbxSeparador4.Location = new System.Drawing.Point(0, 563);
+            this.pbxSeparador4.Name = "pbxSeparador4";
+            this.pbxSeparador4.Size = new System.Drawing.Size(192, 25);
+            this.pbxSeparador4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSeparador4.TabIndex = 13;
+            this.pbxSeparador4.TabStop = false;
             // 
-            // pbxSeparador
+            // pbxSeparador3
             // 
-            this.pbxSeparador.BackColor = System.Drawing.Color.Transparent;
-            this.pbxSeparador.Image = global::SistemaGestionInventario.Properties.Resources.linea;
-            this.pbxSeparador.Location = new System.Drawing.Point(0, 239);
-            this.pbxSeparador.Name = "pbxSeparador";
-            this.pbxSeparador.Size = new System.Drawing.Size(192, 25);
-            this.pbxSeparador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxSeparador.TabIndex = 4;
-            this.pbxSeparador.TabStop = false;
+            this.pbxSeparador3.BackColor = System.Drawing.Color.Transparent;
+            this.pbxSeparador3.Image = global::SistemaGestionInventario.Properties.Resources.linea;
+            this.pbxSeparador3.Location = new System.Drawing.Point(0, 325);
+            this.pbxSeparador3.Name = "pbxSeparador3";
+            this.pbxSeparador3.Size = new System.Drawing.Size(192, 25);
+            this.pbxSeparador3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSeparador3.TabIndex = 5;
+            this.pbxSeparador3.TabStop = false;
+            // 
+            // pbxSeparador2
+            // 
+            this.pbxSeparador2.BackColor = System.Drawing.Color.Transparent;
+            this.pbxSeparador2.Image = global::SistemaGestionInventario.Properties.Resources.linea;
+            this.pbxSeparador2.Location = new System.Drawing.Point(0, 276);
+            this.pbxSeparador2.Name = "pbxSeparador2";
+            this.pbxSeparador2.Size = new System.Drawing.Size(192, 25);
+            this.pbxSeparador2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSeparador2.TabIndex = 4;
+            this.pbxSeparador2.TabStop = false;
             // 
             // lblEstado
             // 
@@ -399,20 +441,20 @@
             this.lblEstado.BackColor = System.Drawing.Color.Transparent;
             this.lblEstado.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstado.ForeColor = System.Drawing.Color.White;
-            this.lblEstado.Location = new System.Drawing.Point(75, 163);
+            this.lblEstado.Location = new System.Drawing.Point(75, 159);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(103, 23);
             this.lblEstado.TabIndex = 3;
             this.lblEstado.Text = "<<estado>>";
             // 
-            // pictureBox1
+            // pbxEstado
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 163);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 23);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pbxEstado.BackColor = System.Drawing.Color.Transparent;
+            this.pbxEstado.Location = new System.Drawing.Point(31, 158);
+            this.pbxEstado.Name = "pbxEstado";
+            this.pbxEstado.Size = new System.Drawing.Size(25, 23);
+            this.pbxEstado.TabIndex = 2;
+            this.pbxEstado.TabStop = false;
             // 
             // lblNombre
             // 
@@ -420,7 +462,7 @@
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(42, 128);
+            this.lblNombre.Location = new System.Drawing.Point(42, 123);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(107, 23);
             this.lblNombre.TabIndex = 1;
@@ -431,29 +473,22 @@
             this.pbxImagenPerfil.BackColor = System.Drawing.Color.Transparent;
             this.pbxImagenPerfil.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbxImagenPerfil.ErrorImage")));
             this.pbxImagenPerfil.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbxImagenPerfil.InitialImage")));
-            this.pbxImagenPerfil.Location = new System.Drawing.Point(46, 25);
+            this.pbxImagenPerfil.Location = new System.Drawing.Point(46, 14);
             this.pbxImagenPerfil.Name = "pbxImagenPerfil";
             this.pbxImagenPerfil.Size = new System.Drawing.Size(100, 100);
             this.pbxImagenPerfil.TabIndex = 0;
             this.pbxImagenPerfil.TabStop = false;
             // 
-            // btnClientes
+            // pbxSeparador1
             // 
-            this.btnClientes.BackColor = System.Drawing.Color.Transparent;
-            this.btnClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnClientes.FlatAppearance.BorderSize = 0;
-            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.ForeColor = System.Drawing.Color.Silver;
-            this.btnClientes.Image = global::SistemaGestionInventario.Properties.Resources.profile_round___1345_;
-            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(-1, 372);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(192, 29);
-            this.btnClientes.TabIndex = 15;
-            this.btnClientes.Text = "Clientes";
-            this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnClientes.UseVisualStyleBackColor = false;
+            this.pbxSeparador1.BackColor = System.Drawing.Color.Transparent;
+            this.pbxSeparador1.Image = global::SistemaGestionInventario.Properties.Resources.linea;
+            this.pbxSeparador1.Location = new System.Drawing.Point(0, 220);
+            this.pbxSeparador1.Name = "pbxSeparador1";
+            this.pbxSeparador1.Size = new System.Drawing.Size(192, 25);
+            this.pbxSeparador1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSeparador1.TabIndex = 14;
+            this.pbxSeparador1.TabStop = false;
             // 
             // frmAdministrador
             // 
@@ -478,11 +513,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.plMenuLateral.ResumeLayout(false);
             this.plMenuLateral.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEstado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenPerfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -493,27 +529,28 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.PictureBox pbxImagenPerfil;
         private System.Windows.Forms.Label lblEstado;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pbxSeparador;
-        private System.Windows.Forms.Button btnCuenta;
-        private System.Windows.Forms.Button btnEscritorio;
-        private System.Windows.Forms.Button btnAlmacen;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pbxEstado;
+        private System.Windows.Forms.PictureBox pbxSeparador2;
+        private System.Windows.Forms.PictureBox pbxSeparador3;
         private System.Windows.Forms.Panel plMenuContactos;
-        private System.Windows.Forms.Button btnProveedores;
-        private System.Windows.Forms.Button btnReportes;
-        private System.Windows.Forms.Button btnPagos;
-        private System.Windows.Forms.Button btnFacturas;
-        private System.Windows.Forms.Button btnEstadisticas;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnCerrarSesion;
         private System.Windows.Forms.Panel plContenedor;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pbxSIGALSW;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btnAdministradorUsuarios;
-        private System.Windows.Forms.Button btnAcercaDe;
-        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.PictureBox pbxSeparador4;
+        private System.Windows.Forms.RadioButton rbtAcercaDe;
+        private System.Windows.Forms.RadioButton rbtAdminDeUsuarios;
+        private System.Windows.Forms.RadioButton rbtEstadisticas;
+        private System.Windows.Forms.RadioButton rbtFacturas;
+        private System.Windows.Forms.RadioButton rbtPagos;
+        private System.Windows.Forms.RadioButton rbtReportes;
+        private System.Windows.Forms.RadioButton rbtClientes;
+        private System.Windows.Forms.RadioButton rbtProveedores;
+        private System.Windows.Forms.RadioButton rbtAlmacen;
+        private System.Windows.Forms.RadioButton rbtEscritorio;
+        private System.Windows.Forms.RadioButton rbtCuenta;
+        private System.Windows.Forms.PictureBox pbxSeparador1;
     }
 }
 

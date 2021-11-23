@@ -130,11 +130,11 @@
   <data name="lock_open_round [#708]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lock_open_round [#708].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="edit_cover [#1481]" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_cover [#1481].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="arrow_in_right [#385]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow_in_right [#385].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pie_curva21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pie_curva21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="profile [#1335]1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile [#1335].ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,9 +169,6 @@
   <data name="lock_circle_close [#701]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lock_circle_close [#701].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unnamed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="sigal-sw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sigal-sw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -183,6 +180,9 @@
   </data>
   <data name="edit [#1483]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit [#1483].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="money_round [#1184]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\money_round [#1184].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrow_repeat [#242]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow_repeat [#242].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,14 +211,20 @@
   <data name="stats [#1366]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stats [#1366].ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="profile_image [#1362]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profile_image [#1362].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="desktop [#232]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\desktop [#232].ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pie_curva21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pie_curva21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="color5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\color5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_cover [#1481]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_cover [#1481].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="car_round [#657]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\car_round [#657].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,7 +265,7 @@
   <data name="profile [#1335]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile [#1335].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="money_round [#1184]" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\money_round [#1184].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="profile_image_plus [#1359]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profile_image_plus [#1359].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

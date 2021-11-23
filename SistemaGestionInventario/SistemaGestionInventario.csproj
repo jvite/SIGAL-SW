@@ -47,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Facturacion.cs">
+    <Compile Include="frmFacturacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Facturacion.Designer.cs">
-      <DependentUpon>Facturacion.cs</DependentUpon>
+    <Compile Include="frmFacturacion.Designer.cs">
+      <DependentUpon>frmFacturacion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAdministrador.cs">
       <SubType>Form</SubType>
@@ -101,17 +101,11 @@
     <Compile Include="frmUserAdmin.Designer.cs">
       <DependentUpon>frmUserAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUsuario.Designer.cs">
-      <DependentUpon>frmUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="GenerarContrasena.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Facturacion.resx">
-      <DependentUpon>Facturacion.cs</DependentUpon>
+    <EmbeddedResource Include="frmFacturacion.resx">
+      <DependentUpon>frmFacturacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdministrador.resx">
       <DependentUpon>frmAdministrador.cs</DependentUpon>
@@ -136,9 +130,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUserAdmin.resx">
       <DependentUpon>frmUserAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUsuario.resx">
-      <DependentUpon>frmUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -306,6 +297,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\money_round [#1184].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile_image [#1362].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile_image_plus [#1359].png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

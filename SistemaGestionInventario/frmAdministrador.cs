@@ -12,16 +12,6 @@ namespace SistemaGestionInventario
 {
     public partial class frmAdministrador : Form
     {
-        bool botonCuenta = false;
-        bool botonEscritorio = false;
-        bool botonAlmacen = false;
-        bool botonProveedores = false;
-        bool botonReportes = false;
-        bool botonPagos = false;
-        bool botonFacturas = false;
-        bool botonEstadisticas = false;
-        bool botonAdinUsuarios = false;
-        bool botonAcercaDe = false;
 
         public frmAdministrador()
         {
@@ -33,9 +23,24 @@ namespace SistemaGestionInventario
             
         }
 
+        private void ColorLetra()
+        {
+            rbtAcercaDe.ForeColor = Color.Gray;
+            rbtAdminDeUsuarios.ForeColor = Color.Gray;
+            rbtAlmacen.ForeColor = Color.Gray;
+            rbtClientes.ForeColor = Color.Gray;
+            rbtCuenta.ForeColor = Color.Gray;
+            rbtEscritorio.ForeColor = Color.Gray;
+            rbtEstadisticas.ForeColor = Color.Gray;
+            rbtFacturas.ForeColor = Color.Gray;
+            rbtPagos.ForeColor = Color.Gray;
+            rbtProveedores.ForeColor = Color.Gray;
+            rbtReportes.ForeColor = Color.Gray;
+        }
+
         private void abrirForm(object formHija) //Metodo para abrir un formulario dentro de un panel
         {
-            if (plContenedor.Controls.Count > 0)
+            if (plContenedor.Controls.Count > 0) //Si hay mas de un control en en contenedor
             {
                 this.plContenedor.Controls.RemoveAt(0);//Se vacía el conetenedor
             }
@@ -47,43 +52,6 @@ namespace SistemaGestionInventario
             fh.Show();//se muestra el form
         }
 
-        private void coloresDefault()
-        {
-            //Color de la letra
-            btnAlmacen.ForeColor = Color.Silver;
-            btnCuenta.ForeColor = Color.Silver;
-            btnEscritorio.ForeColor = Color.Silver;
-            btnEstadisticas.ForeColor = Color.Silver;
-            btnFacturas.ForeColor = Color.Silver;
-            btnPagos.ForeColor = Color.Silver;
-            btnProveedores.ForeColor = Color.Silver;
-            btnReportes.ForeColor = Color.Silver;
-
-            //Color de fondo
-            btnAlmacen.BackColor = Color.Transparent;
-            btnCuenta.BackColor = Color.Transparent;
-            btnEscritorio.BackColor = Color.Transparent;
-            btnEstadisticas.BackColor = Color.Transparent;
-            btnFacturas.BackColor = Color.Transparent;
-            btnPagos.BackColor = Color.Transparent;
-            btnProveedores.BackColor = Color.Transparent;
-            btnReportes.BackColor = Color.Transparent;
-        }
-
-        private void resetearBotones()
-        {
-            botonCuenta = false;
-            botonEscritorio = false;
-            botonAlmacen = false;
-            botonProveedores = false;
-            botonReportes = false;
-            botonPagos = false;
-            botonFacturas = false;
-            botonEstadisticas = false;
-            botonAdinUsuarios = false;
-            botonAcercaDe = false;
-        }
-
         private void btnCerrar_Click(object sender, EventArgs e)
         {
            if(MessageBox.Show("¿Desea salir de SIGAL SW?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
@@ -93,196 +61,6 @@ namespace SistemaGestionInventario
             }
         }
 
-        /////////////////////////////////////EVENTOS BOTON CUENTA/////////////////////////////////////
-        private void btnCuenta_MouseEnter(object sender, EventArgs e)//El mouse pasa sobre el botón
-        {
-            if (botonCuenta==false) {
-                btnCuenta.BackColor = Color.FromArgb(38, 50, 56);
-                btnCuenta.ForeColor = Color.White;
-            }
-        }
-
-        private void btnCuenta_MouseLeave(object sender, EventArgs e)//El mouse se sale del boton
-        {
-            if (botonCuenta == false)
-            {
-                btnCuenta.BackColor = Color.Transparent;
-                btnCuenta.ForeColor = Color.Silver;
-            }
-            
-        }
-        /////////////////////////////////////EVENTOS BOTON ESCRITORIO/////////////////////////////////////
-        private void btnEscritorio_MouseEnter(object sender, EventArgs e)
-        {
-            if (botonEscritorio == false) { 
-                btnEscritorio.BackColor = Color.FromArgb(38, 50, 56);
-                btnEscritorio.ForeColor = Color.White;
-            }
-        }
-
-        private void btnEscritorio_MouseLeave(object sender, EventArgs e)
-        {
-            if (botonEscritorio == false)
-            {
-                btnEscritorio.BackColor = Color.Transparent;
-                btnEscritorio.ForeColor = Color.Silver;
-            }
-        }
-        /////////////////////////////////////EVENTOS BOTON ALMACEN/////////////////////////////////////
-        private void btnAlmacen_MouseEnter(object sender, EventArgs e)
-        {
-            if (botonAlmacen == false)
-            {
-                btnAlmacen.BackColor = Color.FromArgb(38, 50, 56);
-                btnAlmacen.ForeColor = Color.White;
-            }
-        }
-
-        private void btnAlmacen_MouseLeave(object sender, EventArgs e)
-        {
-            if (botonAlmacen == false)
-            {
-                btnAlmacen.ForeColor = Color.Silver;
-                btnAlmacen.BackColor = Color.Transparent;
-            }
-        }
-        /////////////////////////////////////EVENTOS BOTON PROVEEDORES/////////////////////////////////////
-        private void btnProveedores_MouseEnter(object sender, EventArgs e)
-        {
-            btnProveedores.BackColor = Color.FromArgb(38, 50, 56);
-            btnProveedores.ForeColor = Color.White;
-        }
-
-        private void btnProveedores_MouseLeave(object sender, EventArgs e)
-        {
-            btnProveedores.ForeColor = Color.Silver;
-            btnProveedores.BackColor = Color.Transparent;
-        }
-        /////////////////////////////////////EVENTOS BOTON REPORTES/////////////////////////////////////
-        private void btnReportes_MouseEnter(object sender, EventArgs e)
-        {
-            btnReportes.BackColor = Color.FromArgb(38, 50, 56);
-            btnReportes.ForeColor = Color.White;
-        }
-
-        private void btnReportes_MouseLeave(object sender, EventArgs e)
-        {
-            btnReportes.ForeColor = Color.Silver;
-            btnReportes.BackColor = Color.Transparent;
-        }
-        /////////////////////////////////////EVENTOS BOTON PAGOS/////////////////////////////////////
-        private void btnPagos_MouseEnter(object sender, EventArgs e)
-        {
-            btnPagos.BackColor = Color.FromArgb(38, 50, 56);
-            btnPagos.ForeColor = Color.White;
-        }
-
-        private void btnPagos_MouseLeave(object sender, EventArgs e)
-        {
-            btnPagos.ForeColor = Color.Silver;
-            btnPagos.BackColor = Color.Transparent;
-        }
-        /////////////////////////////////////EVENTOS BOTON FACTURAS/////////////////////////////////////
-        private void btnFacturas_MouseEnter(object sender, EventArgs e)
-        {
-            btnFacturas.BackColor = Color.FromArgb(38, 50, 56);
-            btnFacturas.ForeColor = Color.White;
-        }
-
-        private void btnFacturas_MouseLeave(object sender, EventArgs e)
-        {
-            btnFacturas.ForeColor = Color.Silver;
-            btnFacturas.BackColor = Color.Transparent;
-        }
-        /////////////////////////////////////EVENTOS BOTON ESTADISTICAS/////////////////////////////////////
-        private void btnEstadisticas_MouseEnter(object sender, EventArgs e)
-        {
-            btnEstadisticas.BackColor = Color.FromArgb(38, 50, 56);
-            btnEstadisticas.ForeColor = Color.White;
-        }
-
-        private void btnEstadisticas_MouseLeave(object sender, EventArgs e)
-        {
-            btnEstadisticas.ForeColor = Color.Silver;
-            btnEstadisticas.BackColor = Color.Transparent;
-        }
-        /////////////////////////////////////EVENTOS BOTON ADMINISTRADOR/////////////////////////////////////
-        private void btnAdministradorUsuarios_MouseEnter(object sender, EventArgs e)
-        {
-            if (botonAdinUsuarios == false)
-            {
-                btnAdministradorUsuarios.BackColor = Color.FromArgb(38, 50, 56);
-                btnAdministradorUsuarios.ForeColor = Color.White;
-            }
-        }
-
-        private void btnAdministradorUsuarios_MouseLeave(object sender, EventArgs e)
-        {
-            if (botonAdinUsuarios == false)
-            {
-                btnAdministradorUsuarios.ForeColor = Color.Silver;
-                btnAdministradorUsuarios.BackColor = Color.Transparent;
-            }
-        }
-        /////////////////////////////////////EVENTOS BOTON ACERCA DE/////////////////////////////////////
-        private void btnAcercaDe_MouseEnter(object sender, EventArgs e)
-        {
-            btnAcercaDe.BackColor = Color.FromArgb(38, 50, 56);
-            btnAcercaDe.ForeColor = Color.White;
-        }
-
-        private void btnAcercaDe_MouseLeave(object sender, EventArgs e)
-        {
-            btnAcercaDe.ForeColor = Color.Silver;
-            btnAcercaDe.BackColor = Color.Transparent;
-        }
-        //////////////////////////////////////ABRIR FORMULARIOS CON BOTONES////////////////////////////////////////////////
-        private void btnAlmacen_Click(object sender, EventArgs e)
-        {
-            coloresDefault(); //Se restablecen los colores por defecto
-            btnAlmacen.BackColor = Color.White; //Se cambia el color del boton a blanco
-            btnAlmacen.ForeColor = Color.Gray; //Se cambia el color de la fuente del boton a gris
-            abrirForm(new frmAlmacen()); //Se llama la función para abrir el formulario
-        }
-
-        private void btnProveedores_Click(object sender, EventArgs e)
-        {
-            coloresDefault();
-            btnProveedores.BackColor = Color.White;
-            btnProveedores.ForeColor = Color.Gray;
-            abrirForm(new frmProveedores());
-        }
-
-        private void btnAdministradorUsuarios_Click(object sender, EventArgs e)
-        {
-            coloresDefault();
-            resetearBotones();
-            btnAdministradorUsuarios.BackColor = Color.White;
-            btnAdministradorUsuarios.ForeColor = Color.Gray;
-            botonAdinUsuarios = true;
-            abrirForm(new frmUserAdmin());
-        }
-
-        private void btnCuenta_Click(object sender, EventArgs e)
-        {
-            coloresDefault();
-            resetearBotones();
-            btnCuenta.BackColor = Color.White;
-            btnCuenta.ForeColor = Color.Gray;
-            botonCuenta = true;
-            abrirForm(new frmPerfil());
-        }
-
-        private void btnEscritorio_Click(object sender, EventArgs e)
-        {
-            coloresDefault();
-            btnEscritorio.BackColor = Color.White;
-            btnEscritorio.ForeColor = Color.Gray;
-            abrirForm(new frmDashboard());
-        }
-        //////////////////////////////////////////////////////////////////////////////////////
-
-        /////////////////////////////////////////CERRAR SESIÓN/////////////////////////////////////////////
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Está a punto de cerrar sesión, ¿Continuar?", "Cerrar sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
@@ -292,6 +70,335 @@ namespace SistemaGestionInventario
                 inicio.Show();
             }
         }
+
+        //////////////////////////////////////ABRIR FORMULARIOS CON RADIO BUTTON////////////////////////////////////////////////
+        private void rbtCuenta_CheckedChanged(object sender, EventArgs e)//CUENTA
+        {
+            if(rbtCuenta.Checked == true)
+            {
+                abrirForm(new frmPerfil());
+                rbtCuenta.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtCuenta.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtAlmacen_CheckedChanged(object sender, EventArgs e)//ALMACEN
+        {
+            if (rbtAlmacen.Checked == true)
+            {
+                abrirForm(new frmAlmacen());
+                rbtAlmacen.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtAlmacen.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtProveedores_CheckedChanged(object sender, EventArgs e)//PROVEEDORES
+        {
+            if (rbtProveedores.Checked == true)
+            {
+                abrirForm(new frmProveedores());
+                rbtProveedores.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtProveedores.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtClientes_CheckedChanged(object sender, EventArgs e)//CLIENTES
+        {
+            if (rbtClientes.Checked == true)
+            {
+                //abrirForm(new frmClientes()):
+                rbtClientes.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtClientes.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtReportes_CheckedChanged(object sender, EventArgs e)//REPORTES
+        {
+            if (rbtReportes.Checked == true)
+            {
+                //abrirForm(new frmReportes());
+                rbtReportes.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtReportes.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtPagos_CheckedChanged(object sender, EventArgs e)//PAGOS
+        {
+            if (rbtPagos.Checked == true)
+            {
+                rbtPagos.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtPagos.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtFacturas_CheckedChanged(object sender, EventArgs e)//FACTURAS
+        {
+            if (rbtFacturas.Checked == true)
+            {
+                abrirForm(new frmFacturacion());
+                rbtFacturas.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtFacturas.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtEstadisticas_CheckedChanged(object sender, EventArgs e)//ESTADISTICAS
+        {
+            if (rbtFacturas.Checked == true)
+            {
+                abrirForm(new frmFacturacion());
+                rbtEstadisticas.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtEstadisticas.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtEscritorio_CheckedChanged(object sender, EventArgs e)//ESCRITORIO
+        {
+            if (rbtEscritorio.Checked == true)
+            {
+                abrirForm(new frmDashboard());
+                rbtEscritorio.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtEscritorio.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtAdminDeUsuarios_CheckedChanged(object sender, EventArgs e)//ADMINISTRADOR DE USUARIOS
+        {
+            if (rbtAdminDeUsuarios.Checked == true)
+            {
+                abrirForm(new frmUserAdmin());
+                rbtAdminDeUsuarios.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtAdminDeUsuarios.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtAcercaDe_CheckedChanged(object sender, EventArgs e)//ACERCA DE
+        {
+            if (rbtAcercaDe.Checked == true)
+            {
+                rbtAcercaDe.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtAcercaDe.ForeColor = Color.White;
+            }
+        }
         //////////////////////////////////////////////////////////////////////////////////////
+        
+        private void rbtCuenta_MouseEnter(object sender, EventArgs e)//SI EL MOUSE ENTRA EN EL BOTON
+        {
+            rbtCuenta.ForeColor = Color.DimGray;
+        }
+
+        private void rbtCuenta_MouseLeave(object sender, EventArgs e)
+        {
+            if (rbtCuenta.Checked == true)
+            {
+                rbtCuenta.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtCuenta.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtEscritorio_MouseEnter(object sender, EventArgs e)
+        {
+            rbtEscritorio.ForeColor = Color.DimGray;
+        }
+
+        private void rbtEscritorio_MouseLeave(object sender, EventArgs e)
+        {
+            if (rbtEscritorio.Checked == true)
+            {
+                rbtEscritorio.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtEscritorio.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtAlmacen_MouseEnter(object sender, EventArgs e)
+        {
+            rbtAlmacen.ForeColor = Color.DimGray;
+        }
+
+        private void rbtAlmacen_MouseLeave(object sender, EventArgs e)
+        {
+            if (rbtAlmacen.Checked == true)
+            {
+                rbtAlmacen.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtAlmacen.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtProveedores_MouseEnter(object sender, EventArgs e)
+        {
+            rbtProveedores.ForeColor = Color.DimGray;
+        }
+
+        private void rbtProveedores_MouseLeave(object sender, EventArgs e)
+        {
+            if (rbtProveedores.Checked == true)
+            {
+                rbtProveedores.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtProveedores.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtClientes_MouseEnter(object sender, EventArgs e)
+        {
+            rbtClientes.ForeColor = Color.DimGray;
+        }
+
+        private void rbtClientes_MouseLeave(object sender, EventArgs e)
+        {
+            if (rbtClientes.Checked == true)
+            {
+                rbtClientes.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtClientes.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtReportes_MouseEnter(object sender, EventArgs e)
+        {
+            rbtReportes.ForeColor = Color.DimGray;
+        }
+
+        private void rbtReportes_MouseLeave(object sender, EventArgs e)
+        {
+            if (rbtReportes.Checked == true)
+            {
+                rbtReportes.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtReportes.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtPagos_MouseEnter(object sender, EventArgs e)
+        {
+            rbtPagos.ForeColor = Color.DimGray;
+        }
+
+        private void rbtPagos_MouseLeave(object sender, EventArgs e)
+        {
+            if (rbtPagos.Checked == true)
+            {
+                rbtPagos.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtPagos.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtFacturas_MouseEnter(object sender, EventArgs e)
+        {
+            rbtFacturas.ForeColor = Color.DimGray;
+        }
+
+        private void rbtFacturas_MouseLeave(object sender, EventArgs e)
+        {
+            if (rbtFacturas.Checked == true)
+            {
+                rbtFacturas.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtFacturas.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtEstadisticas_MouseEnter(object sender, EventArgs e)
+        {
+            rbtEstadisticas.ForeColor = Color.DimGray;
+        }
+
+        private void rbtEstadisticas_MouseLeave(object sender, EventArgs e)
+        {
+            if (rbtEstadisticas.Checked == true)
+            {
+                rbtEstadisticas.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtEstadisticas.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtAdminDeUsuarios_MouseEnter(object sender, EventArgs e)
+        {
+            rbtAdminDeUsuarios.ForeColor = Color.DimGray;
+        }
+
+        private void rbtAdminDeUsuarios_MouseLeave(object sender, EventArgs e)
+        {
+            if (rbtAdminDeUsuarios.Checked == true)
+            {
+                rbtAdminDeUsuarios.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtAdminDeUsuarios.ForeColor = Color.White;
+            }
+        }
+
+        private void rbtAcercaDe_MouseEnter(object sender, EventArgs e)
+        {
+            rbtAcercaDe.ForeColor = Color.DimGray;
+        }
+
+        private void rbtAcercaDe_MouseLeave(object sender, EventArgs e)
+        {
+            if (rbtAcercaDe.Checked == true)
+            {
+                rbtAcercaDe.ForeColor = Color.DimGray;
+            }
+            else
+            {
+                rbtAcercaDe.ForeColor = Color.White;
+            }
+        }
     }
 }

@@ -344,8 +344,8 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(311, 79);
             this.label11.TabIndex = 57;
-            this.label11.Text = "La contraseña debe de tener entre 6 y 12 caracteres con letras mayuculas y minusc" +
-    "ulas y numeros. No debe de contener caracteres especiales.";
+            this.label11.Text = "La contraseña debe de tener entre 6 y 12 caracteres. Debe incluir: Letras mayucul" +
+    "as, minusculas y numeros. No debe de contener caracteres especiales (/ - ).";
             // 
             // frmPerfil
             // 

@@ -423,6 +423,26 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap profile_image___1362_ {
+            get {
+                object obj = ResourceManager.GetObject("profile_image [#1362]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profile_image_plus___1359_ {
+            get {
+                object obj = ResourceManager.GetObject("profile_image_plus [#1359]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap profile_image_plus_round___1327_ {
             get {
                 object obj = ResourceManager.GetObject("profile_image_plus_round [#1327]", resourceCulture);
