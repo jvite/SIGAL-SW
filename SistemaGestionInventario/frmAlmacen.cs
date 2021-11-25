@@ -26,7 +26,7 @@ namespace SistemaGestionInventario
             txtProveedor.Enabled = true;
             txtEnExistencia.Enabled = true;
             dtpFechaEntrada.Enabled = true;
-            cbxActivo.Enabled = true;
+            cbxEstado.Enabled = true;
         }
 
         private void deshabilitarCajasDeTexto()
@@ -36,7 +36,7 @@ namespace SistemaGestionInventario
             txtProveedor.Enabled = false;
             txtEnExistencia.Enabled = false;
             dtpFechaEntrada.Enabled = false;
-            cbxActivo.Enabled = false;
+            cbxEstado.Enabled = false;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)

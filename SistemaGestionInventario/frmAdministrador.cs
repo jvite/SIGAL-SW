@@ -33,7 +33,7 @@ namespace SistemaGestionInventario
             rbtEscritorio.ForeColor = Color.Gray;
             rbtEstadisticas.ForeColor = Color.Gray;
             rbtFacturas.ForeColor = Color.Gray;
-            rbtPagos.ForeColor = Color.Gray;
+            rbtVentas.ForeColor = Color.Gray;
             rbtProveedores.ForeColor = Color.Gray;
             rbtReportes.ForeColor = Color.Gray;
         }
@@ -137,15 +137,15 @@ namespace SistemaGestionInventario
             }
         }
 
-        private void rbtPagos_CheckedChanged(object sender, EventArgs e)//PAGOS
+        private void rbtVentas_CheckedChanged(object sender, EventArgs e)//VENTAS
         {
-            if (rbtPagos.Checked == true)
+            if (rbtVentas.Checked == true)
             {
-                rbtPagos.ForeColor = Color.DimGray;
+                rbtVentas.ForeColor = Color.DimGray;
             }
             else
             {
-                rbtPagos.ForeColor = Color.White;
+                rbtVentas.ForeColor = Color.White;
             }
         }
 
@@ -212,14 +212,14 @@ namespace SistemaGestionInventario
                 rbtAcercaDe.ForeColor = Color.White;
             }
         }
-        //////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
         
         private void rbtCuenta_MouseEnter(object sender, EventArgs e)//SI EL MOUSE ENTRA EN EL BOTON
         {
             rbtCuenta.ForeColor = Color.DimGray;
         }
 
-        private void rbtCuenta_MouseLeave(object sender, EventArgs e)
+        private void rbtCuenta_MouseLeave(object sender, EventArgs e)//SI EL MOUSE SALE DEL BOTON
         {
             if (rbtCuenta.Checked == true)
             {
@@ -230,7 +230,7 @@ namespace SistemaGestionInventario
                 rbtCuenta.ForeColor = Color.White;
             }
         }
-
+        /////////////////////////////////////////////////////////////////
         private void rbtEscritorio_MouseEnter(object sender, EventArgs e)
         {
             rbtEscritorio.ForeColor = Color.DimGray;
@@ -247,7 +247,7 @@ namespace SistemaGestionInventario
                 rbtEscritorio.ForeColor = Color.White;
             }
         }
-
+        /////////////////////////////////////////////////////////////////
         private void rbtAlmacen_MouseEnter(object sender, EventArgs e)
         {
             rbtAlmacen.ForeColor = Color.DimGray;
@@ -264,7 +264,7 @@ namespace SistemaGestionInventario
                 rbtAlmacen.ForeColor = Color.White;
             }
         }
-
+        /////////////////////////////////////////////////////////////////
         private void rbtProveedores_MouseEnter(object sender, EventArgs e)
         {
             rbtProveedores.ForeColor = Color.DimGray;
@@ -281,7 +281,7 @@ namespace SistemaGestionInventario
                 rbtProveedores.ForeColor = Color.White;
             }
         }
-
+        /////////////////////////////////////////////////////////////////
         private void rbtClientes_MouseEnter(object sender, EventArgs e)
         {
             rbtClientes.ForeColor = Color.DimGray;
@@ -298,7 +298,7 @@ namespace SistemaGestionInventario
                 rbtClientes.ForeColor = Color.White;
             }
         }
-
+        /////////////////////////////////////////////////////////////////
         private void rbtReportes_MouseEnter(object sender, EventArgs e)
         {
             rbtReportes.ForeColor = Color.DimGray;
@@ -315,24 +315,24 @@ namespace SistemaGestionInventario
                 rbtReportes.ForeColor = Color.White;
             }
         }
-
-        private void rbtPagos_MouseEnter(object sender, EventArgs e)
+        /////////////////////////////////////////////////////////////////
+        private void rbtVentas_MouseEnter(object sender, EventArgs e)
         {
-            rbtPagos.ForeColor = Color.DimGray;
+            rbtVentas.ForeColor = Color.DimGray;
         }
 
-        private void rbtPagos_MouseLeave(object sender, EventArgs e)
+        private void rbtVentas_MouseLeave(object sender, EventArgs e)
         {
-            if (rbtPagos.Checked == true)
+            if (rbtVentas.Checked == true)
             {
-                rbtPagos.ForeColor = Color.DimGray;
+                rbtVentas.ForeColor = Color.DimGray;
             }
             else
             {
-                rbtPagos.ForeColor = Color.White;
+                rbtVentas.ForeColor = Color.White;
             }
         }
-
+        /////////////////////////////////////////////////////////////////
         private void rbtFacturas_MouseEnter(object sender, EventArgs e)
         {
             rbtFacturas.ForeColor = Color.DimGray;
@@ -349,7 +349,7 @@ namespace SistemaGestionInventario
                 rbtFacturas.ForeColor = Color.White;
             }
         }
-
+        /////////////////////////////////////////////////////////////////
         private void rbtEstadisticas_MouseEnter(object sender, EventArgs e)
         {
             rbtEstadisticas.ForeColor = Color.DimGray;
@@ -366,7 +366,7 @@ namespace SistemaGestionInventario
                 rbtEstadisticas.ForeColor = Color.White;
             }
         }
-
+        /////////////////////////////////////////////////////////////////
         private void rbtAdminDeUsuarios_MouseEnter(object sender, EventArgs e)
         {
             rbtAdminDeUsuarios.ForeColor = Color.DimGray;
@@ -383,7 +383,7 @@ namespace SistemaGestionInventario
                 rbtAdminDeUsuarios.ForeColor = Color.White;
             }
         }
-
+        /////////////////////////////////////////////////////////////////
         private void rbtAcercaDe_MouseEnter(object sender, EventArgs e)
         {
             rbtAcercaDe.ForeColor = Color.DimGray;

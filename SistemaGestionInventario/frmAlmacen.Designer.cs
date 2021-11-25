@@ -50,11 +50,19 @@
             this.txtProveedor = new System.Windows.Forms.TextBox();
             this.lblEnExistencia = new System.Windows.Forms.Label();
             this.txtEnExistencia = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbxActivo = new System.Windows.Forms.ComboBox();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.cbxEstado = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dtpFechaEntrada = new System.Windows.Forms.DateTimePicker();
             this.btnEditar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblMarca = new System.Windows.Forms.Label();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.lblModelo = new System.Windows.Forms.Label();
+            this.txtModelo = new System.Windows.Forms.TextBox();
+            this.chbProblema = new System.Windows.Forms.CheckBox();
+            this.txtIDProveedor = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +72,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(265, 2);
+            this.lblTitulo.Location = new System.Drawing.Point(265, -2);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(112, 33);
             this.lblTitulo.TabIndex = 4;
@@ -211,135 +219,143 @@
             // 
             this.lblID.AutoSize = true;
             this.lblID.BackColor = System.Drawing.Color.Transparent;
-            this.lblID.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(16, 55);
+            this.lblID.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Location = new System.Drawing.Point(15, 30);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(29, 21);
+            this.lblID.Size = new System.Drawing.Size(28, 19);
             this.lblID.TabIndex = 15;
             this.lblID.Text = "ID:";
             // 
             // txtID
             // 
             this.txtID.Enabled = false;
-            this.txtID.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(174, 52);
+            this.txtID.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtID.Location = new System.Drawing.Point(91, 27);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(127, 28);
+            this.txtID.Size = new System.Drawing.Size(127, 27);
             this.txtID.TabIndex = 14;
             // 
             // lblArticulo
             // 
             this.lblArticulo.AutoSize = true;
             this.lblArticulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblArticulo.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArticulo.Location = new System.Drawing.Point(16, 91);
+            this.lblArticulo.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArticulo.Location = new System.Drawing.Point(15, 62);
             this.lblArticulo.Name = "lblArticulo";
-            this.lblArticulo.Size = new System.Drawing.Size(70, 21);
+            this.lblArticulo.Size = new System.Drawing.Size(66, 19);
             this.lblArticulo.TabIndex = 17;
             this.lblArticulo.Text = "Articulo:";
             // 
             // txtArticulo
             // 
-            this.txtArticulo.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArticulo.Location = new System.Drawing.Point(174, 88);
+            this.txtArticulo.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtArticulo.Location = new System.Drawing.Point(91, 59);
             this.txtArticulo.Name = "txtArticulo";
-            this.txtArticulo.Size = new System.Drawing.Size(127, 28);
+            this.txtArticulo.Size = new System.Drawing.Size(127, 27);
             this.txtArticulo.TabIndex = 16;
             // 
             // lblDescripcion
             // 
-            this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescripcion.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(16, 125);
+            this.lblDescripcion.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(15, 182);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(95, 21);
+            this.lblDescripcion.Size = new System.Drawing.Size(203, 26);
             this.lblDescripcion.TabIndex = 19;
-            this.lblDescripcion.Text = "Descripción:";
+            this.lblDescripcion.Text = "Descripción del problema:";
+            this.lblDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(174, 122);
+            this.txtDescripcion.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.Location = new System.Drawing.Point(19, 210);
+            this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(127, 28);
+            this.txtDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtDescripcion.Size = new System.Drawing.Size(199, 43);
             this.txtDescripcion.TabIndex = 18;
             // 
             // lblProveedor
             // 
             this.lblProveedor.AutoSize = true;
             this.lblProveedor.BackColor = System.Drawing.Color.Transparent;
-            this.lblProveedor.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProveedor.Location = new System.Drawing.Point(16, 159);
+            this.lblProveedor.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProveedor.Location = new System.Drawing.Point(261, 70);
             this.lblProveedor.Name = "lblProveedor";
-            this.lblProveedor.Size = new System.Drawing.Size(87, 21);
+            this.lblProveedor.Size = new System.Drawing.Size(82, 19);
             this.lblProveedor.TabIndex = 21;
             this.lblProveedor.Text = "Proveedor:";
             // 
             // txtProveedor
             // 
-            this.txtProveedor.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProveedor.Location = new System.Drawing.Point(174, 156);
+            this.txtProveedor.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProveedor.Location = new System.Drawing.Point(404, 65);
             this.txtProveedor.Name = "txtProveedor";
-            this.txtProveedor.Size = new System.Drawing.Size(127, 28);
+            this.txtProveedor.Size = new System.Drawing.Size(127, 27);
             this.txtProveedor.TabIndex = 20;
             // 
             // lblEnExistencia
             // 
             this.lblEnExistencia.AutoSize = true;
             this.lblEnExistencia.BackColor = System.Drawing.Color.Transparent;
-            this.lblEnExistencia.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnExistencia.Location = new System.Drawing.Point(16, 191);
+            this.lblEnExistencia.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnExistencia.Location = new System.Drawing.Point(260, 104);
             this.lblEnExistencia.Name = "lblEnExistencia";
-            this.lblEnExistencia.Size = new System.Drawing.Size(171, 21);
+            this.lblEnExistencia.Size = new System.Drawing.Size(137, 19);
             this.lblEnExistencia.TabIndex = 23;
-            this.lblEnExistencia.Text = "Unidades en existencia:";
+            this.lblEnExistencia.Text = "Unid. en existencia:";
             // 
             // txtEnExistencia
             // 
             this.txtEnExistencia.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnExistencia.Location = new System.Drawing.Point(187, 188);
+            this.txtEnExistencia.Location = new System.Drawing.Point(403, 101);
             this.txtEnExistencia.Name = "txtEnExistencia";
-            this.txtEnExistencia.Size = new System.Drawing.Size(114, 28);
+            this.txtEnExistencia.Size = new System.Drawing.Size(127, 28);
             this.txtEnExistencia.TabIndex = 22;
             // 
-            // label3
+            // lblEstado
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(318, 129);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 21);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Activo:";
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.BackColor = System.Drawing.Color.Transparent;
+            this.lblEstado.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Location = new System.Drawing.Point(339, 169);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(60, 19);
+            this.lblEstado.TabIndex = 24;
+            this.lblEstado.Text = "Estado:";
             // 
-            // cbxActivo
+            // cbxEstado
             // 
-            this.cbxActivo.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxActivo.FormattingEnabled = true;
-            this.cbxActivo.Location = new System.Drawing.Point(404, 126);
-            this.cbxActivo.Name = "cbxActivo";
-            this.cbxActivo.Size = new System.Drawing.Size(127, 29);
-            this.cbxActivo.TabIndex = 25;
+            this.cbxEstado.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxEstado.FormattingEnabled = true;
+            this.cbxEstado.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.cbxEstado.Location = new System.Drawing.Point(404, 169);
+            this.cbxEstado.Name = "cbxEstado";
+            this.cbxEstado.Size = new System.Drawing.Size(127, 27);
+            this.cbxEstado.TabIndex = 25;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(315, 56);
+            this.label4.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(267, 140);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 21);
+            this.label4.Size = new System.Drawing.Size(128, 19);
             this.label4.TabIndex = 27;
             this.label4.Text = "Fecha de entrada:";
             // 
             // dtpFechaEntrada
             // 
+            this.dtpFechaEntrada.CalendarFont = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaEntrada.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaEntrada.Location = new System.Drawing.Point(319, 85);
+            this.dtpFechaEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaEntrada.Location = new System.Drawing.Point(404, 134);
+            this.dtpFechaEntrada.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpFechaEntrada.Name = "dtpFechaEntrada";
-            this.dtpFechaEntrada.Size = new System.Drawing.Size(212, 27);
+            this.dtpFechaEntrada.Size = new System.Drawing.Size(127, 27);
             this.dtpFechaEntrada.TabIndex = 28;
             // 
             // btnEditar
@@ -358,23 +374,113 @@
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(261, 31);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(136, 19);
+            this.label5.TabIndex = 49;
+            this.label5.Text = "Unidad de medida:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "N/A",
+            "Kilogramos (Kg)",
+            "Metros (M)",
+            "Litros (L)"});
+            this.comboBox1.Location = new System.Drawing.Point(404, 27);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(127, 27);
+            this.comboBox1.TabIndex = 50;
+            // 
+            // lblMarca
+            // 
+            this.lblMarca.AutoSize = true;
+            this.lblMarca.BackColor = System.Drawing.Color.Transparent;
+            this.lblMarca.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarca.Location = new System.Drawing.Point(15, 94);
+            this.lblMarca.Name = "lblMarca";
+            this.lblMarca.Size = new System.Drawing.Size(54, 19);
+            this.lblMarca.TabIndex = 52;
+            this.lblMarca.Text = "Marca:";
+            // 
+            // txtMarca
+            // 
+            this.txtMarca.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMarca.Location = new System.Drawing.Point(91, 91);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(127, 27);
+            this.txtMarca.TabIndex = 51;
+            // 
+            // lblModelo
+            // 
+            this.lblModelo.AutoSize = true;
+            this.lblModelo.BackColor = System.Drawing.Color.Transparent;
+            this.lblModelo.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModelo.Location = new System.Drawing.Point(15, 128);
+            this.lblModelo.Name = "lblModelo";
+            this.lblModelo.Size = new System.Drawing.Size(65, 19);
+            this.lblModelo.TabIndex = 54;
+            this.lblModelo.Text = "Modelo:";
+            // 
+            // txtModelo
+            // 
+            this.txtModelo.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtModelo.Location = new System.Drawing.Point(91, 123);
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.Size = new System.Drawing.Size(127, 27);
+            this.txtModelo.TabIndex = 53;
+            // 
+            // chbProblema
+            // 
+            this.chbProblema.AutoSize = true;
+            this.chbProblema.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbProblema.Location = new System.Drawing.Point(20, 156);
+            this.chbProblema.Name = "chbProblema";
+            this.chbProblema.Size = new System.Drawing.Size(93, 23);
+            this.chbProblema.TabIndex = 58;
+            this.chbProblema.Text = "Problema";
+            this.chbProblema.UseVisualStyleBackColor = true;
+            // 
+            // txtIDProveedor
+            // 
+            this.txtIDProveedor.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDProveedor.Location = new System.Drawing.Point(362, 65);
+            this.txtIDProveedor.Name = "txtIDProveedor";
+            this.txtIDProveedor.Size = new System.Drawing.Size(36, 27);
+            this.txtIDProveedor.TabIndex = 59;
+            // 
             // frmAlmacen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(735, 538);
+            this.Controls.Add(this.txtIDProveedor);
+            this.Controls.Add(this.chbProblema);
+            this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.lblModelo);
+            this.Controls.Add(this.txtModelo);
+            this.Controls.Add(this.lblMarca);
+            this.Controls.Add(this.txtMarca);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.dtpFechaEntrada);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.cbxActivo);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cbxEstado);
+            this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.lblEnExistencia);
             this.Controls.Add(this.txtEnExistencia);
             this.Controls.Add(this.lblProveedor);
             this.Controls.Add(this.txtProveedor);
             this.Controls.Add(this.lblDescripcion);
-            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.lblArticulo);
             this.Controls.Add(this.txtArticulo);
             this.Controls.Add(this.lblID);
@@ -425,10 +531,18 @@
         private System.Windows.Forms.TextBox txtProveedor;
         private System.Windows.Forms.Label lblEnExistencia;
         private System.Windows.Forms.TextBox txtEnExistencia;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbxActivo;
+        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.ComboBox cbxEstado;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dtpFechaEntrada;
         private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblMarca;
+        private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.Label lblModelo;
+        private System.Windows.Forms.TextBox txtModelo;
+        private System.Windows.Forms.CheckBox chbProblema;
+        private System.Windows.Forms.TextBox txtIDProveedor;
     }
 }

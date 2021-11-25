@@ -36,11 +36,12 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.plMenuContactos = new System.Windows.Forms.Panel();
             this.plMenuLateral = new System.Windows.Forms.Panel();
+            this.pbxSeparador1 = new System.Windows.Forms.PictureBox();
             this.rbtAcercaDe = new System.Windows.Forms.RadioButton();
             this.rbtAdminDeUsuarios = new System.Windows.Forms.RadioButton();
             this.rbtEstadisticas = new System.Windows.Forms.RadioButton();
             this.rbtFacturas = new System.Windows.Forms.RadioButton();
-            this.rbtPagos = new System.Windows.Forms.RadioButton();
+            this.rbtVentas = new System.Windows.Forms.RadioButton();
             this.rbtReportes = new System.Windows.Forms.RadioButton();
             this.rbtClientes = new System.Windows.Forms.RadioButton();
             this.rbtProveedores = new System.Windows.Forms.RadioButton();
@@ -54,16 +55,15 @@
             this.pbxEstado = new System.Windows.Forms.PictureBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.pbxImagenPerfil = new System.Windows.Forms.PictureBox();
-            this.pbxSeparador1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSIGALSW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.plMenuLateral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEstado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenPerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador1)).BeginInit();
             this.SuspendLayout();
             // 
             // plContenedor
@@ -139,7 +139,7 @@
             this.plMenuLateral.Controls.Add(this.rbtAdminDeUsuarios);
             this.plMenuLateral.Controls.Add(this.rbtEstadisticas);
             this.plMenuLateral.Controls.Add(this.rbtFacturas);
-            this.plMenuLateral.Controls.Add(this.rbtPagos);
+            this.plMenuLateral.Controls.Add(this.rbtVentas);
             this.plMenuLateral.Controls.Add(this.rbtReportes);
             this.plMenuLateral.Controls.Add(this.rbtClientes);
             this.plMenuLateral.Controls.Add(this.rbtProveedores);
@@ -157,6 +157,17 @@
             this.plMenuLateral.Name = "plMenuLateral";
             this.plMenuLateral.Size = new System.Drawing.Size(191, 645);
             this.plMenuLateral.TabIndex = 0;
+            // 
+            // pbxSeparador1
+            // 
+            this.pbxSeparador1.BackColor = System.Drawing.Color.Transparent;
+            this.pbxSeparador1.Image = global::SistemaGestionInventario.Properties.Resources.linea;
+            this.pbxSeparador1.Location = new System.Drawing.Point(0, 220);
+            this.pbxSeparador1.Name = "pbxSeparador1";
+            this.pbxSeparador1.Size = new System.Drawing.Size(192, 25);
+            this.pbxSeparador1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSeparador1.TabIndex = 14;
+            this.pbxSeparador1.TabStop = false;
             // 
             // rbtAcercaDe
             // 
@@ -246,27 +257,27 @@
             this.rbtFacturas.MouseEnter += new System.EventHandler(this.rbtFacturas_MouseEnter);
             this.rbtFacturas.MouseLeave += new System.EventHandler(this.rbtFacturas_MouseLeave);
             // 
-            // rbtPagos
+            // rbtVentas
             // 
-            this.rbtPagos.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbtPagos.BackColor = System.Drawing.Color.Transparent;
-            this.rbtPagos.FlatAppearance.BorderSize = 0;
-            this.rbtPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtPagos.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtPagos.ForeColor = System.Drawing.Color.White;
-            this.rbtPagos.Image = global::SistemaGestionInventario.Properties.Resources.money___1183_;
-            this.rbtPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rbtPagos.Location = new System.Drawing.Point(0, 466);
-            this.rbtPagos.Name = "rbtPagos";
-            this.rbtPagos.Size = new System.Drawing.Size(191, 29);
-            this.rbtPagos.TabIndex = 6;
-            this.rbtPagos.Text = "Pagos";
-            this.rbtPagos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbtPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rbtPagos.UseVisualStyleBackColor = false;
-            this.rbtPagos.CheckedChanged += new System.EventHandler(this.rbtPagos_CheckedChanged);
-            this.rbtPagos.MouseEnter += new System.EventHandler(this.rbtPagos_MouseEnter);
-            this.rbtPagos.MouseLeave += new System.EventHandler(this.rbtPagos_MouseLeave);
+            this.rbtVentas.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtVentas.BackColor = System.Drawing.Color.Transparent;
+            this.rbtVentas.FlatAppearance.BorderSize = 0;
+            this.rbtVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtVentas.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtVentas.ForeColor = System.Drawing.Color.White;
+            this.rbtVentas.Image = global::SistemaGestionInventario.Properties.Resources.money___1183_;
+            this.rbtVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtVentas.Location = new System.Drawing.Point(0, 466);
+            this.rbtVentas.Name = "rbtVentas";
+            this.rbtVentas.Size = new System.Drawing.Size(191, 29);
+            this.rbtVentas.TabIndex = 6;
+            this.rbtVentas.Text = "Ventas";
+            this.rbtVentas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtVentas.UseVisualStyleBackColor = false;
+            this.rbtVentas.CheckedChanged += new System.EventHandler(this.rbtVentas_CheckedChanged);
+            this.rbtVentas.MouseEnter += new System.EventHandler(this.rbtVentas_MouseEnter);
+            this.rbtVentas.MouseLeave += new System.EventHandler(this.rbtVentas_MouseLeave);
             // 
             // rbtReportes
             // 
@@ -479,17 +490,6 @@
             this.pbxImagenPerfil.TabIndex = 0;
             this.pbxImagenPerfil.TabStop = false;
             // 
-            // pbxSeparador1
-            // 
-            this.pbxSeparador1.BackColor = System.Drawing.Color.Transparent;
-            this.pbxSeparador1.Image = global::SistemaGestionInventario.Properties.Resources.linea;
-            this.pbxSeparador1.Location = new System.Drawing.Point(0, 220);
-            this.pbxSeparador1.Name = "pbxSeparador1";
-            this.pbxSeparador1.Size = new System.Drawing.Size(192, 25);
-            this.pbxSeparador1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxSeparador1.TabIndex = 14;
-            this.pbxSeparador1.TabStop = false;
-            // 
             // frmAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -513,12 +513,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.plMenuLateral.ResumeLayout(false);
             this.plMenuLateral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEstado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenPerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -543,7 +543,7 @@
         private System.Windows.Forms.RadioButton rbtAdminDeUsuarios;
         private System.Windows.Forms.RadioButton rbtEstadisticas;
         private System.Windows.Forms.RadioButton rbtFacturas;
-        private System.Windows.Forms.RadioButton rbtPagos;
+        private System.Windows.Forms.RadioButton rbtVentas;
         private System.Windows.Forms.RadioButton rbtReportes;
         private System.Windows.Forms.RadioButton rbtClientes;
         private System.Windows.Forms.RadioButton rbtProveedores;
