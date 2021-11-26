@@ -58,6 +58,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblApellidos = new System.Windows.Forms.Label();
             this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.lblTelefono2 = new System.Windows.Forms.Label();
+            this.txtTelefono2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -68,7 +70,7 @@
             this.lblEmpresa.AutoSize = true;
             this.lblEmpresa.BackColor = System.Drawing.Color.Transparent;
             this.lblEmpresa.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpresa.Location = new System.Drawing.Point(17, 152);
+            this.lblEmpresa.Location = new System.Drawing.Point(17, 149);
             this.lblEmpresa.Name = "lblEmpresa";
             this.lblEmpresa.Size = new System.Drawing.Size(71, 19);
             this.lblEmpresa.TabIndex = 79;
@@ -77,7 +79,7 @@
             // txtEmpresa
             // 
             this.txtEmpresa.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmpresa.Location = new System.Drawing.Point(107, 149);
+            this.txtEmpresa.Location = new System.Drawing.Point(107, 146);
             this.txtEmpresa.Name = "txtEmpresa";
             this.txtEmpresa.Size = new System.Drawing.Size(146, 27);
             this.txtEmpresa.TabIndex = 78;
@@ -122,7 +124,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(16, 212);
+            this.label5.Location = new System.Drawing.Point(16, 209);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 19);
             this.label5.TabIndex = 72;
@@ -131,7 +133,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(107, 209);
+            this.txtTelefono.Location = new System.Drawing.Point(107, 206);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(159, 27);
             this.txtTelefono.TabIndex = 71;
@@ -141,7 +143,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(16, 182);
+            this.label4.Location = new System.Drawing.Point(16, 179);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 19);
             this.label4.TabIndex = 70;
@@ -150,7 +152,7 @@
             // txtDomicilio
             // 
             this.txtDomicilio.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDomicilio.Location = new System.Drawing.Point(107, 179);
+            this.txtDomicilio.Location = new System.Drawing.Point(107, 176);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(201, 27);
             this.txtDomicilio.TabIndex = 69;
@@ -160,7 +162,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(16, 92);
+            this.lblNombre.Location = new System.Drawing.Point(17, 89);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(84, 19);
             this.lblNombre.TabIndex = 68;
@@ -169,7 +171,7 @@
             // txtRazonSocial
             // 
             this.txtRazonSocial.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRazonSocial.Location = new System.Drawing.Point(107, 89);
+            this.txtRazonSocial.Location = new System.Drawing.Point(107, 86);
             this.txtRazonSocial.Name = "txtRazonSocial";
             this.txtRazonSocial.Size = new System.Drawing.Size(146, 27);
             this.txtRazonSocial.TabIndex = 67;
@@ -188,7 +190,7 @@
             // txtID
             // 
             this.txtID.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(107, 59);
+            this.txtID.Location = new System.Drawing.Point(107, 56);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(37, 27);
             this.txtID.TabIndex = 65;
@@ -203,21 +205,21 @@
             // 
             // cbxCriterio
             // 
-            this.cbxCriterio.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxCriterio.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxCriterio.FormattingEnabled = true;
-            this.cbxCriterio.Location = new System.Drawing.Point(473, 282);
+            this.cbxCriterio.Location = new System.Drawing.Point(473, 287);
             this.cbxCriterio.Name = "cbxCriterio";
-            this.cbxCriterio.Size = new System.Drawing.Size(121, 29);
+            this.cbxCriterio.Size = new System.Drawing.Size(121, 27);
             this.cbxCriterio.TabIndex = 61;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(400, 285);
+            this.label2.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(393, 291);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 21);
+            this.label2.Size = new System.Drawing.Size(63, 19);
             this.label2.TabIndex = 60;
             this.label2.Text = "Criterio:";
             // 
@@ -225,19 +227,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 285);
+            this.label1.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 291);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 21);
+            this.label1.Size = new System.Drawing.Size(78, 19);
             this.label1.TabIndex = 59;
             this.label1.Text = "Busqueda:";
             // 
             // txtBusqueda
             // 
-            this.txtBusqueda.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusqueda.Location = new System.Drawing.Point(99, 282);
+            this.txtBusqueda.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(100, 287);
             this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(287, 28);
+            this.txtBusqueda.Size = new System.Drawing.Size(287, 27);
             this.txtBusqueda.TabIndex = 58;
             // 
             // lblTitulo
@@ -282,10 +284,10 @@
             this.btnBuscar.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color4;
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBuscar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(616, 282);
+            this.btnBuscar.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(616, 287);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(107, 32);
+            this.btnBuscar.Size = new System.Drawing.Size(107, 28);
             this.btnBuscar.TabIndex = 62;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -356,7 +358,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::SistemaGestionInventario.Properties.Resources.linea;
-            this.pictureBox3.Location = new System.Drawing.Point(-1, 255);
+            this.pictureBox3.Location = new System.Drawing.Point(-1, 260);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(737, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -368,7 +370,7 @@
             this.lblApellidos.AutoSize = true;
             this.lblApellidos.BackColor = System.Drawing.Color.Transparent;
             this.lblApellidos.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellidos.Location = new System.Drawing.Point(16, 122);
+            this.lblApellidos.Location = new System.Drawing.Point(16, 119);
             this.lblApellidos.Name = "lblApellidos";
             this.lblApellidos.Size = new System.Drawing.Size(76, 19);
             this.lblApellidos.TabIndex = 82;
@@ -377,10 +379,29 @@
             // txtApellidos
             // 
             this.txtApellidos.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidos.Location = new System.Drawing.Point(107, 119);
+            this.txtApellidos.Location = new System.Drawing.Point(107, 116);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(146, 27);
             this.txtApellidos.TabIndex = 81;
+            // 
+            // lblTelefono2
+            // 
+            this.lblTelefono2.AutoSize = true;
+            this.lblTelefono2.BackColor = System.Drawing.Color.Transparent;
+            this.lblTelefono2.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono2.Location = new System.Drawing.Point(16, 239);
+            this.lblTelefono2.Name = "lblTelefono2";
+            this.lblTelefono2.Size = new System.Drawing.Size(83, 19);
+            this.lblTelefono2.TabIndex = 84;
+            this.lblTelefono2.Text = "Teléfono 2:";
+            // 
+            // txtTelefono2
+            // 
+            this.txtTelefono2.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono2.Location = new System.Drawing.Point(107, 236);
+            this.txtTelefono2.Name = "txtTelefono2";
+            this.txtTelefono2.Size = new System.Drawing.Size(159, 27);
+            this.txtTelefono2.TabIndex = 83;
             // 
             // frmClientes
             // 
@@ -389,6 +410,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(735, 538);
             this.ControlBox = false;
+            this.Controls.Add(this.lblTelefono2);
+            this.Controls.Add(this.txtTelefono2);
             this.Controls.Add(this.lblApellidos);
             this.Controls.Add(this.txtApellidos);
             this.Controls.Add(this.pbxLogo);
@@ -465,5 +488,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.TextBox txtApellidos;
+        private System.Windows.Forms.Label lblTelefono2;
+        private System.Windows.Forms.TextBox txtTelefono2;
     }
 }
