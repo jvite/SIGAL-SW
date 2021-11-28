@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblInformacion.Text" xml:space="preserve">
+    <value>La siguiente informacion es referente a la conexión con la base de datos y el Web Service. Modifique la configuracion bajo su propio riesgo, el sistema puede dejar de funcionar. Para volver a la configuracion por defecto pulse el boton Default.</value>
+  </data>
 </root>

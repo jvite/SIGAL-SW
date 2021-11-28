@@ -95,11 +95,11 @@
     <Compile Include="frmProveedores.Designer.cs">
       <DependentUpon>frmProveedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSolicitudes.cs">
+    <Compile Include="frmConfiguracion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSolicitudes.Designer.cs">
-      <DependentUpon>frmSolicitudes.cs</DependentUpon>
+    <Compile Include="frmConfiguracion.Designer.cs">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUserAdmin.cs">
       <SubType>Form</SubType>
@@ -134,8 +134,8 @@
     <EmbeddedResource Include="frmProveedores.resx">
       <DependentUpon>frmProveedores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSolicitudes.resx">
-      <DependentUpon>frmSolicitudes.cs</DependentUpon>
+    <EmbeddedResource Include="frmConfiguracion.resx">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUserAdmin.resx">
       <DependentUpon>frmUserAdmin.cs</DependentUpon>
@@ -315,6 +315,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\profile_round [#1342].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close [#1511].png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

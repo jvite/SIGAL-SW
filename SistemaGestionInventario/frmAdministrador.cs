@@ -115,7 +115,7 @@ namespace SistemaGestionInventario
         {
             if (rbtClientes.Checked == true)
             {
-                //abrirForm(new frmClientes()):
+                abrirForm(new frmClientes());
                 rbtClientes.ForeColor = Color.DimGray;
             }
             else

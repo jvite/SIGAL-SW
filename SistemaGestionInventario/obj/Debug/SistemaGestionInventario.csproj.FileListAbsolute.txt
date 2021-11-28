@@ -34,3 +34,4 @@ C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInvent
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.csproj.CoreCompileInputs.cache
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.exe
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.pdb
+C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmClientes.resources

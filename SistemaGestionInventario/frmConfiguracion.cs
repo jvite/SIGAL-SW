@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaGestionInventario
 {
-    public partial class frmSolicitudes : Form
+    public partial class frmConfiguracion : Form
     {
-        public frmSolicitudes()
+        public frmConfiguracion()
         {
             InitializeComponent();
         }
