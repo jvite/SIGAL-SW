@@ -51,6 +51,10 @@
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.cbxRol = new System.Windows.Forms.ComboBox();
+            this.lblSexo = new System.Windows.Forms.Label();
+            this.cbxSexo = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnReestablecerContrasena = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -59,13 +63,9 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lblSexo = new System.Windows.Forms.Label();
-            this.cbxSexo = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // lblID
@@ -81,6 +81,7 @@
             // 
             // txtID
             // 
+            this.txtID.Enabled = false;
             this.txtID.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.Location = new System.Drawing.Point(49, 52);
             this.txtID.Name = "txtID";
@@ -281,6 +282,51 @@
             this.txtTelefono.Size = new System.Drawing.Size(145, 26);
             this.txtTelefono.TabIndex = 43;
             // 
+            // cbxRol
+            // 
+            this.cbxRol.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxRol.FormattingEnabled = true;
+            this.cbxRol.Items.AddRange(new object[] {
+            "Administrador",
+            "Empleado"});
+            this.cbxRol.Location = new System.Drawing.Point(392, 139);
+            this.cbxRol.Name = "cbxRol";
+            this.cbxRol.Size = new System.Drawing.Size(121, 26);
+            this.cbxRol.TabIndex = 47;
+            // 
+            // lblSexo
+            // 
+            this.lblSexo.AutoSize = true;
+            this.lblSexo.BackColor = System.Drawing.Color.Transparent;
+            this.lblSexo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSexo.Location = new System.Drawing.Point(16, 143);
+            this.lblSexo.Name = "lblSexo";
+            this.lblSexo.Size = new System.Drawing.Size(42, 18);
+            this.lblSexo.TabIndex = 49;
+            this.lblSexo.Text = "Sexo:";
+            // 
+            // cbxSexo
+            // 
+            this.cbxSexo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxSexo.FormattingEnabled = true;
+            this.cbxSexo.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
+            this.cbxSexo.Location = new System.Drawing.Point(94, 139);
+            this.cbxSexo.Name = "cbxSexo";
+            this.cbxSexo.Size = new System.Drawing.Size(145, 26);
+            this.cbxSexo.TabIndex = 50;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(259, 39);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(41, 206);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 54;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnEditar
             // 
             this.btnEditar.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color5;
@@ -304,7 +350,7 @@
             this.btnReestablecerContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReestablecerContrasena.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReestablecerContrasena.Image = global::SistemaGestionInventario.Properties.Resources.lock_open_round___708_1;
-            this.btnReestablecerContrasena.Location = new System.Drawing.Point(354, 204);
+            this.btnReestablecerContrasena.Location = new System.Drawing.Point(356, 186);
             this.btnReestablecerContrasena.Name = "btnReestablecerContrasena";
             this.btnReestablecerContrasena.Size = new System.Drawing.Size(184, 36);
             this.btnReestablecerContrasena.TabIndex = 45;
@@ -402,51 +448,6 @@
             this.pictureBox3.TabIndex = 27;
             this.pictureBox3.TabStop = false;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Administrador",
-            "Empleado"});
-            this.comboBox1.Location = new System.Drawing.Point(392, 139);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 26);
-            this.comboBox1.TabIndex = 47;
-            // 
-            // lblSexo
-            // 
-            this.lblSexo.AutoSize = true;
-            this.lblSexo.BackColor = System.Drawing.Color.Transparent;
-            this.lblSexo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSexo.Location = new System.Drawing.Point(16, 143);
-            this.lblSexo.Name = "lblSexo";
-            this.lblSexo.Size = new System.Drawing.Size(42, 18);
-            this.lblSexo.TabIndex = 49;
-            this.lblSexo.Text = "Sexo:";
-            // 
-            // cbxSexo
-            // 
-            this.cbxSexo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxSexo.FormattingEnabled = true;
-            this.cbxSexo.Items.AddRange(new object[] {
-            "Masculino",
-            "Femenino"});
-            this.cbxSexo.Location = new System.Drawing.Point(94, 139);
-            this.cbxSexo.Name = "cbxSexo";
-            this.cbxSexo.Size = new System.Drawing.Size(145, 26);
-            this.cbxSexo.TabIndex = 50;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(253, 39);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 206);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 54;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmUserAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -456,7 +457,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cbxSexo);
             this.Controls.Add(this.lblSexo);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbxRol);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnReestablecerContrasena);
             this.Controls.Add(this.label3);
@@ -491,8 +492,8 @@
             this.Name = "frmUserAdmin";
             this.Text = "frmUserAdmin";
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -530,7 +531,7 @@
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Button btnReestablecerContrasena;
         private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxRol;
         private System.Windows.Forms.Label lblSexo;
         private System.Windows.Forms.ComboBox cbxSexo;
         private System.Windows.Forms.PictureBox pictureBox1;

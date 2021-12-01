@@ -33,7 +33,8 @@ namespace SistemaGestionInventario
             txtTelefono.Enabled = true;
             txtUsuario.Enabled = true;
             txtContrasena.Enabled = true;
-            txtRol.Enabled = true;
+            cbxRol.Enabled = true;
+            cbxSexo.Enabled = true;
         }
 
         private void deshabilitarCajasDeTexto()
@@ -45,7 +46,8 @@ namespace SistemaGestionInventario
             txtTelefono.Enabled = false;
             txtUsuario.Enabled = false;
             txtContrasena.Enabled = false;
-            txtRol.Enabled = false;
+            cbxRol.Enabled = false;
+            cbxSexo.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)

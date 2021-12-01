@@ -8,10 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace SistemaGestionInventario
 {
+
     public partial class frmAdministrador : Form
     {
+        bool modificado=false; //Indica si se ha realizado un cambio en el campo
 
         public frmAdministrador()
         {
@@ -398,6 +401,16 @@ namespace SistemaGestionInventario
             else
             {
                 rbtAcercaDe.ForeColor = Color.White;
+            }
+        }
+
+        private void btnConfiguracion_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("La siguiente configuracion es referente al servidor, guarde los cambios antes de continuar.", "Conexion", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
+            {
+                this.Dispose();
+                frmConfiguracion configuracion = new frmConfiguracion();
+                configuracion.Show();
             }
         }
     }

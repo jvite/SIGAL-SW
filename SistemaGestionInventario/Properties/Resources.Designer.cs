@@ -163,6 +163,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close___1538_ {
+            get {
+                object obj = ResourceManager.GetObject("close [#1538]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap color1 {
             get {
                 object obj = ResourceManager.GetObject("color1", resourceCulture);
@@ -546,6 +556,26 @@ namespace SistemaGestionInventario.Properties {
         internal static System.Drawing.Bitmap sigal_sw3 {
             get {
                 object obj = ResourceManager.GetObject("sigal-sw3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap star___1260_ {
+            get {
+                object obj = ResourceManager.GetObject("star [#1260]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap star___1260_1 {
+            get {
+                object obj = ResourceManager.GetObject("star [#1260]1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

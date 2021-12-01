@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdministrador));
             this.plContenedor = new System.Windows.Forms.Panel();
+            this.btnConfiguracion = new System.Windows.Forms.Button();
             this.pbxSIGALSW = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
@@ -73,6 +74,23 @@
             this.plContenedor.Name = "plContenedor";
             this.plContenedor.Size = new System.Drawing.Size(751, 548);
             this.plContenedor.TabIndex = 4;
+            // 
+            // btnConfiguracion
+            // 
+            this.btnConfiguracion.BackColor = System.Drawing.Color.DimGray;
+            this.btnConfiguracion.FlatAppearance.BorderSize = 0;
+            this.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfiguracion.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfiguracion.Image = global::SistemaGestionInventario.Properties.Resources.star___1260_1;
+            this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfiguracion.Location = new System.Drawing.Point(284, 8);
+            this.btnConfiguracion.Name = "btnConfiguracion";
+            this.btnConfiguracion.Size = new System.Drawing.Size(101, 44);
+            this.btnConfiguracion.TabIndex = 15;
+            this.btnConfiguracion.Text = "Configurar conexion";
+            this.btnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConfiguracion.UseVisualStyleBackColor = false;
+            this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
             // 
             // pbxSIGALSW
             // 
@@ -497,6 +515,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1011, 644);
             this.ControlBox = false;
+            this.Controls.Add(this.btnConfiguracion);
             this.Controls.Add(this.pbxSIGALSW);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.plContenedor);
@@ -551,6 +570,7 @@
         private System.Windows.Forms.RadioButton rbtEscritorio;
         private System.Windows.Forms.RadioButton rbtCuenta;
         private System.Windows.Forms.PictureBox pbxSeparador1;
+        private System.Windows.Forms.Button btnConfiguracion;
     }
 }
 

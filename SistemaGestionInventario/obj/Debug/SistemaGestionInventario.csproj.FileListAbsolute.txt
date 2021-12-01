@@ -27,7 +27,6 @@ C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInvent
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmInicioDeSesion.resources
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmPerfil.resources
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmProveedores.resources
-C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmSolicitudes.resources
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmUserAdmin.resources
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.Properties.Resources.resources
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.csproj.GenerateResource.cache
@@ -35,3 +34,4 @@ C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInvent
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.exe
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.pdb
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmClientes.resources
+C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmConfiguracion.resources
