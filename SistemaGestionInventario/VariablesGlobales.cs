@@ -1,20 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaGestionInventario
 {
-    class VariablesGlobales
+    public class VariablesGlobales
     {
-        public static bool Estado(bool e)
-        {
-            if (e == true)
-            {
+        bool EstadoSesion = false;
+        bool ModificacionesRealizadas = false;
 
+        public bool CambiarEstado()
+        {
+            if (EstadoSesion == true)
+            {
+                EstadoSesion = false;
             }
-            return e;
+            else
+            {
+                EstadoSesion = false;
+            }
+
+            return EstadoSesion;
+        }
+
+        public bool CambiosRealizados()
+        {
+            if (ModificacionesRealizadas == true)
+            {
+                ModificacionesRealizadas = false;
+            }
+            else
+            {
+                ModificacionesRealizadas = true;
+            }
+            return ModificacionesRealizadas;
         }
     }
 }

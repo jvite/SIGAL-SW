@@ -50,6 +50,18 @@ namespace SistemaGestionInventario
             cbxSexo.Enabled = false;
         }
 
+        private void LimpiarFormulario()
+        {
+            txtID.Text = "";
+            txtNombre.Text = "";
+            txtApellidos.Text = "";
+            txtCorreo.Text = "";
+            txtTelefono.Text = "";
+            txtUsuario.Text = "";
+            txtContrasena.Text = "";
+            //cbxRol.Items.
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Está a pundo de reestablecer la contraseña actual, ¿Desea continuar?", "Reestablecer contraseña", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
@@ -77,6 +89,8 @@ namespace SistemaGestionInventario
             btnActualizar.Enabled = false;
             btnGuardar.Enabled = true;
             btnBuscar.Enabled = false;
+
+            //VariablesGlobales.CambiosRealizados();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

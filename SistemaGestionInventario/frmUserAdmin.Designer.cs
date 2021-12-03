@@ -284,11 +284,13 @@
             // 
             // cbxRol
             // 
+            this.cbxRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxRol.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxRol.FormattingEnabled = true;
+            this.cbxRol.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cbxRol.Items.AddRange(new object[] {
-            "Administrador",
-            "Empleado"});
+            "Empleado",
+            "Administrador"});
             this.cbxRol.Location = new System.Drawing.Point(392, 139);
             this.cbxRol.Name = "cbxRol";
             this.cbxRol.Size = new System.Drawing.Size(121, 26);
