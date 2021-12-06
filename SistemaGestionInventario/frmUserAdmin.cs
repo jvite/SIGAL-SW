@@ -20,8 +20,10 @@ namespace SistemaGestionInventario
 
             //los cuadros de texto no se pueden editar al iniciar
             deshabilitarCajasDeTexto();
-
+            cbxRol.SelectedIndex = 0;
+            cbxSexo.SelectedIndex = 0;
             btnGuardar.Enabled = false;
+            btnCancelar.Enabled = false;
         }
 
         private void habilitarCajasDeTexto()
@@ -59,7 +61,8 @@ namespace SistemaGestionInventario
             txtTelefono.Text = "";
             txtUsuario.Text = "";
             txtContrasena.Text = "";
-            //cbxRol.Items.
+            cbxSexo.SelectedIndex = 0;
+            cbxRol.SelectedIndex = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -67,6 +70,8 @@ namespace SistemaGestionInventario
             if (MessageBox.Show("Está a pundo de reestablecer la contraseña actual, ¿Desea continuar?", "Reestablecer contraseña", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
                 MessageBox.Show("La contraseña actuales: " + GenerarContrasena.GenerarPassword(8), "Contraseña reestablecida con éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                VariablesGlobales.ModificacionEnCurso = false;
+                VariablesGlobales.ModificacionesRealizadas = false;
             }
         }
 
@@ -78,7 +83,10 @@ namespace SistemaGestionInventario
             btnNuevo.Enabled = false;
             btnGuardar.Enabled = true;
             btnReestablecerContrasena.Enabled = false;
+            btnCancelar.Enabled = true;
             btnBuscar.Enabled = false;
+
+            VariablesGlobales.ModificacionEnCurso = true;
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -88,9 +96,10 @@ namespace SistemaGestionInventario
             btnNuevo.Enabled = false;
             btnActualizar.Enabled = false;
             btnGuardar.Enabled = true;
+            btnCancelar.Enabled = true;
             btnBuscar.Enabled = false;
 
-            //VariablesGlobales.CambiosRealizados();
+            VariablesGlobales.ModificacionEnCurso = true;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -101,7 +110,11 @@ namespace SistemaGestionInventario
             btnActualizar.Enabled = true;
             btnNuevo.Enabled = true;
             btnReestablecerContrasena.Enabled = true;
+            btnCancelar.Enabled = false;
             btnBuscar.Enabled = true;
+
+            VariablesGlobales.ModificacionesRealizadas = false;
+            VariablesGlobales.ModificacionEnCurso = false;
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -109,6 +122,24 @@ namespace SistemaGestionInventario
             if (MessageBox.Show("¿Está seguro de eliminar este usuario? Esta acción no se puede deshacer.", "Eliminar usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
                 MessageBox.Show("El usuario ha sido eliminado con éxito", "Eliminar usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                VariablesGlobales.ModificacionEnCurso = false;
+                VariablesGlobales.ModificacionesRealizadas = false;
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarFormulario();
+            deshabilitarCajasDeTexto();
+            VariablesGlobales.ModificacionEnCurso = false;
+            VariablesGlobales.ModificacionesRealizadas = false;
+        }
+
+        private void CamposModificados(object sender, EventArgs e)
+        {
+            if (VariablesGlobales.ModificacionesRealizadas == false)
+            {
+                VariablesGlobales.ModificacionesRealizadas = true;
             }
         }
     }

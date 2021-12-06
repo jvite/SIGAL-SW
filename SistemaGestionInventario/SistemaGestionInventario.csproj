@@ -329,5 +329,26 @@
   <ItemGroup>
     <None Include="Resources\star [#1260]1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_circle [#1425]1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit [#1483]1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_item [#1409].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete [#1487]1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_repeat [#235].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close [#1511]1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color6.fw.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

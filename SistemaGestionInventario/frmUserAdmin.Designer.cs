@@ -54,6 +54,7 @@
             this.cbxRol = new System.Windows.Forms.ComboBox();
             this.lblSexo = new System.Windows.Forms.Label();
             this.cbxSexo = new System.Windows.Forms.ComboBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnReestablecerContrasena = new System.Windows.Forms.Button();
@@ -164,6 +165,7 @@
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(145, 26);
             this.txtApellidos.TabIndex = 30;
+            this.txtApellidos.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
             // lblNombre
             // 
@@ -183,6 +185,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(145, 26);
             this.txtNombre.TabIndex = 32;
+            this.txtNombre.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
             // lblUsuario
             // 
@@ -202,6 +205,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(156, 26);
             this.txtUsuario.TabIndex = 34;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
             // lblContrasena
             // 
@@ -221,6 +225,7 @@
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.Size = new System.Drawing.Size(156, 26);
             this.txtContrasena.TabIndex = 36;
+            this.txtContrasena.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
             // lblRol
             // 
@@ -262,6 +267,7 @@
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(145, 26);
             this.txtCorreo.TabIndex = 41;
+            this.txtCorreo.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
             // label3
             // 
@@ -281,6 +287,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(145, 26);
             this.txtTelefono.TabIndex = 43;
+            this.txtTelefono.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
             // cbxRol
             // 
@@ -289,12 +296,14 @@
             this.cbxRol.FormattingEnabled = true;
             this.cbxRol.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cbxRol.Items.AddRange(new object[] {
-            "Empleado",
-            "Administrador"});
+            "Seleccionar...",
+            "Administrador",
+            "Empleado"});
             this.cbxRol.Location = new System.Drawing.Point(392, 139);
             this.cbxRol.Name = "cbxRol";
             this.cbxRol.Size = new System.Drawing.Size(121, 26);
             this.cbxRol.TabIndex = 47;
+            this.cbxRol.SelectedIndexChanged += new System.EventHandler(this.CamposModificados);
             // 
             // lblSexo
             // 
@@ -312,12 +321,30 @@
             this.cbxSexo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxSexo.FormattingEnabled = true;
             this.cbxSexo.Items.AddRange(new object[] {
+            "Seleccionar...",
             "Masculino",
             "Femenino"});
             this.cbxSexo.Location = new System.Drawing.Point(94, 139);
             this.cbxSexo.Name = "cbxSexo";
             this.cbxSexo.Size = new System.Drawing.Size(145, 26);
             this.cbxSexo.TabIndex = 50;
+            this.cbxSexo.SelectedIndexChanged += new System.EventHandler(this.CamposModificados);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color6_fw;
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancelar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Image = global::SistemaGestionInventario.Properties.Resources.close___1511_1;
+            this.btnCancelar.Location = new System.Drawing.Point(592, 161);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(131, 33);
+            this.btnCancelar.TabIndex = 55;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // pictureBox1
             // 
@@ -335,10 +362,10 @@
             this.btnEditar.FlatAppearance.BorderSize = 0;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEditar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Image = global::SistemaGestionInventario.Properties.Resources.edit___1483_;
-            this.btnEditar.Location = new System.Drawing.Point(592, 54);
+            this.btnEditar.Image = global::SistemaGestionInventario.Properties.Resources.edit___1483_1;
+            this.btnEditar.Location = new System.Drawing.Point(592, 50);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(131, 49);
+            this.btnEditar.Size = new System.Drawing.Size(131, 33);
             this.btnEditar.TabIndex = 46;
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -354,7 +381,7 @@
             this.btnReestablecerContrasena.Image = global::SistemaGestionInventario.Properties.Resources.lock_open_round___708_1;
             this.btnReestablecerContrasena.Location = new System.Drawing.Point(356, 186);
             this.btnReestablecerContrasena.Name = "btnReestablecerContrasena";
-            this.btnReestablecerContrasena.Size = new System.Drawing.Size(184, 36);
+            this.btnReestablecerContrasena.Size = new System.Drawing.Size(184, 33);
             this.btnReestablecerContrasena.TabIndex = 45;
             this.btnReestablecerContrasena.Text = "Reestablecer contraseña";
             this.btnReestablecerContrasena.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -381,10 +408,10 @@
             this.btnActualizar.FlatAppearance.BorderSize = 0;
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnActualizar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Image = global::SistemaGestionInventario.Properties.Resources.arrow_repeat___236_;
-            this.btnActualizar.Location = new System.Drawing.Point(592, 204);
+            this.btnActualizar.Image = global::SistemaGestionInventario.Properties.Resources.arrow_repeat___235_;
+            this.btnActualizar.Location = new System.Drawing.Point(592, 198);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(131, 49);
+            this.btnActualizar.Size = new System.Drawing.Size(131, 33);
             this.btnActualizar.TabIndex = 19;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -396,10 +423,10 @@
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Image = global::SistemaGestionInventario.Properties.Resources.save_item___1411_;
-            this.btnGuardar.Location = new System.Drawing.Point(592, 104);
+            this.btnGuardar.Image = global::SistemaGestionInventario.Properties.Resources.save_item___1409_;
+            this.btnGuardar.Location = new System.Drawing.Point(592, 87);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(131, 49);
+            this.btnGuardar.Size = new System.Drawing.Size(131, 33);
             this.btnGuardar.TabIndex = 18;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -413,10 +440,10 @@
             this.btnEliminar.FlatAppearance.BorderSize = 0;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Image = global::SistemaGestionInventario.Properties.Resources.delete___1487_;
-            this.btnEliminar.Location = new System.Drawing.Point(592, 154);
+            this.btnEliminar.Image = global::SistemaGestionInventario.Properties.Resources.delete___1487_1;
+            this.btnEliminar.Location = new System.Drawing.Point(592, 124);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(131, 49);
+            this.btnEliminar.Size = new System.Drawing.Size(131, 33);
             this.btnEliminar.TabIndex = 17;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -429,10 +456,10 @@
             this.btnNuevo.FlatAppearance.BorderSize = 0;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNuevo.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Image = global::SistemaGestionInventario.Properties.Resources.plus_circle___1425_;
-            this.btnNuevo.Location = new System.Drawing.Point(592, 4);
+            this.btnNuevo.Image = global::SistemaGestionInventario.Properties.Resources.plus_circle___1425_1;
+            this.btnNuevo.Location = new System.Drawing.Point(592, 13);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(131, 49);
+            this.btnNuevo.Size = new System.Drawing.Size(131, 33);
             this.btnNuevo.TabIndex = 16;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -456,6 +483,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(735, 538);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cbxSexo);
             this.Controls.Add(this.lblSexo);
@@ -537,5 +565,6 @@
         private System.Windows.Forms.Label lblSexo;
         private System.Windows.Forms.ComboBox cbxSexo;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }
