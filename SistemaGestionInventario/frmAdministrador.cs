@@ -39,6 +39,14 @@ namespace SistemaGestionInventario
             fh.Show();//se muestra el form
         }
 
+        private void Advertencia()
+        {
+            if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso == true)//Si se estan realizando cambios
+            {
+                MessageBox.Show("Guarde los cambios antes de continuar.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso==true)//Si se estan realizando cambios
@@ -71,226 +79,147 @@ namespace SistemaGestionInventario
                 }
             }
         }
-
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //////////////////////////////////////ABRIR FORMULARIOS CON RADIO BUTTON////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         private void rbtCuenta_CheckedChanged(object sender, EventArgs e)//CUENTA
         {
-            if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso == true)//Si se estan realizando cambios
+            if (rbtCuenta.Checked == true)
             {
-                MessageBox.Show("Guarde los cambios antes de continuar.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                //rbtCuenta.Checked = false;
+                abrirForm(new frmPerfil());
+                rbtCuenta.ForeColor = Color.DimGray;
             }
             else
             {
-                if (rbtCuenta.Checked == true)
-                {
-                    abrirForm(new frmPerfil());
-                    rbtCuenta.ForeColor = Color.DimGray;
-                }
-                else
-                {
-                    rbtCuenta.ForeColor = Color.White;
-                }
+                rbtCuenta.ForeColor = Color.White;
             }
         }
 
         private void rbtAlmacen_CheckedChanged(object sender, EventArgs e)//ALMACEN
         {
-            if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso == true)//Si se estan realizando cambios
+            if (rbtAlmacen.Checked == true)
             {
-                MessageBox.Show("Guarde los cambios antes de continuar.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                abrirForm(new frmAlmacen());
+                rbtAlmacen.ForeColor = Color.DimGray;
             }
             else
             {
-                if (rbtAlmacen.Checked == true)
-                {
-                    abrirForm(new frmAlmacen());
-                    rbtAlmacen.ForeColor = Color.DimGray;
-                }
-                else
-                {
-                    rbtAlmacen.ForeColor = Color.White;
-                }
+                rbtAlmacen.ForeColor = Color.White;
             }
         }
 
         private void rbtProveedores_CheckedChanged(object sender, EventArgs e)//PROVEEDORES
         {
-            if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso == true)//Si se estan realizando cambios
+            if (rbtProveedores.Checked == true)
             {
-                MessageBox.Show("Guarde los cambios antes de continuar.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                abrirForm(new frmProveedores());
+                rbtProveedores.ForeColor = Color.DimGray;
             }
             else
             {
-                if (rbtProveedores.Checked == true)
-                {
-                    abrirForm(new frmProveedores());
-                    rbtProveedores.ForeColor = Color.DimGray;
-                }
-                else
-                {
-                    rbtProveedores.ForeColor = Color.White;
-                }
+                rbtProveedores.ForeColor = Color.White;
             }
         }
 
         private void rbtClientes_CheckedChanged(object sender, EventArgs e)//CLIENTES
         {
-            if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso == true)//Si se estan realizando cambios
+            if (rbtClientes.Checked == true)
             {
-                MessageBox.Show("Guarde los cambios antes de continuar.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                abrirForm(new frmClientes());
+                rbtClientes.ForeColor = Color.DimGray;
             }
             else
             {
-                if (rbtClientes.Checked == true)
-                {
-                    abrirForm(new frmClientes());
-                    rbtClientes.ForeColor = Color.DimGray;
-                }
-                else
-                {
-                    rbtClientes.ForeColor = Color.White;
-                }
+                rbtClientes.ForeColor = Color.White;
             }
         }
 
         private void rbtReportes_CheckedChanged(object sender, EventArgs e)//REPORTES
         {
-            if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso == true)//Si se estan realizando cambios
+            if (rbtReportes.Checked == true)
             {
-                MessageBox.Show("Guarde los cambios antes de continuar.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //abrirForm(new frmReportes());
+                rbtReportes.ForeColor = Color.DimGray;
             }
             else
             {
-                if (rbtReportes.Checked == true)
-                {
-                    //abrirForm(new frmReportes());
-                    rbtReportes.ForeColor = Color.DimGray;
-                }
-                else
-                {
-                    rbtReportes.ForeColor = Color.White;
-                }
+                rbtReportes.ForeColor = Color.White;
             }
         }
 
         private void rbtVentas_CheckedChanged(object sender, EventArgs e)//VENTAS
         {
-            if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso == true)//Si se estan realizando cambios
+            if (rbtVentas.Checked == true)
             {
-                MessageBox.Show("Guarde los cambios antes de continuar.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                rbtVentas.ForeColor = Color.DimGray;
             }
             else
             {
-                if (rbtVentas.Checked == true)
-                {
-                    rbtVentas.ForeColor = Color.DimGray;
-                }
-                else
-                {
-                    rbtVentas.ForeColor = Color.White;
-                }
+                rbtVentas.ForeColor = Color.White;
             }
         }
 
         private void rbtFacturas_CheckedChanged(object sender, EventArgs e)//FACTURAS
         {
-            if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso == true)//Si se estan realizando cambios
+            if (rbtFacturas.Checked == true)
             {
-                MessageBox.Show("Guarde los cambios antes de continuar.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                abrirForm(new frmFacturacion());
+                rbtFacturas.ForeColor = Color.DimGray;
             }
             else
             {
-                if (rbtFacturas.Checked == true)
-                {
-                    abrirForm(new frmFacturacion());
-                    rbtFacturas.ForeColor = Color.DimGray;
-                }
-                else
-                {
-                    rbtFacturas.ForeColor = Color.White;
-                }
+                rbtFacturas.ForeColor = Color.White;
             }
         }
 
         private void rbtEstadisticas_CheckedChanged(object sender, EventArgs e)//ESTADISTICAS
         {
-            if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso == true)//Si se estan realizando cambios
+            if (rbtFacturas.Checked == true)
             {
-                MessageBox.Show("Guarde los cambios antes de continuar.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                abrirForm(new frmFacturacion());
+                rbtEstadisticas.ForeColor = Color.DimGray;
             }
             else
             {
-                if (rbtFacturas.Checked == true)
-                {
-                    abrirForm(new frmFacturacion());
-                    rbtEstadisticas.ForeColor = Color.DimGray;
-                }
-                else
-                {
-                    rbtEstadisticas.ForeColor = Color.White;
-                }
+                rbtEstadisticas.ForeColor = Color.White;
             }
-            
         }
 
         private void rbtEscritorio_CheckedChanged(object sender, EventArgs e)//ESCRITORIO
         {
-            if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso == true)//Si se estan realizando cambios
+            if (rbtEscritorio.Checked == true)
             {
-                MessageBox.Show("Guarde los cambios antes de continuar.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                abrirForm(new frmDashboard());
+                rbtEscritorio.ForeColor = Color.DimGray;
             }
             else
             {
-                if (rbtEscritorio.Checked == true)
-                {
-                    abrirForm(new frmDashboard());
-                    rbtEscritorio.ForeColor = Color.DimGray;
-                }
-                else
-                {
-                    rbtEscritorio.ForeColor = Color.White;
-                }
+                rbtEscritorio.ForeColor = Color.White;
             }
         }
 
         private void rbtAdminDeUsuarios_CheckedChanged(object sender, EventArgs e)//ADMINISTRADOR DE USUARIOS
         {
-            if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso == true)//Si se estan realizando cambios
+            if (rbtAdminDeUsuarios.Checked == true)
             {
-                MessageBox.Show("Guarde los cambios antes de continuar.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                rbtAdminDeUsuarios.Checked = false;
+                abrirForm(new frmUserAdmin());
+                rbtAdminDeUsuarios.ForeColor = Color.DimGray;
             }
             else
             {
-                if (rbtAdminDeUsuarios.Checked == true)
-                {
-                    abrirForm(new frmUserAdmin());
-                    rbtAdminDeUsuarios.ForeColor = Color.DimGray;
-                }
-                else
-                {
-                    rbtAdminDeUsuarios.ForeColor = Color.White;
-                }
+                rbtAdminDeUsuarios.ForeColor = Color.White;
             }
         }
 
         private void rbtAcercaDe_CheckedChanged(object sender, EventArgs e)//ACERCA DE
         {
-            if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso == true)//Si se estan realizando cambios
+            if (rbtAcercaDe.Checked == true)
             {
-                MessageBox.Show("Guarde los cambios antes de continuar.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                rbtAcercaDe.ForeColor = Color.DimGray;
             }
             else
             {
-                if (rbtAcercaDe.Checked == true)
-                {
-                    rbtAcercaDe.ForeColor = Color.DimGray;
-                }
-                else
-                {
-                    rbtAcercaDe.ForeColor = Color.White;
-                }
+                rbtAcercaDe.ForeColor = Color.White;
             }
         }
         //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -489,6 +418,94 @@ namespace SistemaGestionInventario
                 this.Dispose();
                 frmConfiguracion configuracion = new frmConfiguracion();
                 configuracion.Show();
+            }
+        }
+
+        private void rbtAdminDeUsuarios_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (rbtAdminDeUsuarios.Checked == false)
+            {
+                Advertencia();
+            }
+        }
+
+        private void rbtCuenta_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (rbtCuenta.Checked == false)
+            {
+                Advertencia();
+            }
+        }
+
+        private void rbtEscritorio_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (rbtEscritorio.Checked == false)
+            {
+                Advertencia();
+            }
+        }
+
+        private void rbtAlmacen_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (rbtAlmacen.Checked == false)
+            {
+                Advertencia();
+            }
+        }
+
+        private void rbtProveedores_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (rbtProveedores.Checked == false)
+            {
+                Advertencia();
+            }
+        }
+
+        private void rbtClientes_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (rbtClientes.Checked == false)
+            {
+                Advertencia();
+            }
+        }
+
+        private void rbtReportes_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (rbtReportes.Checked == false)
+            {
+                Advertencia();
+            }
+        }
+
+        private void rbtVentas_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (rbtVentas.Checked == false)
+            {
+                Advertencia();
+            }
+        }
+
+        private void rbtFacturas_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (rbtFacturas.Checked == false)
+            {
+                Advertencia();
+            }
+        }
+
+        private void rbtEstadisticas_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (rbtEstadisticas.Checked == false)
+            {
+                Advertencia();
+            }
+        }
+
+        private void rbtAcercaDe_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (rbtAcercaDe.Checked == false)
+            {
+                Advertencia();
             }
         }
     }

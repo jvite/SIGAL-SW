@@ -81,6 +81,7 @@
             this.btnConfiguracion.FlatAppearance.BorderSize = 0;
             this.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfiguracion.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfiguracion.ForeColor = System.Drawing.Color.White;
             this.btnConfiguracion.Image = global::SistemaGestionInventario.Properties.Resources.star___1260_1;
             this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConfiguracion.Location = new System.Drawing.Point(284, 8);
@@ -206,6 +207,7 @@
             this.rbtAcercaDe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtAcercaDe.UseVisualStyleBackColor = false;
             this.rbtAcercaDe.CheckedChanged += new System.EventHandler(this.rbtAcercaDe_CheckedChanged);
+            this.rbtAcercaDe.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtAcercaDe_MouseDown);
             this.rbtAcercaDe.MouseEnter += new System.EventHandler(this.rbtAcercaDe_MouseEnter);
             this.rbtAcercaDe.MouseLeave += new System.EventHandler(this.rbtAcercaDe_MouseLeave);
             // 
@@ -228,6 +230,7 @@
             this.rbtAdminDeUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtAdminDeUsuarios.UseVisualStyleBackColor = false;
             this.rbtAdminDeUsuarios.CheckedChanged += new System.EventHandler(this.rbtAdminDeUsuarios_CheckedChanged);
+            this.rbtAdminDeUsuarios.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtAdminDeUsuarios_MouseDown);
             this.rbtAdminDeUsuarios.MouseEnter += new System.EventHandler(this.rbtAdminDeUsuarios_MouseEnter);
             this.rbtAdminDeUsuarios.MouseLeave += new System.EventHandler(this.rbtAdminDeUsuarios_MouseLeave);
             // 
@@ -250,6 +253,7 @@
             this.rbtEstadisticas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtEstadisticas.UseVisualStyleBackColor = false;
             this.rbtEstadisticas.CheckedChanged += new System.EventHandler(this.rbtEstadisticas_CheckedChanged);
+            this.rbtEstadisticas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtEstadisticas_MouseDown);
             this.rbtEstadisticas.MouseEnter += new System.EventHandler(this.rbtEstadisticas_MouseEnter);
             this.rbtEstadisticas.MouseLeave += new System.EventHandler(this.rbtEstadisticas_MouseLeave);
             // 
@@ -272,6 +276,7 @@
             this.rbtFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtFacturas.UseVisualStyleBackColor = false;
             this.rbtFacturas.CheckedChanged += new System.EventHandler(this.rbtFacturas_CheckedChanged);
+            this.rbtFacturas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtFacturas_MouseDown);
             this.rbtFacturas.MouseEnter += new System.EventHandler(this.rbtFacturas_MouseEnter);
             this.rbtFacturas.MouseLeave += new System.EventHandler(this.rbtFacturas_MouseLeave);
             // 
@@ -294,6 +299,7 @@
             this.rbtVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtVentas.UseVisualStyleBackColor = false;
             this.rbtVentas.CheckedChanged += new System.EventHandler(this.rbtVentas_CheckedChanged);
+            this.rbtVentas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtVentas_MouseDown);
             this.rbtVentas.MouseEnter += new System.EventHandler(this.rbtVentas_MouseEnter);
             this.rbtVentas.MouseLeave += new System.EventHandler(this.rbtVentas_MouseLeave);
             // 
@@ -316,6 +322,7 @@
             this.rbtReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtReportes.UseVisualStyleBackColor = false;
             this.rbtReportes.CheckedChanged += new System.EventHandler(this.rbtReportes_CheckedChanged);
+            this.rbtReportes.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtReportes_MouseDown);
             this.rbtReportes.MouseEnter += new System.EventHandler(this.rbtReportes_MouseEnter);
             this.rbtReportes.MouseLeave += new System.EventHandler(this.rbtReportes_MouseLeave);
             // 
@@ -338,6 +345,7 @@
             this.rbtClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtClientes.UseVisualStyleBackColor = false;
             this.rbtClientes.CheckedChanged += new System.EventHandler(this.rbtClientes_CheckedChanged);
+            this.rbtClientes.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtClientes_MouseDown);
             this.rbtClientes.MouseEnter += new System.EventHandler(this.rbtClientes_MouseEnter);
             this.rbtClientes.MouseLeave += new System.EventHandler(this.rbtClientes_MouseLeave);
             // 
@@ -360,6 +368,7 @@
             this.rbtProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtProveedores.UseVisualStyleBackColor = false;
             this.rbtProveedores.CheckedChanged += new System.EventHandler(this.rbtProveedores_CheckedChanged);
+            this.rbtProveedores.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtProveedores_MouseDown);
             this.rbtProveedores.MouseEnter += new System.EventHandler(this.rbtProveedores_MouseEnter);
             this.rbtProveedores.MouseLeave += new System.EventHandler(this.rbtProveedores_MouseLeave);
             // 
@@ -382,6 +391,7 @@
             this.rbtAlmacen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtAlmacen.UseVisualStyleBackColor = false;
             this.rbtAlmacen.CheckedChanged += new System.EventHandler(this.rbtAlmacen_CheckedChanged);
+            this.rbtAlmacen.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtAlmacen_MouseDown);
             this.rbtAlmacen.MouseEnter += new System.EventHandler(this.rbtAlmacen_MouseEnter);
             this.rbtAlmacen.MouseLeave += new System.EventHandler(this.rbtAlmacen_MouseLeave);
             // 
@@ -406,6 +416,7 @@
             this.rbtEscritorio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtEscritorio.UseVisualStyleBackColor = false;
             this.rbtEscritorio.CheckedChanged += new System.EventHandler(this.rbtEscritorio_CheckedChanged);
+            this.rbtEscritorio.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtEscritorio_MouseDown);
             this.rbtEscritorio.MouseEnter += new System.EventHandler(this.rbtEscritorio_MouseEnter);
             this.rbtEscritorio.MouseLeave += new System.EventHandler(this.rbtEscritorio_MouseLeave);
             // 
@@ -428,6 +439,7 @@
             this.rbtCuenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtCuenta.UseVisualStyleBackColor = false;
             this.rbtCuenta.CheckedChanged += new System.EventHandler(this.rbtCuenta_CheckedChanged);
+            this.rbtCuenta.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtCuenta_MouseDown);
             this.rbtCuenta.MouseEnter += new System.EventHandler(this.rbtCuenta_MouseEnter);
             this.rbtCuenta.MouseLeave += new System.EventHandler(this.rbtCuenta_MouseLeave);
             // 

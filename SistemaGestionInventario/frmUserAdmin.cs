@@ -18,7 +18,6 @@ namespace SistemaGestionInventario
         {
             InitializeComponent();
 
-            //los cuadros de texto no se pueden editar al iniciar
             deshabilitarCajasDeTexto();
             cbxRol.SelectedIndex = 0;
             cbxSexo.SelectedIndex = 0;
@@ -96,6 +95,7 @@ namespace SistemaGestionInventario
             btnNuevo.Enabled = false;
             btnActualizar.Enabled = false;
             btnGuardar.Enabled = true;
+            btnReestablecerContrasena.Enabled = true;
             btnCancelar.Enabled = true;
             btnBuscar.Enabled = false;
 
@@ -135,7 +135,7 @@ namespace SistemaGestionInventario
             VariablesGlobales.ModificacionesRealizadas = false;
         }
 
-        private void CamposModificados(object sender, EventArgs e)
+        private void CamposModificados(object sender, EventArgs e)//Si se modifico algun campo del formulario
         {
             if (VariablesGlobales.ModificacionesRealizadas == false)
             {
