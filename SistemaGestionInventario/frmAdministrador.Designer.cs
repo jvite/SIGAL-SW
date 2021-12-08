@@ -72,21 +72,22 @@
             this.plContenedor.BackColor = System.Drawing.Color.Transparent;
             this.plContenedor.Location = new System.Drawing.Point(198, 91);
             this.plContenedor.Name = "plContenedor";
-            this.plContenedor.Size = new System.Drawing.Size(751, 548);
+            this.plContenedor.Size = new System.Drawing.Size(768, 562);
             this.plContenedor.TabIndex = 4;
             // 
             // btnConfiguracion
             // 
-            this.btnConfiguracion.BackColor = System.Drawing.Color.DimGray;
+            this.btnConfiguracion.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfiguracion.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color1;
             this.btnConfiguracion.FlatAppearance.BorderSize = 0;
             this.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfiguracion.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfiguracion.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfiguracion.ForeColor = System.Drawing.Color.White;
             this.btnConfiguracion.Image = global::SistemaGestionInventario.Properties.Resources.star___1260_1;
             this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConfiguracion.Location = new System.Drawing.Point(284, 8);
+            this.btnConfiguracion.Location = new System.Drawing.Point(279, 12);
             this.btnConfiguracion.Name = "btnConfiguracion";
-            this.btnConfiguracion.Size = new System.Drawing.Size(101, 44);
+            this.btnConfiguracion.Size = new System.Drawing.Size(148, 27);
             this.btnConfiguracion.TabIndex = 15;
             this.btnConfiguracion.Text = "Configurar conexion";
             this.btnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -111,7 +112,7 @@
             this.pictureBox3.Image = global::SistemaGestionInventario.Properties.Resources.linea;
             this.pictureBox3.Location = new System.Drawing.Point(198, 65);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(751, 25);
+            this.pictureBox3.Size = new System.Drawing.Size(768, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
@@ -145,9 +146,9 @@
             // plMenuContactos
             // 
             this.plMenuContactos.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color1;
-            this.plMenuContactos.Location = new System.Drawing.Point(955, 0);
+            this.plMenuContactos.Location = new System.Drawing.Point(986, 0);
             this.plMenuContactos.Name = "plMenuContactos";
-            this.plMenuContactos.Size = new System.Drawing.Size(56, 645);
+            this.plMenuContactos.Size = new System.Drawing.Size(39, 663);
             this.plMenuContactos.TabIndex = 1;
             // 
             // plMenuLateral
@@ -174,7 +175,7 @@
             this.plMenuLateral.Controls.Add(this.pbxImagenPerfil);
             this.plMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.plMenuLateral.Name = "plMenuLateral";
-            this.plMenuLateral.Size = new System.Drawing.Size(191, 645);
+            this.plMenuLateral.Size = new System.Drawing.Size(191, 663);
             this.plMenuLateral.TabIndex = 0;
             // 
             // pbxSeparador1
@@ -226,7 +227,7 @@
             this.rbtAdminDeUsuarios.Size = new System.Drawing.Size(191, 29);
             this.rbtAdminDeUsuarios.TabIndex = 9;
             this.rbtAdminDeUsuarios.Text = "Admin. de usuarios";
-            this.rbtAdminDeUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtAdminDeUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.rbtAdminDeUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtAdminDeUsuarios.UseVisualStyleBackColor = false;
             this.rbtAdminDeUsuarios.CheckedChanged += new System.EventHandler(this.rbtAdminDeUsuarios_CheckedChanged);
@@ -435,7 +436,6 @@
             this.rbtCuenta.Size = new System.Drawing.Size(191, 29);
             this.rbtCuenta.TabIndex = 0;
             this.rbtCuenta.Text = "Cuenta";
-            this.rbtCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbtCuenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtCuenta.UseVisualStyleBackColor = false;
             this.rbtCuenta.CheckedChanged += new System.EventHandler(this.rbtCuenta_CheckedChanged);
@@ -525,7 +525,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1011, 644);
+            this.ClientSize = new System.Drawing.Size(1025, 661);
             this.ControlBox = false;
             this.Controls.Add(this.btnConfiguracion);
             this.Controls.Add(this.pbxSIGALSW);

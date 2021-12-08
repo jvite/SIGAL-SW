@@ -23,11 +23,13 @@ namespace SistemaGestionInventario
             cbxSexo.SelectedIndex = 0;
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
+            btnReestablecerContrasena.Enabled = false;
+            VariablesGlobales.ModificacionEnCurso = false;
+            VariablesGlobales.ModificacionesRealizadas = false;
         }
 
         private void habilitarCajasDeTexto()
         {
-            txtID.Enabled = true;
             txtNombre.Enabled = true;
             txtApellidos.Enabled = true;
             txtCorreo.Enabled = true;
@@ -40,7 +42,6 @@ namespace SistemaGestionInventario
 
         private void deshabilitarCajasDeTexto()
         {
-            txtID.Enabled = false;
             txtNombre.Enabled = false;
             txtApellidos.Enabled = false;
             txtCorreo.Enabled = false;
@@ -109,7 +110,7 @@ namespace SistemaGestionInventario
             btnEditar.Enabled = true;
             btnActualizar.Enabled = true;
             btnNuevo.Enabled = true;
-            btnReestablecerContrasena.Enabled = true;
+            btnReestablecerContrasena.Enabled = false;
             btnCancelar.Enabled = false;
             btnBuscar.Enabled = true;
 
@@ -124,6 +125,7 @@ namespace SistemaGestionInventario
                 MessageBox.Show("El usuario ha sido eliminado con éxito", "Eliminar usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 VariablesGlobales.ModificacionEnCurso = false;
                 VariablesGlobales.ModificacionesRealizadas = false;
+                LimpiarFormulario();
             }
         }
 
@@ -133,6 +135,13 @@ namespace SistemaGestionInventario
             deshabilitarCajasDeTexto();
             VariablesGlobales.ModificacionEnCurso = false;
             VariablesGlobales.ModificacionesRealizadas = false;
+            btnGuardar.Enabled = false;
+            btnNuevo.Enabled = true;
+            btnEditar.Enabled = true;
+            btnEliminar.Enabled = true;
+            btnCancelar.Enabled = false;
+            btnActualizar.Enabled = true;
+            btnBuscar.Enabled = true;
         }
 
         private void CamposModificados(object sender, EventArgs e)//Si se modifico algun campo del formulario
