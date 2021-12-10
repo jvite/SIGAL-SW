@@ -22,8 +22,11 @@ namespace SistemaGestionInventario
         private void habilitarCajasDeTexto()
         {
             txtArticulo.Enabled = true;
+            txtMarca.Enabled = true;
+            txtModelo.Enabled = true;
             txtDescripcion.Enabled = true;
-            txtProveedor.Enabled = true;
+            cbxProveedor.Enabled = true;
+            cbxUnidadMedida.Enabled = true;
             txtEnExistencia.Enabled = true;
             dtpFechaEntrada.Enabled = true;
             cbxEstado.Enabled = true;
@@ -32,11 +35,27 @@ namespace SistemaGestionInventario
         private void deshabilitarCajasDeTexto()
         {
             txtArticulo.Enabled = false;
+            txtMarca.Enabled = false;
+            txtModelo.Enabled = false;
             txtDescripcion.Enabled = false;
-            txtProveedor.Enabled = false;
+            cbxProveedor.Enabled = false;
+            cbxUnidadMedida.Enabled = false;
             txtEnExistencia.Enabled = false;
             dtpFechaEntrada.Enabled = false;
             cbxEstado.Enabled = false;
+        }
+
+        private void limpiarFormulario()
+        {
+            txtArticulo.Text="";
+            txtMarca.Text = "";
+            txtModelo.Text = "";
+            txtDescripcion.Text = "";
+            cbxProveedor.SelectedIndex = 0;
+            cbxUnidadMedida.SelectedIndex = 0;
+            txtEnExistencia.Text = "";
+            dtpFechaEntrada.Value = DateTime.Today;
+            cbxEstado.SelectedIndex = 0;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)

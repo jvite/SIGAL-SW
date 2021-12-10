@@ -38,6 +38,7 @@ namespace SistemaGestionInventario
             txtContrasena.Enabled = true;
             cbxRol.Enabled = true;
             cbxSexo.Enabled = true;
+            cbxEstatus.Enabled = true;
         }
 
         private void deshabilitarCajasDeTexto()
@@ -50,6 +51,7 @@ namespace SistemaGestionInventario
             txtContrasena.Enabled = false;
             cbxRol.Enabled = false;
             cbxSexo.Enabled = false;
+            cbxEstatus.Enabled = false;
         }
 
         private void LimpiarFormulario()
@@ -63,13 +65,14 @@ namespace SistemaGestionInventario
             txtContrasena.Text = "";
             cbxSexo.SelectedIndex = 0;
             cbxRol.SelectedIndex = 0;
+            cbxEstatus.SelectedIndex = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Está a pundo de reestablecer la contraseña actual, ¿Desea continuar?", "Reestablecer contraseña", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            if (MessageBox.Show("La contraseña actual se borrará y se generará una nueva, ¿Desea continuar?", "SIGAL SW", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
-                MessageBox.Show("La contraseña actuales: " + GenerarContrasena.GenerarPassword(8), "Contraseña reestablecida con éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("La contraseña actual es: " + GenerarContrasena.GenerarPassword(8), "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 VariablesGlobales.ModificacionEnCurso = false;
                 VariablesGlobales.ModificacionesRealizadas = false;
             }
@@ -84,6 +87,7 @@ namespace SistemaGestionInventario
             btnGuardar.Enabled = true;
             btnReestablecerContrasena.Enabled = false;
             btnCancelar.Enabled = true;
+            btnLimpiar.Enabled = true;
             btnBuscar.Enabled = false;
 
             VariablesGlobales.ModificacionEnCurso = true;
@@ -98,6 +102,7 @@ namespace SistemaGestionInventario
             btnGuardar.Enabled = true;
             btnReestablecerContrasena.Enabled = true;
             btnCancelar.Enabled = true;
+            btnLimpiar.Enabled = true;
             btnBuscar.Enabled = false;
 
             VariablesGlobales.ModificacionEnCurso = true;
@@ -112,6 +117,7 @@ namespace SistemaGestionInventario
             btnNuevo.Enabled = true;
             btnReestablecerContrasena.Enabled = false;
             btnCancelar.Enabled = false;
+            btnLimpiar.Enabled = false;
             btnBuscar.Enabled = true;
 
             VariablesGlobales.ModificacionesRealizadas = false;
@@ -141,6 +147,7 @@ namespace SistemaGestionInventario
             btnEliminar.Enabled = true;
             btnCancelar.Enabled = false;
             btnActualizar.Enabled = true;
+            btnLimpiar.Enabled = false;
             btnBuscar.Enabled = true;
         }
 
@@ -150,6 +157,11 @@ namespace SistemaGestionInventario
             {
                 VariablesGlobales.ModificacionesRealizadas = true;
             }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            LimpiarFormulario();
         }
     }
 }

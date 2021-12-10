@@ -353,6 +353,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap file___1699_ {
+            get {
+                object obj = ResourceManager.GetObject("file [#1699]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap file_double___1695_ {
             get {
                 object obj = ResourceManager.GetObject("file_double [#1695]", resourceCulture);
