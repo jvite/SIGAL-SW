@@ -98,7 +98,7 @@
             this.dgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTabla.Location = new System.Drawing.Point(12, 337);
             this.dgvTabla.Name = "dgvTabla";
-            this.dgvTabla.Size = new System.Drawing.Size(744, 215);
+            this.dgvTabla.Size = new System.Drawing.Size(756, 215);
             this.dgvTabla.TabIndex = 26;
             // 
             // cbxCriterio
@@ -379,7 +379,7 @@
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLimpiar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.Image = global::SistemaGestionInventario.Properties.Resources.file___1699_;
-            this.btnLimpiar.Location = new System.Drawing.Point(645, 233);
+            this.btnLimpiar.Location = new System.Drawing.Point(657, 230);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(111, 33);
             this.btnLimpiar.TabIndex = 60;
@@ -395,7 +395,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = global::SistemaGestionInventario.Properties.Resources.close___1511_1;
-            this.btnCancelar.Location = new System.Drawing.Point(645, 159);
+            this.btnCancelar.Location = new System.Drawing.Point(657, 156);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(111, 33);
             this.btnCancelar.TabIndex = 55;
@@ -421,7 +421,7 @@
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEditar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Image = global::SistemaGestionInventario.Properties.Resources.edit___1483_1;
-            this.btnEditar.Location = new System.Drawing.Point(645, 48);
+            this.btnEditar.Location = new System.Drawing.Point(657, 45);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(111, 33);
             this.btnEditar.TabIndex = 46;
@@ -452,7 +452,7 @@
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscar.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(648, 305);
+            this.btnBuscar.Location = new System.Drawing.Point(661, 303);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(107, 26);
             this.btnBuscar.TabIndex = 25;
@@ -467,7 +467,7 @@
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnActualizar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.Image = global::SistemaGestionInventario.Properties.Resources.arrow_repeat___235_;
-            this.btnActualizar.Location = new System.Drawing.Point(645, 196);
+            this.btnActualizar.Location = new System.Drawing.Point(657, 193);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(111, 33);
             this.btnActualizar.TabIndex = 19;
@@ -482,7 +482,7 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = global::SistemaGestionInventario.Properties.Resources.save_item___1409_;
-            this.btnGuardar.Location = new System.Drawing.Point(645, 85);
+            this.btnGuardar.Location = new System.Drawing.Point(657, 82);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(111, 33);
             this.btnGuardar.TabIndex = 18;
@@ -498,7 +498,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Image = global::SistemaGestionInventario.Properties.Resources.delete___1487_1;
-            this.btnEliminar.Location = new System.Drawing.Point(645, 122);
+            this.btnEliminar.Location = new System.Drawing.Point(657, 119);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(111, 33);
             this.btnEliminar.TabIndex = 17;
@@ -514,7 +514,7 @@
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNuevo.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Image = global::SistemaGestionInventario.Properties.Resources.plus_circle___1425_1;
-            this.btnNuevo.Location = new System.Drawing.Point(645, 11);
+            this.btnNuevo.Location = new System.Drawing.Point(657, 8);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnNuevo.Size = new System.Drawing.Size(111, 33);
@@ -530,7 +530,7 @@
             this.pictureBox3.Image = global::SistemaGestionInventario.Properties.Resources.linea;
             this.pictureBox3.Location = new System.Drawing.Point(-1, 272);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(769, 25);
+            this.pictureBox3.Size = new System.Drawing.Size(784, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 27;
             this.pictureBox3.TabStop = false;
@@ -540,7 +540,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(768, 562);
+            this.ClientSize = new System.Drawing.Size(782, 562);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.cbxEstatus);
             this.Controls.Add(this.lblEstatus);

@@ -493,6 +493,36 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Primary {
+            get {
+                object obj = ResourceManager.GetObject("Primary", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Primary_Dark {
+            get {
+                object obj = ResourceManager.GetObject("Primary Dark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Primary_Light_fw {
+            get {
+                object obj = ResourceManager.GetObject("Primary Light.fw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap profile___1335_ {
             get {
                 object obj = ResourceManager.GetObject("profile [#1335]", resourceCulture);
@@ -613,6 +643,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SIGAL_SW_LOGO {
+            get {
+                object obj = ResourceManager.GetObject("SIGAL SW LOGO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sigal_sw1 {
             get {
                 object obj = ResourceManager.GetObject("sigal-sw1", resourceCulture);
@@ -636,6 +676,16 @@ namespace SistemaGestionInventario.Properties {
         internal static System.Drawing.Bitmap sigal_sw3 {
             get {
                 object obj = ResourceManager.GetObject("sigal-sw3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sigal_sw4 {
+            get {
+                object obj = ResourceManager.GetObject("sigal-sw4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

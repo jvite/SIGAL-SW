@@ -72,13 +72,13 @@
             this.plContenedor.BackColor = System.Drawing.Color.Transparent;
             this.plContenedor.Location = new System.Drawing.Point(198, 91);
             this.plContenedor.Name = "plContenedor";
-            this.plContenedor.Size = new System.Drawing.Size(768, 562);
+            this.plContenedor.Size = new System.Drawing.Size(782, 562);
             this.plContenedor.TabIndex = 4;
             // 
             // btnConfiguracion
             // 
             this.btnConfiguracion.BackColor = System.Drawing.Color.Transparent;
-            this.btnConfiguracion.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color1;
+            this.btnConfiguracion.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.Primary_Light_fw;
             this.btnConfiguracion.FlatAppearance.BorderSize = 0;
             this.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfiguracion.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -145,7 +145,7 @@
             // 
             // plMenuContactos
             // 
-            this.plMenuContactos.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color1;
+            this.plMenuContactos.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.Primary_Dark;
             this.plMenuContactos.Location = new System.Drawing.Point(986, 0);
             this.plMenuContactos.Name = "plMenuContactos";
             this.plMenuContactos.Size = new System.Drawing.Size(39, 663);
@@ -153,7 +153,7 @@
             // 
             // plMenuLateral
             // 
-            this.plMenuLateral.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color1;
+            this.plMenuLateral.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.Primary_Dark;
             this.plMenuLateral.Controls.Add(this.pbxSeparador1);
             this.plMenuLateral.Controls.Add(this.rbtAcercaDe);
             this.plMenuLateral.Controls.Add(this.rbtAdminDeUsuarios);
@@ -402,6 +402,7 @@
             this.rbtEscritorio.BackColor = System.Drawing.Color.Transparent;
             this.rbtEscritorio.Checked = true;
             this.rbtEscritorio.FlatAppearance.BorderSize = 0;
+            this.rbtEscritorio.FlatAppearance.CheckedBackColor = System.Drawing.Color.CadetBlue;
             this.rbtEscritorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtEscritorio.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtEscritorio.ForeColor = System.Drawing.Color.DimGray;
@@ -525,6 +526,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.Primary;
             this.ClientSize = new System.Drawing.Size(1025, 661);
             this.ControlBox = false;
             this.Controls.Add(this.btnConfiguracion);

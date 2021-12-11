@@ -43,7 +43,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::SistemaGestionInventario.Properties.Resources.sigal_sw2;
+            this.pictureBox1.Image = global::SistemaGestionInventario.Properties.Resources.SIGAL_SW_LOGO;
             this.pictureBox1.Location = new System.Drawing.Point(89, 54);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(296, 98);
@@ -72,6 +72,7 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblUsuario.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.White;
             this.lblUsuario.Location = new System.Drawing.Point(212, 194);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(68, 21);
@@ -83,6 +84,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(199, 292);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 21);
@@ -106,7 +108,10 @@
             // btnAcceder
             // 
             this.btnAcceder.BackColor = System.Drawing.Color.Transparent;
-            this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAcceder.FlatAppearance.BorderSize = 0;
+            this.btnAcceder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAcceder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAcceder.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcceder.Image = global::SistemaGestionInventario.Properties.Resources.arrow_in_right___385_;
             this.btnAcceder.Location = new System.Drawing.Point(203, 372);
@@ -149,7 +154,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color1;
+            this.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.Primary_Dark;
             this.ClientSize = new System.Drawing.Size(490, 553);
             this.ControlBox = false;
             this.Controls.Add(this.linkLabel1);

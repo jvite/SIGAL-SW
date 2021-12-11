@@ -103,6 +103,7 @@ namespace SistemaGestionInventario
             btnReestablecerContrasena.Enabled = true;
             btnCancelar.Enabled = true;
             btnLimpiar.Enabled = true;
+            btnEliminar.Enabled = false;
             btnBuscar.Enabled = false;
 
             VariablesGlobales.ModificacionEnCurso = true;

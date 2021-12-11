@@ -353,5 +353,20 @@
   <ItemGroup>
     <None Include="Resources\file [#1699].png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Primary Dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Primary Light.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Primary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sigal-sw4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIGAL SW LOGO.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -17,6 +17,12 @@ namespace SistemaGestionInventario
             InitializeComponent();
 
             deshabilitarCajasDeTexto();
+            cbxEstado.SelectedIndex = 0;
+            cbxProveedor.SelectedIndex = 0;
+            btnGuardar.Enabled = false;
+            btnCancelar.Enabled = false;
+            VariablesGlobales.ModificacionEnCurso = false;
+            VariablesGlobales.ModificacionesRealizadas = false;
         }
 
         private void habilitarCajasDeTexto()
@@ -66,6 +72,11 @@ namespace SistemaGestionInventario
             btnNuevo.Enabled = false;
             btnGuardar.Enabled = true;
             btnBuscar.Enabled = false;
+            btnCancelar.Enabled = true;
+            btnLimpiar.Enabled = true;
+            btnEliminar.Enabled = false;
+
+            VariablesGlobales.ModificacionEnCurso = true;
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -76,6 +87,10 @@ namespace SistemaGestionInventario
             btnActualizar.Enabled = false;
             btnGuardar.Enabled = true;
             btnBuscar.Enabled = false;
+            btnLimpiar.Enabled = false;
+            btnCancelar.Enabled = false;
+
+            VariablesGlobales.ModificacionEnCurso = true;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -86,19 +101,44 @@ namespace SistemaGestionInventario
             btnActualizar.Enabled = true;
             btnNuevo.Enabled = true;
             btnBuscar.Enabled = true;
+            btnCancelar.Enabled = false;
+            btnLimpiar.Enabled = false;
+
+            VariablesGlobales.ModificacionEnCurso = false;
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Está seguro de eliminar este articulo? Esta acción no se puede deshacer.", "Eliminar articulo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
+                limpiarFormulario();
                 MessageBox.Show("El articulo ha sido eliminado con éxito", "Eliminar articulo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                VariablesGlobales.ModificacionEnCurso = false;
+                VariablesGlobales.ModificacionesRealizadas = false;
             }
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            limpiarFormulario();
+            VariablesGlobales.ModificacionEnCurso = true;
+            VariablesGlobales.ModificacionesRealizadas = true;
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            btnCancelar.Enabled = false;
+            btnNuevo.Enabled = true;
+            btnEditar.Enabled = true;
+            btnGuardar.Enabled = true;
+            btnEliminar.Enabled = true;
+            btnActualizar.Enabled = true;
+            btnLimpiar.Enabled = false;
         }
     }
 }
