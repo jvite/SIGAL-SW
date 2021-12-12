@@ -98,7 +98,7 @@
             // 
             this.pbxSIGALSW.BackColor = System.Drawing.Color.Transparent;
             this.pbxSIGALSW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxSIGALSW.Image = global::SistemaGestionInventario.Properties.Resources.sigal_sw3;
+            this.pbxSIGALSW.Image = global::SistemaGestionInventario.Properties.Resources.SIGAL_SW_LOGO_WHITE_fw;
             this.pbxSIGALSW.Location = new System.Drawing.Point(463, 1);
             this.pbxSIGALSW.Name = "pbxSIGALSW";
             this.pbxSIGALSW.Size = new System.Drawing.Size(218, 68);
@@ -194,6 +194,9 @@
             this.rbtAcercaDe.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtAcercaDe.BackColor = System.Drawing.Color.Transparent;
             this.rbtAcercaDe.FlatAppearance.BorderSize = 0;
+            this.rbtAcercaDe.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtAcercaDe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.rbtAcercaDe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.rbtAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtAcercaDe.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtAcercaDe.ForeColor = System.Drawing.Color.White;
@@ -209,14 +212,15 @@
             this.rbtAcercaDe.UseVisualStyleBackColor = false;
             this.rbtAcercaDe.CheckedChanged += new System.EventHandler(this.rbtAcercaDe_CheckedChanged);
             this.rbtAcercaDe.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtAcercaDe_MouseDown);
-            this.rbtAcercaDe.MouseEnter += new System.EventHandler(this.rbtAcercaDe_MouseEnter);
-            this.rbtAcercaDe.MouseLeave += new System.EventHandler(this.rbtAcercaDe_MouseLeave);
             // 
             // rbtAdminDeUsuarios
             // 
             this.rbtAdminDeUsuarios.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtAdminDeUsuarios.BackColor = System.Drawing.Color.Transparent;
             this.rbtAdminDeUsuarios.FlatAppearance.BorderSize = 0;
+            this.rbtAdminDeUsuarios.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtAdminDeUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.rbtAdminDeUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.rbtAdminDeUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtAdminDeUsuarios.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtAdminDeUsuarios.ForeColor = System.Drawing.Color.White;
@@ -232,14 +236,15 @@
             this.rbtAdminDeUsuarios.UseVisualStyleBackColor = false;
             this.rbtAdminDeUsuarios.CheckedChanged += new System.EventHandler(this.rbtAdminDeUsuarios_CheckedChanged);
             this.rbtAdminDeUsuarios.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtAdminDeUsuarios_MouseDown);
-            this.rbtAdminDeUsuarios.MouseEnter += new System.EventHandler(this.rbtAdminDeUsuarios_MouseEnter);
-            this.rbtAdminDeUsuarios.MouseLeave += new System.EventHandler(this.rbtAdminDeUsuarios_MouseLeave);
             // 
             // rbtEstadisticas
             // 
             this.rbtEstadisticas.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtEstadisticas.BackColor = System.Drawing.Color.Transparent;
             this.rbtEstadisticas.FlatAppearance.BorderSize = 0;
+            this.rbtEstadisticas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtEstadisticas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.rbtEstadisticas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.rbtEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtEstadisticas.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtEstadisticas.ForeColor = System.Drawing.Color.White;
@@ -255,14 +260,15 @@
             this.rbtEstadisticas.UseVisualStyleBackColor = false;
             this.rbtEstadisticas.CheckedChanged += new System.EventHandler(this.rbtEstadisticas_CheckedChanged);
             this.rbtEstadisticas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtEstadisticas_MouseDown);
-            this.rbtEstadisticas.MouseEnter += new System.EventHandler(this.rbtEstadisticas_MouseEnter);
-            this.rbtEstadisticas.MouseLeave += new System.EventHandler(this.rbtEstadisticas_MouseLeave);
             // 
             // rbtFacturas
             // 
             this.rbtFacturas.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtFacturas.BackColor = System.Drawing.Color.Transparent;
             this.rbtFacturas.FlatAppearance.BorderSize = 0;
+            this.rbtFacturas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtFacturas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.rbtFacturas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.rbtFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtFacturas.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtFacturas.ForeColor = System.Drawing.Color.White;
@@ -278,14 +284,15 @@
             this.rbtFacturas.UseVisualStyleBackColor = false;
             this.rbtFacturas.CheckedChanged += new System.EventHandler(this.rbtFacturas_CheckedChanged);
             this.rbtFacturas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtFacturas_MouseDown);
-            this.rbtFacturas.MouseEnter += new System.EventHandler(this.rbtFacturas_MouseEnter);
-            this.rbtFacturas.MouseLeave += new System.EventHandler(this.rbtFacturas_MouseLeave);
             // 
             // rbtVentas
             // 
             this.rbtVentas.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtVentas.BackColor = System.Drawing.Color.Transparent;
             this.rbtVentas.FlatAppearance.BorderSize = 0;
+            this.rbtVentas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtVentas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.rbtVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.rbtVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtVentas.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtVentas.ForeColor = System.Drawing.Color.White;
@@ -301,14 +308,15 @@
             this.rbtVentas.UseVisualStyleBackColor = false;
             this.rbtVentas.CheckedChanged += new System.EventHandler(this.rbtVentas_CheckedChanged);
             this.rbtVentas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtVentas_MouseDown);
-            this.rbtVentas.MouseEnter += new System.EventHandler(this.rbtVentas_MouseEnter);
-            this.rbtVentas.MouseLeave += new System.EventHandler(this.rbtVentas_MouseLeave);
             // 
             // rbtReportes
             // 
             this.rbtReportes.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtReportes.BackColor = System.Drawing.Color.Transparent;
             this.rbtReportes.FlatAppearance.BorderSize = 0;
+            this.rbtReportes.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtReportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.rbtReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.rbtReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtReportes.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtReportes.ForeColor = System.Drawing.Color.White;
@@ -324,14 +332,15 @@
             this.rbtReportes.UseVisualStyleBackColor = false;
             this.rbtReportes.CheckedChanged += new System.EventHandler(this.rbtReportes_CheckedChanged);
             this.rbtReportes.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtReportes_MouseDown);
-            this.rbtReportes.MouseEnter += new System.EventHandler(this.rbtReportes_MouseEnter);
-            this.rbtReportes.MouseLeave += new System.EventHandler(this.rbtReportes_MouseLeave);
             // 
             // rbtClientes
             // 
             this.rbtClientes.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtClientes.BackColor = System.Drawing.Color.Transparent;
             this.rbtClientes.FlatAppearance.BorderSize = 0;
+            this.rbtClientes.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.rbtClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.rbtClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtClientes.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtClientes.ForeColor = System.Drawing.Color.White;
@@ -347,14 +356,15 @@
             this.rbtClientes.UseVisualStyleBackColor = false;
             this.rbtClientes.CheckedChanged += new System.EventHandler(this.rbtClientes_CheckedChanged);
             this.rbtClientes.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtClientes_MouseDown);
-            this.rbtClientes.MouseEnter += new System.EventHandler(this.rbtClientes_MouseEnter);
-            this.rbtClientes.MouseLeave += new System.EventHandler(this.rbtClientes_MouseLeave);
             // 
             // rbtProveedores
             // 
             this.rbtProveedores.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtProveedores.BackColor = System.Drawing.Color.Transparent;
             this.rbtProveedores.FlatAppearance.BorderSize = 0;
+            this.rbtProveedores.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtProveedores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.rbtProveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.rbtProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtProveedores.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtProveedores.ForeColor = System.Drawing.Color.White;
@@ -370,14 +380,15 @@
             this.rbtProveedores.UseVisualStyleBackColor = false;
             this.rbtProveedores.CheckedChanged += new System.EventHandler(this.rbtProveedores_CheckedChanged);
             this.rbtProveedores.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtProveedores_MouseDown);
-            this.rbtProveedores.MouseEnter += new System.EventHandler(this.rbtProveedores_MouseEnter);
-            this.rbtProveedores.MouseLeave += new System.EventHandler(this.rbtProveedores_MouseLeave);
             // 
             // rbtAlmacen
             // 
             this.rbtAlmacen.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtAlmacen.BackColor = System.Drawing.Color.Transparent;
             this.rbtAlmacen.FlatAppearance.BorderSize = 0;
+            this.rbtAlmacen.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtAlmacen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.rbtAlmacen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.rbtAlmacen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtAlmacen.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtAlmacen.ForeColor = System.Drawing.Color.White;
@@ -393,8 +404,6 @@
             this.rbtAlmacen.UseVisualStyleBackColor = false;
             this.rbtAlmacen.CheckedChanged += new System.EventHandler(this.rbtAlmacen_CheckedChanged);
             this.rbtAlmacen.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtAlmacen_MouseDown);
-            this.rbtAlmacen.MouseEnter += new System.EventHandler(this.rbtAlmacen_MouseEnter);
-            this.rbtAlmacen.MouseLeave += new System.EventHandler(this.rbtAlmacen_MouseLeave);
             // 
             // rbtEscritorio
             // 
@@ -402,10 +411,12 @@
             this.rbtEscritorio.BackColor = System.Drawing.Color.Transparent;
             this.rbtEscritorio.Checked = true;
             this.rbtEscritorio.FlatAppearance.BorderSize = 0;
-            this.rbtEscritorio.FlatAppearance.CheckedBackColor = System.Drawing.Color.CadetBlue;
+            this.rbtEscritorio.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtEscritorio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.rbtEscritorio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.rbtEscritorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtEscritorio.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtEscritorio.ForeColor = System.Drawing.Color.DimGray;
+            this.rbtEscritorio.ForeColor = System.Drawing.Color.White;
             this.rbtEscritorio.Image = global::SistemaGestionInventario.Properties.Resources.desktop___232_;
             this.rbtEscritorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rbtEscritorio.Location = new System.Drawing.Point(0, 292);
@@ -419,14 +430,15 @@
             this.rbtEscritorio.UseVisualStyleBackColor = false;
             this.rbtEscritorio.CheckedChanged += new System.EventHandler(this.rbtEscritorio_CheckedChanged);
             this.rbtEscritorio.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtEscritorio_MouseDown);
-            this.rbtEscritorio.MouseEnter += new System.EventHandler(this.rbtEscritorio_MouseEnter);
-            this.rbtEscritorio.MouseLeave += new System.EventHandler(this.rbtEscritorio_MouseLeave);
             // 
             // rbtCuenta
             // 
             this.rbtCuenta.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtCuenta.BackColor = System.Drawing.Color.Transparent;
             this.rbtCuenta.FlatAppearance.BorderSize = 0;
+            this.rbtCuenta.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtCuenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.rbtCuenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.rbtCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtCuenta.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtCuenta.ForeColor = System.Drawing.Color.White;
@@ -441,8 +453,6 @@
             this.rbtCuenta.UseVisualStyleBackColor = false;
             this.rbtCuenta.CheckedChanged += new System.EventHandler(this.rbtCuenta_CheckedChanged);
             this.rbtCuenta.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtCuenta_MouseDown);
-            this.rbtCuenta.MouseEnter += new System.EventHandler(this.rbtCuenta_MouseEnter);
-            this.rbtCuenta.MouseLeave += new System.EventHandler(this.rbtCuenta_MouseLeave);
             // 
             // pbxSeparador4
             // 

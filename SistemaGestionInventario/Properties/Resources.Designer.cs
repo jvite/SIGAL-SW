@@ -653,6 +653,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SIGAL_SW_LOGO_WHITE_fw {
+            get {
+                object obj = ResourceManager.GetObject("SIGAL SW LOGO WHITE.fw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sigal_sw1 {
             get {
                 object obj = ResourceManager.GetObject("sigal-sw1", resourceCulture);

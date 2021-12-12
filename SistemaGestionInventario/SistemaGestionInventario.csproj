@@ -368,5 +368,8 @@
   <ItemGroup>
     <None Include="Resources\SIGAL SW LOGO.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIGAL SW LOGO WHITE.fw.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
