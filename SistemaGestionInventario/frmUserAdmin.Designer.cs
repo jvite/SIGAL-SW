@@ -78,7 +78,7 @@
             this.lblID.AutoSize = true;
             this.lblID.BackColor = System.Drawing.Color.Transparent;
             this.lblID.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(10, 42);
+            this.lblID.Location = new System.Drawing.Point(9, 39);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(26, 18);
             this.lblID.TabIndex = 29;
@@ -105,7 +105,7 @@
             // 
             this.cbxCriterio.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxCriterio.FormattingEnabled = true;
-            this.cbxCriterio.Location = new System.Drawing.Point(490, 306);
+            this.cbxCriterio.Location = new System.Drawing.Point(490, 304);
             this.cbxCriterio.Name = "cbxCriterio";
             this.cbxCriterio.Size = new System.Drawing.Size(121, 26);
             this.cbxCriterio.TabIndex = 24;
@@ -144,10 +144,10 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(234, 4);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(256, 33);
+            this.lblTitulo.Size = new System.Drawing.Size(242, 33);
             this.lblTitulo.TabIndex = 20;
             this.lblTitulo.Text = "Administrar usuarios";
             // 
@@ -311,6 +311,7 @@
             // 
             // cbxSexo
             // 
+            this.cbxSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxSexo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxSexo.FormattingEnabled = true;
             this.cbxSexo.Items.AddRange(new object[] {
@@ -539,7 +540,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(782, 562);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.cbxEstatus);

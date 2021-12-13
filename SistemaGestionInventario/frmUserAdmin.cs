@@ -21,6 +21,7 @@ namespace SistemaGestionInventario
             deshabilitarCajasDeTexto();
             cbxRol.SelectedIndex = 0;
             cbxSexo.SelectedIndex = 0;
+            cbxEstatus.SelectedIndex = 0;
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
             btnReestablecerContrasena.Enabled = false;
@@ -96,6 +97,7 @@ namespace SistemaGestionInventario
         private void btnEditar_Click(object sender, EventArgs e)
         {
             habilitarCajasDeTexto();
+
             btnEditar.Enabled = false;
             btnNuevo.Enabled = false;
             btnActualizar.Enabled = false;
@@ -112,6 +114,7 @@ namespace SistemaGestionInventario
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             deshabilitarCajasDeTexto();
+
             btnGuardar.Enabled = false;
             btnEditar.Enabled = true;
             btnActualizar.Enabled = true;
@@ -140,8 +143,7 @@ namespace SistemaGestionInventario
         {
             LimpiarFormulario();
             deshabilitarCajasDeTexto();
-            VariablesGlobales.ModificacionEnCurso = false;
-            VariablesGlobales.ModificacionesRealizadas = false;
+
             btnGuardar.Enabled = false;
             btnNuevo.Enabled = true;
             btnEditar.Enabled = true;
@@ -150,6 +152,9 @@ namespace SistemaGestionInventario
             btnActualizar.Enabled = true;
             btnLimpiar.Enabled = false;
             btnBuscar.Enabled = true;
+
+            VariablesGlobales.ModificacionEnCurso = false;
+            VariablesGlobales.ModificacionesRealizadas = false;
         }
 
         private void CamposModificados(object sender, EventArgs e)//Si se modifico algun campo del formulario
@@ -163,6 +168,8 @@ namespace SistemaGestionInventario
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarFormulario();
+            VariablesGlobales.ModificacionEnCurso = true;
+            VariablesGlobales.ModificacionesRealizadas = true;
         }
     }
 }

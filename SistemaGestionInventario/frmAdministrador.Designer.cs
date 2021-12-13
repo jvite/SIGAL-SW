@@ -121,6 +121,8 @@
             // 
             this.btnCerrarSesion.BackColor = System.Drawing.Color.Transparent;
             this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
+            this.btnCerrarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(156)))), ((int)(((byte)(169)))));
+            this.btnCerrarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
             this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrarSesion.Image = global::SistemaGestionInventario.Properties.Resources.arrow_left___271_;
             this.btnCerrarSesion.Location = new System.Drawing.Point(200, 1);
@@ -134,6 +136,8 @@
             // 
             this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
             this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(156)))), ((int)(((byte)(169)))));
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Image = global::SistemaGestionInventario.Properties.Resources.shut_down___1431_;
             this.btnCerrar.Location = new System.Drawing.Point(898, 1);
@@ -539,9 +543,9 @@
             this.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.Primary;
             this.ClientSize = new System.Drawing.Size(1025, 661);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnConfiguracion);
             this.Controls.Add(this.pbxSIGALSW);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.plContenedor);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnCerrar);

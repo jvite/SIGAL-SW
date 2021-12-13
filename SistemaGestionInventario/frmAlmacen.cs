@@ -19,8 +19,10 @@ namespace SistemaGestionInventario
             deshabilitarCajasDeTexto();
             cbxEstado.SelectedIndex = 0;
             cbxProveedor.SelectedIndex = 0;
+            dtpFechaEntrada.Value = DateTime.Today;
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
+            btnLimpiar.Enabled = false;
             VariablesGlobales.ModificacionEnCurso = false;
             VariablesGlobales.ModificacionesRealizadas = false;
         }
@@ -67,14 +69,15 @@ namespace SistemaGestionInventario
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             habilitarCajasDeTexto();
-            btnActualizar.Enabled = false;
-            btnEditar.Enabled = false;
+            limpiarFormulario();
+
             btnNuevo.Enabled = false;
+            btnEditar.Enabled = false;
             btnGuardar.Enabled = true;
-            btnBuscar.Enabled = false;
-            btnCancelar.Enabled = true;
-            btnLimpiar.Enabled = true;
             btnEliminar.Enabled = false;
+            btnCancelar.Enabled = true;
+            btnActualizar.Enabled = false;
+            btnLimpiar.Enabled = true;
 
             VariablesGlobales.ModificacionEnCurso = true;
         }
@@ -82,13 +85,14 @@ namespace SistemaGestionInventario
         private void btnEditar_Click(object sender, EventArgs e)
         {
             habilitarCajasDeTexto();
+
             btnEditar.Enabled = false;
             btnNuevo.Enabled = false;
-            btnActualizar.Enabled = false;
             btnGuardar.Enabled = true;
-            btnBuscar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnCancelar.Enabled = true;
+            btnActualizar.Enabled = false;
             btnLimpiar.Enabled = false;
-            btnCancelar.Enabled = false;
 
             VariablesGlobales.ModificacionEnCurso = true;
         }
@@ -96,12 +100,13 @@ namespace SistemaGestionInventario
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             deshabilitarCajasDeTexto();
+
             btnGuardar.Enabled = false;
-            btnEditar.Enabled = true;
-            btnActualizar.Enabled = true;
             btnNuevo.Enabled = true;
-            btnBuscar.Enabled = true;
+            btnEditar.Enabled = true;
+            btnEliminar.Enabled = true;
             btnCancelar.Enabled = false;
+            btnActualizar.Enabled = true;
             btnLimpiar.Enabled = false;
 
             VariablesGlobales.ModificacionEnCurso = false;
@@ -132,13 +137,26 @@ namespace SistemaGestionInventario
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            deshabilitarCajasDeTexto();
+
             btnCancelar.Enabled = false;
             btnNuevo.Enabled = true;
+            btnGuardar.Enabled = false;
             btnEditar.Enabled = true;
-            btnGuardar.Enabled = true;
             btnEliminar.Enabled = true;
             btnActualizar.Enabled = true;
             btnLimpiar.Enabled = false;
+
+            VariablesGlobales.ModificacionEnCurso = false;
+            VariablesGlobales.ModificacionesRealizadas = false;
+        }
+
+        private void CamposModificados(object sender, EventArgs e)//Si se modifico algun campo del formulario
+        {
+            if (VariablesGlobales.ModificacionesRealizadas == false)
+            {
+                VariablesGlobales.ModificacionesRealizadas = true;
+            }
         }
     }
 }

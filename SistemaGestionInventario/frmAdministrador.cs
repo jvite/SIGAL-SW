@@ -142,6 +142,10 @@ namespace SistemaGestionInventario
         {
             if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso == true)
             {
+                Advertencia();
+            }
+            else
+            {
                 if (MessageBox.Show("La siguiente configuracion es referente al servidor, guarde los cambios antes de continuar.", "Conexion", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
                 {
                     this.Dispose();
