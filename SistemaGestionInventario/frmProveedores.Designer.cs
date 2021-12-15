@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProveedores));
             this.lblID = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.dgvTabla = new System.Windows.Forms.DataGridView();
@@ -36,19 +37,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblRazonSocial = new System.Windows.Forms.Label();
             this.txtRazonSocial = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblDomicilio = new System.Windows.Forms.Label();
             this.txtDomicilio = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblTelefono = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblCorreo = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblRFC = new System.Windows.Forms.Label();
             this.txtRFC = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblContacto = new System.Windows.Forms.Label();
             this.txtContacto = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblRubro = new System.Windows.Forms.Label();
             this.txtGiro = new System.Windows.Forms.TextBox();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -60,9 +61,19 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.lblCiudad = new System.Windows.Forms.Label();
+            this.txtCiudad = new System.Windows.Forms.TextBox();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblServicio = new System.Windows.Forms.Label();
+            this.txtServicio = new System.Windows.Forms.TextBox();
+            this.lblEstatus = new System.Windows.Forms.Label();
+            this.cbxEstatus = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblID
@@ -78,6 +89,7 @@
             // 
             // txtID
             // 
+            this.txtID.Enabled = false;
             this.txtID.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.Location = new System.Drawing.Point(112, 62);
             this.txtID.Name = "txtID";
@@ -142,137 +154,137 @@
             this.lblTitulo.TabIndex = 20;
             this.lblTitulo.Text = "Proveedores";
             // 
-            // label3
+            // lblRazonSocial
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 95);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 18);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "Razon social:";
+            this.lblRazonSocial.AutoSize = true;
+            this.lblRazonSocial.BackColor = System.Drawing.Color.Transparent;
+            this.lblRazonSocial.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRazonSocial.Location = new System.Drawing.Point(9, 95);
+            this.lblRazonSocial.Name = "lblRazonSocial";
+            this.lblRazonSocial.Size = new System.Drawing.Size(88, 18);
+            this.lblRazonSocial.TabIndex = 31;
+            this.lblRazonSocial.Text = "Razon social:";
             // 
             // txtRazonSocial
             // 
             this.txtRazonSocial.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRazonSocial.Location = new System.Drawing.Point(112, 91);
             this.txtRazonSocial.Name = "txtRazonSocial";
-            this.txtRazonSocial.Size = new System.Drawing.Size(184, 26);
+            this.txtRazonSocial.Size = new System.Drawing.Size(205, 26);
             this.txtRazonSocial.TabIndex = 30;
             // 
-            // label4
+            // lblDomicilio
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 123);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 18);
-            this.label4.TabIndex = 33;
-            this.label4.Text = "Domicilio fiscal:";
+            this.lblDomicilio.AutoSize = true;
+            this.lblDomicilio.BackColor = System.Drawing.Color.Transparent;
+            this.lblDomicilio.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDomicilio.Location = new System.Drawing.Point(9, 182);
+            this.lblDomicilio.Name = "lblDomicilio";
+            this.lblDomicilio.Size = new System.Drawing.Size(103, 18);
+            this.lblDomicilio.TabIndex = 33;
+            this.lblDomicilio.Text = "Domicilio fiscal:";
             // 
             // txtDomicilio
             // 
             this.txtDomicilio.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDomicilio.Location = new System.Drawing.Point(112, 120);
+            this.txtDomicilio.Location = new System.Drawing.Point(112, 178);
             this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Size = new System.Drawing.Size(241, 26);
+            this.txtDomicilio.Size = new System.Drawing.Size(205, 26);
             this.txtDomicilio.TabIndex = 32;
             // 
-            // label5
+            // lblTelefono
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(9, 183);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 18);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "Teléfono:";
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.BackColor = System.Drawing.Color.Transparent;
+            this.lblTelefono.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono.Location = new System.Drawing.Point(371, 65);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(65, 18);
+            this.lblTelefono.TabIndex = 35;
+            this.lblTelefono.Text = "Teléfono:";
             // 
             // txtTelefono
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(112, 178);
+            this.txtTelefono.Location = new System.Drawing.Point(445, 62);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(182, 26);
             this.txtTelefono.TabIndex = 34;
             // 
-            // label6
+            // lblCorreo
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 211);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 18);
-            this.label6.TabIndex = 37;
-            this.label6.Text = "Correo:";
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.BackColor = System.Drawing.Color.Transparent;
+            this.lblCorreo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreo.Location = new System.Drawing.Point(372, 95);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(54, 18);
+            this.lblCorreo.TabIndex = 37;
+            this.lblCorreo.Text = "Correo:";
             // 
             // txtCorreo
             // 
             this.txtCorreo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.Location = new System.Drawing.Point(112, 207);
+            this.txtCorreo.Location = new System.Drawing.Point(445, 91);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(182, 26);
             this.txtCorreo.TabIndex = 36;
             // 
-            // label7
+            // lblRFC
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(9, 240);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 18);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "RFC:";
+            this.lblRFC.AutoSize = true;
+            this.lblRFC.BackColor = System.Drawing.Color.Transparent;
+            this.lblRFC.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRFC.Location = new System.Drawing.Point(373, 124);
+            this.lblRFC.Name = "lblRFC";
+            this.lblRFC.Size = new System.Drawing.Size(38, 18);
+            this.lblRFC.TabIndex = 39;
+            this.lblRFC.Text = "RFC:";
             // 
             // txtRFC
             // 
             this.txtRFC.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRFC.Location = new System.Drawing.Point(112, 237);
+            this.txtRFC.Location = new System.Drawing.Point(445, 120);
             this.txtRFC.Name = "txtRFC";
             this.txtRFC.Size = new System.Drawing.Size(182, 26);
             this.txtRFC.TabIndex = 38;
             // 
-            // label8
+            // lblContacto
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(275, 55);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(119, 18);
-            this.label8.TabIndex = 49;
-            this.label8.Text = "Persona contacto:";
+            this.lblContacto.AutoSize = true;
+            this.lblContacto.BackColor = System.Drawing.Color.Transparent;
+            this.lblContacto.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContacto.Location = new System.Drawing.Point(373, 153);
+            this.lblContacto.Name = "lblContacto";
+            this.lblContacto.Size = new System.Drawing.Size(69, 18);
+            this.lblContacto.TabIndex = 49;
+            this.lblContacto.Text = "Contacto:";
             // 
             // txtContacto
             // 
             this.txtContacto.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContacto.Location = new System.Drawing.Point(415, 52);
+            this.txtContacto.Location = new System.Drawing.Point(445, 150);
             this.txtContacto.Name = "txtContacto";
-            this.txtContacto.Size = new System.Drawing.Size(236, 26);
+            this.txtContacto.Size = new System.Drawing.Size(182, 26);
             this.txtContacto.TabIndex = 48;
             // 
-            // label9
+            // lblRubro
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(9, 153);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 18);
-            this.label9.TabIndex = 51;
-            this.label9.Text = "Rubro/Giro:";
+            this.lblRubro.AutoSize = true;
+            this.lblRubro.BackColor = System.Drawing.Color.Transparent;
+            this.lblRubro.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRubro.Location = new System.Drawing.Point(9, 124);
+            this.lblRubro.Name = "lblRubro";
+            this.lblRubro.Size = new System.Drawing.Size(80, 18);
+            this.lblRubro.TabIndex = 51;
+            this.lblRubro.Text = "Rubro/Giro:";
             // 
             // txtGiro
             // 
             this.txtGiro.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGiro.Location = new System.Drawing.Point(112, 149);
+            this.txtGiro.Location = new System.Drawing.Point(112, 120);
             this.txtGiro.Name = "txtGiro";
-            this.txtGiro.Size = new System.Drawing.Size(182, 26);
+            this.txtGiro.Size = new System.Drawing.Size(205, 26);
             this.txtGiro.TabIndex = 50;
             // 
             // pbxLogo
@@ -405,6 +417,7 @@
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnCancelar
             // 
@@ -420,6 +433,99 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // lblCiudad
+            // 
+            this.lblCiudad.AutoSize = true;
+            this.lblCiudad.BackColor = System.Drawing.Color.Transparent;
+            this.lblCiudad.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCiudad.Location = new System.Drawing.Point(9, 212);
+            this.lblCiudad.Name = "lblCiudad";
+            this.lblCiudad.Size = new System.Drawing.Size(55, 18);
+            this.lblCiudad.TabIndex = 64;
+            this.lblCiudad.Text = "Ciudad:";
+            // 
+            // txtCiudad
+            // 
+            this.txtCiudad.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCiudad.Location = new System.Drawing.Point(112, 207);
+            this.txtCiudad.Name = "txtCiudad";
+            this.txtCiudad.Size = new System.Drawing.Size(182, 26);
+            this.txtCiudad.TabIndex = 63;
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.BackColor = System.Drawing.Color.Transparent;
+            this.lblEstado.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Location = new System.Drawing.Point(9, 239);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(54, 18);
+            this.lblEstado.TabIndex = 66;
+            this.lblEstado.Text = "Estado:";
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstado.Location = new System.Drawing.Point(112, 236);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(182, 26);
+            this.txtEstado.TabIndex = 65;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(324, 44);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(41, 232);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 67;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblServicio
+            // 
+            this.lblServicio.AutoSize = true;
+            this.lblServicio.BackColor = System.Drawing.Color.Transparent;
+            this.lblServicio.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblServicio.Location = new System.Drawing.Point(9, 153);
+            this.lblServicio.Name = "lblServicio";
+            this.lblServicio.Size = new System.Drawing.Size(60, 18);
+            this.lblServicio.TabIndex = 69;
+            this.lblServicio.Text = "Servicio:";
+            // 
+            // txtServicio
+            // 
+            this.txtServicio.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtServicio.Location = new System.Drawing.Point(112, 149);
+            this.txtServicio.Name = "txtServicio";
+            this.txtServicio.Size = new System.Drawing.Size(205, 26);
+            this.txtServicio.TabIndex = 68;
+            // 
+            // lblEstatus
+            // 
+            this.lblEstatus.AutoSize = true;
+            this.lblEstatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblEstatus.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstatus.Location = new System.Drawing.Point(373, 183);
+            this.lblEstatus.Name = "lblEstatus";
+            this.lblEstatus.Size = new System.Drawing.Size(57, 18);
+            this.lblEstatus.TabIndex = 71;
+            this.lblEstatus.Text = "Estatus:";
+            // 
+            // cbxEstatus
+            // 
+            this.cbxEstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxEstatus.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxEstatus.FormattingEnabled = true;
+            this.cbxEstatus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.cbxEstatus.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.cbxEstatus.Location = new System.Drawing.Point(445, 180);
+            this.cbxEstatus.Name = "cbxEstatus";
+            this.cbxEstatus.Size = new System.Drawing.Size(141, 26);
+            this.cbxEstatus.TabIndex = 72;
             // 
             // frmProveedores
             // 
@@ -427,23 +533,31 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(782, 562);
+            this.Controls.Add(this.cbxEstatus);
+            this.Controls.Add(this.lblEstatus);
+            this.Controls.Add(this.lblServicio);
+            this.Controls.Add(this.txtServicio);
+            this.Controls.Add(this.lblEstado);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.lblCiudad);
+            this.Controls.Add(this.txtCiudad);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.pbxLogo);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.lblRubro);
             this.Controls.Add(this.txtGiro);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lblContacto);
             this.Controls.Add(this.txtContacto);
             this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lblRFC);
             this.Controls.Add(this.txtRFC);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblCorreo);
             this.Controls.Add(this.txtCorreo);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.txtTelefono);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblDomicilio);
             this.Controls.Add(this.txtDomicilio);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblRazonSocial);
             this.Controls.Add(this.txtRazonSocial);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.txtID);
@@ -459,13 +573,14 @@
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmProveedores";
             this.Text = "Proveedores";
-            this.Load += new System.EventHandler(this.frmProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -487,23 +602,32 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblRazonSocial;
         private System.Windows.Forms.TextBox txtRazonSocial;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblDomicilio;
         private System.Windows.Forms.TextBox txtDomicilio;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.TextBox txtCorreo;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblRFC;
         private System.Windows.Forms.TextBox txtRFC;
         private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblContacto;
         private System.Windows.Forms.TextBox txtContacto;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblRubro;
         private System.Windows.Forms.TextBox txtGiro;
         private System.Windows.Forms.PictureBox pbxLogo;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label lblCiudad;
+        private System.Windows.Forms.TextBox txtCiudad;
+        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblServicio;
+        private System.Windows.Forms.TextBox txtServicio;
+        private System.Windows.Forms.Label lblEstatus;
+        private System.Windows.Forms.ComboBox cbxEstatus;
     }
 }

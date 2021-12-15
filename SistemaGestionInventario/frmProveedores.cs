@@ -17,63 +17,103 @@ namespace SistemaGestionInventario
             InitializeComponent();
 
             deshabilitarCajasDeTexto();
+
+            btnGuardar.Enabled = false;
+            btnCancelar.Enabled = false;
+            btnLimpiar.Enabled = false;
+
+            VariablesGlobales.ModificacionEnCurso = false;
+            VariablesGlobales.ModificacionesRealizadas = false;
         }
 
         public void habilitarCajasDeTexto()
         {
             txtRazonSocial.Enabled = true;
-            txtDomicilio.Enabled = true;
             txtGiro.Enabled = true;
-            txtRFC.Enabled = true;
+            txtServicio.Enabled = true;
+            txtDomicilio.Enabled = true;
+            txtCiudad.Enabled = true;
+            txtEstado.Enabled = true;
             txtTelefono.Enabled = true;
             txtCorreo.Enabled = true;
+            txtRFC.Enabled = true;
             txtContacto.Enabled = true;
+            cbxEstatus.Enabled = true;
         }
 
         private void deshabilitarCajasDeTexto()
         {
             txtRazonSocial.Enabled = false;
-            txtDomicilio.Enabled = false;
             txtGiro.Enabled = false;
-            txtRFC.Enabled = false;
+            txtServicio.Enabled = false;
+            txtDomicilio.Enabled = false;
+            txtCiudad.Enabled = false;
+            txtEstado.Enabled = false;
             txtTelefono.Enabled = false;
             txtCorreo.Enabled = false;
+            txtRFC.Enabled = false;
             txtContacto.Enabled = false;
+            cbxEstatus.Enabled = false;
         }
 
-        private void frmProveedores_Load(object sender, EventArgs e)
+        private void limpiarFormulario()
         {
-
+            txtRazonSocial.Text = "";
+            txtGiro.Text = "";
+            txtServicio.Text = "";
+            txtDomicilio.Text = "";
+            txtCiudad.Text = "";
+            txtEstado.Text = "";
+            txtTelefono.Text = "";
+            txtCorreo.Text = "";
+            txtRFC.Text = "";
+            txtContacto.Text = "";
+            cbxEstatus.SelectedIndex = 0;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             habilitarCajasDeTexto();
-            btnActualizar.Enabled = false;
-            btnEditar.Enabled = false;
+
             btnNuevo.Enabled = false;
+            btnEditar.Enabled = false;
             btnGuardar.Enabled = true;
-            btnBuscar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnCancelar.Enabled = true;
+            btnActualizar.Enabled = false;
+            btnLimpiar.Enabled = true;
+
+            VariablesGlobales.ModificacionEnCurso = true;
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
             habilitarCajasDeTexto();
-            btnEditar.Enabled = false;
+
             btnNuevo.Enabled = false;
-            btnActualizar.Enabled = false;
+            btnEditar.Enabled = false;
             btnGuardar.Enabled = true;
-            btnBuscar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnCancelar.Enabled = true;
+            btnActualizar.Enabled = false;
+            btnLimpiar.Enabled = false;
+
+            VariablesGlobales.ModificacionEnCurso = true;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             deshabilitarCajasDeTexto();
-            btnGuardar.Enabled = false;
-            btnEditar.Enabled = true;
-            btnActualizar.Enabled = true;
+
             btnNuevo.Enabled = true;
-            btnBuscar.Enabled = true;
+            btnEditar.Enabled = true;
+            btnGuardar.Enabled = false;
+            btnEliminar.Enabled = true;
+            btnCancelar.Enabled = false;
+            btnActualizar.Enabled = true;
+            btnLimpiar.Enabled = false;
+
+            VariablesGlobales.ModificacionEnCurso = true;
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -86,9 +126,23 @@ namespace SistemaGestionInventario
             }
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            deshabilitarCajasDeTexto();
+            VariablesGlobales.ModificacionEnCurso = false;
+            VariablesGlobales.ModificacionEnCurso = false;
+        }
+
         private void btnActualizar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            limpiarFormulario();
+            VariablesGlobales.ModificacionEnCurso = false;
+            VariablesGlobales.ModificacionesRealizadas = false;
         }
     }
 }
