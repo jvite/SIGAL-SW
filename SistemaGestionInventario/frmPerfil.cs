@@ -16,7 +16,6 @@ namespace SistemaGestionInventario
         {
             InitializeComponent();
 
-            txtID.Enabled = false;
             deshabilitarCajasDeTexto();
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
@@ -55,14 +54,10 @@ namespace SistemaGestionInventario
             txtUsuario.Text = "";
         }
 
-        private void frmPerfil_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnEditar_Click(object sender, EventArgs e)
         {
             habilitarCajasDeTexto();
+
             btnEditar.Enabled = false;
             btnGuardar.Enabled = true;
             btnCancelar.Enabled = true;
@@ -95,6 +90,19 @@ namespace SistemaGestionInventario
             if (VariablesGlobales.ModificacionesRealizadas == false)
             {
                 VariablesGlobales.ModificacionesRealizadas = true;
+            }
+        }
+
+        private void btnCambiarContrasena_Click(object sender, EventArgs e)
+        {
+            if (VariablesGlobales.ModificacionesRealizadas == true || VariablesGlobales.ModificacionEnCurso == true)
+            {
+                MessageBox.Show("Guarde los cambios antes de continuar.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                frmCambiarContrasena cambiarContrasena = new frmCambiarContrasena();
+                cambiarContrasena.Show();
             }
         }
     }

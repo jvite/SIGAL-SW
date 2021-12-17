@@ -303,6 +303,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap e4b72ecbb7c98f492629cbeee66435e8 {
+            get {
+                object obj = ResourceManager.GetObject("e4b72ecbb7c98f492629cbeee66435e8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap edit___1479_ {
             get {
                 object obj = ResourceManager.GetObject("edit [#1479]", resourceCulture);
@@ -573,9 +583,29 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap profile_image_plus_round___1327_1 {
+            get {
+                object obj = ResourceManager.GetObject("profile_image_plus_round [#1327]1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap profile_round___1342_ {
             get {
                 object obj = ResourceManager.GetObject("profile_round [#1342]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profile_round___1342_1 {
+            get {
+                object obj = ResourceManager.GetObject("profile_round [#1342]1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
