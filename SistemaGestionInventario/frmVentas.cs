@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace SistemaGestionInventario
 {
-    public partial class frmCambiarContrasena : Form
+    public partial class frmVentas : Form
     {
-        public frmCambiarContrasena()
+        public frmVentas()
         {
             InitializeComponent();
-        }
-
-        private void btnCambiarContrasena_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
         }
     }
 }

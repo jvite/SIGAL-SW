@@ -107,11 +107,23 @@
     <Compile Include="frmConfiguracion.Designer.cs">
       <DependentUpon>frmConfiguracion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistro.Designer.cs">
+      <DependentUpon>frmRegistro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUserAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmUserAdmin.Designer.cs">
       <DependentUpon>frmUserAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentas.Designer.cs">
+      <DependentUpon>frmVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="GenerarContrasena.cs" />
     <Compile Include="Program.cs" />
@@ -147,8 +159,14 @@
     <EmbeddedResource Include="frmConfiguracion.resx">
       <DependentUpon>frmConfiguracion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistro.resx">
+      <DependentUpon>frmRegistro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmUserAdmin.resx">
       <DependentUpon>frmUserAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentas.resx">
+      <DependentUpon>frmVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -388,6 +406,56 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\profile_round [#1342]1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\activity [#985].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.MSProject">
+      <Guid>{A7107640-94DF-1068-855E-00DD01075445}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

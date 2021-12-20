@@ -36,3 +36,4 @@ C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInvent
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmClientes.resources
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmConfiguracion.resources
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmCambiarContrasena.resources
+C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmRegistro.resources

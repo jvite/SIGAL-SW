@@ -109,7 +109,7 @@ namespace SistemaGestionInventario
 
         private void rbtVentas_CheckedChanged(object sender, EventArgs e)//VENTAS
         {
-            //abrirForm(new frmventas());
+            abrirForm(new frmVentas());
         }
 
         private void rbtFacturas_CheckedChanged(object sender, EventArgs e)//FACTURAS
@@ -130,6 +130,11 @@ namespace SistemaGestionInventario
         private void rbtAdminDeUsuarios_CheckedChanged(object sender, EventArgs e)//ADMINISTRADOR DE USUARIOS
         {
             abrirForm(new frmUserAdmin());
+        }
+
+        private void rbtRegistro_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirForm(new frmRegistro());
         }
 
         private void rbtAcercaDe_CheckedChanged(object sender, EventArgs e)//ACERCA DE
@@ -238,6 +243,14 @@ namespace SistemaGestionInventario
         private void rbtAcercaDe_MouseDown(object sender, MouseEventArgs e)
         {
             if (rbtAcercaDe.Checked == false)
+            {
+                Advertencia();
+            }
+        }
+
+        private void rbtRegistro_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (rbtRegistro.Checked == false)
             {
                 Advertencia();
             }

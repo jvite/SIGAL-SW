@@ -147,6 +147,7 @@
             this.btnCerrar.Size = new System.Drawing.Size(43, 37);
             this.btnCerrar.TabIndex = 52;
             this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // frmCambiarContrasena
             // 
@@ -166,6 +167,7 @@
             this.Controls.Add(this.lblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCambiarContrasena";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Cambiar Contrasena";
             this.ResumeLayout(false);
             this.PerformLayout();

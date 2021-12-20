@@ -63,6 +63,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap activity___985_ {
+            get {
+                object obj = ResourceManager.GetObject("activity [#985]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow_in_right___385_ {
             get {
                 object obj = ResourceManager.GetObject("arrow_in_right [#385]", resourceCulture);
