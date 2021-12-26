@@ -33,13 +33,13 @@
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblUsuariosNuevos = new System.Windows.Forms.Label();
             this.lblNumUsuarios = new System.Windows.Forms.Label();
+            this.pbxUsuarios = new System.Windows.Forms.PictureBox();
+            this.lblUsuariosNuevos = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblNumUsuariosTotales = new System.Windows.Forms.Label();
-            this.lblUsuariosTotales = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pbxUsuarios = new System.Windows.Forms.PictureBox();
+            this.lblUsuariosTotales = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblNumClientesNuevos = new System.Windows.Forms.Label();
@@ -51,9 +51,9 @@
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUsuarios)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -90,17 +90,6 @@
             this.panel1.Size = new System.Drawing.Size(181, 105);
             this.panel1.TabIndex = 2;
             // 
-            // lblUsuariosNuevos
-            // 
-            this.lblUsuariosNuevos.AutoSize = true;
-            this.lblUsuariosNuevos.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuariosNuevos.ForeColor = System.Drawing.Color.White;
-            this.lblUsuariosNuevos.Location = new System.Drawing.Point(15, 9);
-            this.lblUsuariosNuevos.Name = "lblUsuariosNuevos";
-            this.lblUsuariosNuevos.Size = new System.Drawing.Size(112, 18);
-            this.lblUsuariosNuevos.TabIndex = 0;
-            this.lblUsuariosNuevos.Text = "Usuarios nuevos:";
-            // 
             // lblNumUsuarios
             // 
             this.lblNumUsuarios.AutoSize = true;
@@ -111,6 +100,27 @@
             this.lblNumUsuarios.Size = new System.Drawing.Size(35, 18);
             this.lblNumUsuarios.TabIndex = 2;
             this.lblNumUsuarios.Text = "NaN";
+            // 
+            // pbxUsuarios
+            // 
+            this.pbxUsuarios.Image = global::SistemaGestionInventario.Properties.Resources.profile_image_plus_round___1327_1;
+            this.pbxUsuarios.Location = new System.Drawing.Point(18, 42);
+            this.pbxUsuarios.Name = "pbxUsuarios";
+            this.pbxUsuarios.Size = new System.Drawing.Size(49, 47);
+            this.pbxUsuarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbxUsuarios.TabIndex = 1;
+            this.pbxUsuarios.TabStop = false;
+            // 
+            // lblUsuariosNuevos
+            // 
+            this.lblUsuariosNuevos.AutoSize = true;
+            this.lblUsuariosNuevos.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuariosNuevos.ForeColor = System.Drawing.Color.White;
+            this.lblUsuariosNuevos.Location = new System.Drawing.Point(15, 9);
+            this.lblUsuariosNuevos.Name = "lblUsuariosNuevos";
+            this.lblUsuariosNuevos.Size = new System.Drawing.Size(112, 18);
+            this.lblUsuariosNuevos.TabIndex = 0;
+            this.lblUsuariosNuevos.Text = "Usuarios nuevos:";
             // 
             // panel2
             // 
@@ -134,17 +144,6 @@
             this.lblNumUsuariosTotales.TabIndex = 2;
             this.lblNumUsuariosTotales.Text = "NaN";
             // 
-            // lblUsuariosTotales
-            // 
-            this.lblUsuariosTotales.AutoSize = true;
-            this.lblUsuariosTotales.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuariosTotales.ForeColor = System.Drawing.Color.White;
-            this.lblUsuariosTotales.Location = new System.Drawing.Point(15, 9);
-            this.lblUsuariosTotales.Name = "lblUsuariosTotales";
-            this.lblUsuariosTotales.Size = new System.Drawing.Size(114, 18);
-            this.lblUsuariosTotales.TabIndex = 0;
-            this.lblUsuariosTotales.Text = "Total de usuarios:";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::SistemaGestionInventario.Properties.Resources.profile_round___1342_;
@@ -155,15 +154,16 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // pbxUsuarios
+            // lblUsuariosTotales
             // 
-            this.pbxUsuarios.Image = global::SistemaGestionInventario.Properties.Resources.profile_image_plus_round___1327_1;
-            this.pbxUsuarios.Location = new System.Drawing.Point(18, 42);
-            this.pbxUsuarios.Name = "pbxUsuarios";
-            this.pbxUsuarios.Size = new System.Drawing.Size(49, 47);
-            this.pbxUsuarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbxUsuarios.TabIndex = 1;
-            this.pbxUsuarios.TabStop = false;
+            this.lblUsuariosTotales.AutoSize = true;
+            this.lblUsuariosTotales.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuariosTotales.ForeColor = System.Drawing.Color.White;
+            this.lblUsuariosTotales.Location = new System.Drawing.Point(15, 9);
+            this.lblUsuariosTotales.Name = "lblUsuariosTotales";
+            this.lblUsuariosTotales.Size = new System.Drawing.Size(114, 18);
+            this.lblUsuariosTotales.TabIndex = 0;
+            this.lblUsuariosTotales.Text = "Total de usuarios:";
             // 
             // pictureBox1
             // 
@@ -280,10 +280,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUsuarios)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxUsuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

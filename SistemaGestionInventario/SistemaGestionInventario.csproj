@@ -457,5 +457,20 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_left [#1506].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_right [#333].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_right [#333]1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_minus [#1683].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus [#1514].png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

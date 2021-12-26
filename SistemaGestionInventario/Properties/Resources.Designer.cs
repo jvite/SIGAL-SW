@@ -123,6 +123,26 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_right___333_ {
+            get {
+                object obj = ResourceManager.GetObject("arrow_right [#333]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arrow_right___333_1 {
+            get {
+                object obj = ResourceManager.GetObject("arrow_right [#333]1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap car___646_ {
             get {
                 object obj = ResourceManager.GetObject("car [#646]", resourceCulture);
@@ -393,6 +413,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap file_minus___1683_ {
+            get {
+                object obj = ResourceManager.GetObject("file_minus [#1683]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap file_plus___1682_ {
             get {
                 object obj = ResourceManager.GetObject("file_plus [#1682]", resourceCulture);
@@ -456,6 +486,16 @@ namespace SistemaGestionInventario.Properties {
         internal static System.Drawing.Bitmap lock_open_round___708_1 {
             get {
                 object obj = ResourceManager.GetObject("lock_open_round [#708]1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minus___1514_ {
+            get {
+                object obj = ResourceManager.GetObject("minus [#1514]", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -646,6 +686,16 @@ namespace SistemaGestionInventario.Properties {
         internal static System.Drawing.Bitmap save_item___1411_ {
             get {
                 object obj = ResourceManager.GetObject("save_item [#1411]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_left___1506_ {
+            get {
+                object obj = ResourceManager.GetObject("search_left [#1506]", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
