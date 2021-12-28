@@ -63,6 +63,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _162844_1fdec54f70737f065b47df982c6f7512 {
+            get {
+                object obj = ResourceManager.GetObject("162844_1fdec54f70737f065b47df982c6f7512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap activity___985_ {
             get {
                 object obj = ResourceManager.GetObject("activity [#985]", resourceCulture);
@@ -223,6 +233,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap collection___989_ {
+            get {
+                object obj = ResourceManager.GetObject("collection [#989]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap color1 {
             get {
                 object obj = ResourceManager.GetObject("color1", resourceCulture);
@@ -333,6 +353,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dollar___1189_ {
+            get {
+                object obj = ResourceManager.GetObject("dollar [#1189]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap e4b72ecbb7c98f492629cbeee66435e8 {
             get {
                 object obj = ResourceManager.GetObject("e4b72ecbb7c98f492629cbeee66435e8", resourceCulture);
@@ -406,6 +436,26 @@ namespace SistemaGestionInventario.Properties {
         internal static System.Drawing.Bitmap file_double___1695_ {
             get {
                 object obj = ResourceManager.GetObject("file_double [#1695]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap file_information___1694_ {
+            get {
+                object obj = ResourceManager.GetObject("file_information [#1694]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap file_information___1714_ {
+            get {
+                object obj = ResourceManager.GetObject("file_information [#1714]", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -546,6 +596,36 @@ namespace SistemaGestionInventario.Properties {
         internal static System.Drawing.Bitmap plus_circle___1425_1 {
             get {
                 object obj = ResourceManager.GetObject("plus_circle [#1425]1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_computer_icons_user_customer_icon_design_user {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-computer-icons-user-customer-icon-design-user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngegg {
+            get {
+                object obj = ResourceManager.GetObject("pngegg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngegg__1_ {
+            get {
+                object obj = ResourceManager.GetObject("pngegg (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -113,6 +113,12 @@
     <Compile Include="frmRegistro.Designer.cs">
       <DependentUpon>frmRegistro.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRegistroVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroVentas.Designer.cs">
+      <DependentUpon>frmRegistroVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUserAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistro.resx">
       <DependentUpon>frmRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroVentas.resx">
+      <DependentUpon>frmRegistroVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUserAdmin.resx">
       <DependentUpon>frmUserAdmin.cs</DependentUpon>
@@ -471,6 +480,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minus [#1514].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-user-customer-icon-design-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\162844_1fdec54f70737f065b47df982c6f7512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collection [#989].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar [#1189].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_information [#1694].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_information [#1714].png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

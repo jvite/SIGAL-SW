@@ -18,6 +18,7 @@ namespace SistemaGestionInventario
         {
             InitializeComponent();
             VariablesGlobales.EstadoSesion = true;
+            abrirForm(new frmDashboard());
         }
 
         private void frmAlmacen_Load(object sender, EventArgs e)
@@ -110,6 +111,11 @@ namespace SistemaGestionInventario
         private void rbtVentas_CheckedChanged(object sender, EventArgs e)//VENTAS
         {
             abrirForm(new frmVentas());
+        }
+
+        private void rbtRegistroVentas_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void rbtFacturas_CheckedChanged(object sender, EventArgs e)//FACTURAS
@@ -251,6 +257,14 @@ namespace SistemaGestionInventario
         private void rbtRegistro_MouseDown(object sender, MouseEventArgs e)
         {
             if (rbtRegistro.Checked == false)
+            {
+                Advertencia();
+            }
+        }
+        
+        private void rbtRegistroVentas_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (rbtRegistroVentas.Checked == false)
             {
                 Advertencia();
             }

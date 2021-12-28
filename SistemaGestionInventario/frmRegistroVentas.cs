@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace SistemaGestionInventario
 {
-    public partial class frmDashboard : Form
+    public partial class frmRegistroVentas : Form
     {
-        public frmDashboard()
+        public frmRegistroVentas()
         {
             InitializeComponent();
-            lblTitulo.Text = "Dashboard " + DateTime.Today.ToLongDateString();
         }
     }
 }
