@@ -115,7 +115,7 @@ namespace SistemaGestionInventario
 
         private void rbtRegistroVentas_CheckedChanged(object sender, EventArgs e)
         {
-
+            abrirForm(new frmRegistroVentas());
         }
 
         private void rbtFacturas_CheckedChanged(object sender, EventArgs e)//FACTURAS
