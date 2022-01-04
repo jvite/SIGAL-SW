@@ -505,5 +505,11 @@
   <ItemGroup>
     <None Include="Resources\file_information [#1714].png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\585-5857042_logout-icon-png-transparent-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\56805.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

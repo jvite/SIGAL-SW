@@ -56,6 +56,8 @@
             this.pbxSeparador2 = new System.Windows.Forms.PictureBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.pbxImagenPerfil = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSIGALSW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.plMenuLateral.SuspendLayout();
@@ -64,12 +66,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenPerfil)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // plContenedor
             // 
             this.plContenedor.BackColor = System.Drawing.Color.Transparent;
-            this.plContenedor.Location = new System.Drawing.Point(198, 91);
+            this.plContenedor.Location = new System.Drawing.Point(199, 147);
             this.plContenedor.Name = "plContenedor";
             this.plContenedor.Size = new System.Drawing.Size(782, 562);
             this.plContenedor.TabIndex = 4;
@@ -84,9 +87,9 @@
             this.btnConfiguracion.ForeColor = System.Drawing.Color.White;
             this.btnConfiguracion.Image = global::SistemaGestionInventario.Properties.Resources.star___1260_1;
             this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConfiguracion.Location = new System.Drawing.Point(279, 12);
+            this.btnConfiguracion.Location = new System.Drawing.Point(30, 664);
             this.btnConfiguracion.Name = "btnConfiguracion";
-            this.btnConfiguracion.Size = new System.Drawing.Size(148, 27);
+            this.btnConfiguracion.Size = new System.Drawing.Size(91, 40);
             this.btnConfiguracion.TabIndex = 15;
             this.btnConfiguracion.Text = "Configurar conexion";
             this.btnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -98,7 +101,7 @@
             this.pbxSIGALSW.BackColor = System.Drawing.Color.Transparent;
             this.pbxSIGALSW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxSIGALSW.Image = global::SistemaGestionInventario.Properties.Resources.SIGAL_SW_LOGO_WHITE_fw;
-            this.pbxSIGALSW.Location = new System.Drawing.Point(463, 1);
+            this.pbxSIGALSW.Location = new System.Drawing.Point(498, 0);
             this.pbxSIGALSW.Name = "pbxSIGALSW";
             this.pbxSIGALSW.Size = new System.Drawing.Size(218, 68);
             this.pbxSIGALSW.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -109,9 +112,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::SistemaGestionInventario.Properties.Resources.linea;
-            this.pictureBox3.Location = new System.Drawing.Point(198, 65);
+            this.pictureBox3.Location = new System.Drawing.Point(200, 121);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(768, 25);
+            this.pictureBox3.Size = new System.Drawing.Size(782, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
@@ -123,11 +126,14 @@
             this.btnCerrarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(156)))), ((int)(((byte)(169)))));
             this.btnCerrarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
             this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarSesion.Image = global::SistemaGestionInventario.Properties.Resources.arrow_left___271_;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(200, 1);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(197, 6);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(50, 51);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(104, 68);
             this.btnCerrarSesion.TabIndex = 11;
+            this.btnCerrarSesion.Text = "Cerrar sesión";
+            this.btnCerrarSesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
@@ -139,7 +145,7 @@
             this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Image = global::SistemaGestionInventario.Properties.Resources.shut_down___1431_;
-            this.btnCerrar.Location = new System.Drawing.Point(898, 1);
+            this.btnCerrar.Location = new System.Drawing.Point(930, 0);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(50, 51);
             this.btnCerrar.TabIndex = 12;
@@ -151,13 +157,14 @@
             this.plMenuContactos.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.Primary_Dark;
             this.plMenuContactos.Location = new System.Drawing.Point(986, 0);
             this.plMenuContactos.Name = "plMenuContactos";
-            this.plMenuContactos.Size = new System.Drawing.Size(39, 663);
+            this.plMenuContactos.Size = new System.Drawing.Size(39, 716);
             this.plMenuContactos.TabIndex = 1;
             // 
             // plMenuLateral
             // 
             this.plMenuLateral.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.Primary_Dark;
             this.plMenuLateral.Controls.Add(this.rbtEstadisticas);
+            this.plMenuLateral.Controls.Add(this.btnConfiguracion);
             this.plMenuLateral.Controls.Add(this.rbtRegistroVentas);
             this.plMenuLateral.Controls.Add(this.rbtRegistro);
             this.plMenuLateral.Controls.Add(this.pbxSeparador1);
@@ -178,7 +185,7 @@
             this.plMenuLateral.Controls.Add(this.pbxImagenPerfil);
             this.plMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.plMenuLateral.Name = "plMenuLateral";
-            this.plMenuLateral.Size = new System.Drawing.Size(191, 663);
+            this.plMenuLateral.Size = new System.Drawing.Size(191, 716);
             this.plMenuLateral.TabIndex = 0;
             // 
             // rbtEstadisticas
@@ -542,11 +549,11 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
-            this.lblNombre.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(42, 123);
+            this.lblNombre.Location = new System.Drawing.Point(42, 116);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(107, 23);
+            this.lblNombre.Size = new System.Drawing.Size(111, 23);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "<<usuario>>";
             // 
@@ -554,12 +561,34 @@
             // 
             this.pbxImagenPerfil.BackColor = System.Drawing.Color.Transparent;
             this.pbxImagenPerfil.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbxImagenPerfil.ErrorImage")));
+            this.pbxImagenPerfil.Image = global::SistemaGestionInventario.Properties.Resources.e4b72ecbb7c98f492629cbeee66435e8;
             this.pbxImagenPerfil.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbxImagenPerfil.InitialImage")));
             this.pbxImagenPerfil.Location = new System.Drawing.Point(46, 13);
             this.pbxImagenPerfil.Name = "pbxImagenPerfil";
             this.pbxImagenPerfil.Size = new System.Drawing.Size(100, 100);
+            this.pbxImagenPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxImagenPerfil.TabIndex = 0;
             this.pbxImagenPerfil.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(156)))), ((int)(((byte)(169)))));
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(318, 27);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(162, 72);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
             // 
             // frmAdministrador
             // 
@@ -567,10 +596,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.Primary;
-            this.ClientSize = new System.Drawing.Size(1025, 661);
+            this.ClientSize = new System.Drawing.Size(1025, 716);
             this.ControlBox = false;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.btnConfiguracion);
             this.Controls.Add(this.pbxSIGALSW);
             this.Controls.Add(this.plContenedor);
             this.Controls.Add(this.btnCerrarSesion);
@@ -590,6 +619,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenPerfil)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -623,6 +654,8 @@
         private System.Windows.Forms.Button btnConfiguracion;
         private System.Windows.Forms.RadioButton rbtRegistro;
         private System.Windows.Forms.RadioButton rbtRegistroVentas;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

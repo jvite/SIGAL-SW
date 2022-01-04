@@ -142,6 +142,9 @@
   <data name="color1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\color1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="file_information [#1714]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file_information [#1714].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="color2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\color2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -235,6 +238,9 @@
   <data name="profile [#1335]1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile [#1335].ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="585-5857042_logout-icon-png-transparent-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\585-5857042_logout-icon-png-transparent-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="profile [#1335]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile [#1335].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -297,6 +303,9 @@
   </data>
   <data name="database_system [#1797]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\database_system [#1797].ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_information [#1694]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file_information [#1694].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dollar [#1189]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dollar [#1189].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -370,10 +379,7 @@
   <data name="linea-vertical" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\linea-vertical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file_information [#1694]" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file_information [#1694].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="file_information [#1714]" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file_information [#1714].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="56805" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\56805.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
