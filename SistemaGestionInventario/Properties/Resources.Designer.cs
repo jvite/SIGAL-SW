@@ -383,6 +383,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dollar___1189_1 {
+            get {
+                object obj = ResourceManager.GetObject("dollar [#1189]1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap e4b72ecbb7c98f492629cbeee66435e8 {
             get {
                 object obj = ResourceManager.GetObject("e4b72ecbb7c98f492629cbeee66435e8", resourceCulture);
@@ -566,6 +576,16 @@ namespace SistemaGestionInventario.Properties {
         internal static System.Drawing.Bitmap minus___1514_ {
             get {
                 object obj = ResourceManager.GetObject("minus [#1514]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap money___1182_ {
+            get {
+                object obj = ResourceManager.GetObject("money [#1182]", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -37,7 +37,7 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.plMenuContactos = new System.Windows.Forms.Panel();
             this.plMenuLateral = new System.Windows.Forms.Panel();
-            this.rbtEstadisticas = new System.Windows.Forms.RadioButton();
+            this.rbtGastos = new System.Windows.Forms.RadioButton();
             this.rbtRegistroVentas = new System.Windows.Forms.RadioButton();
             this.rbtRegistro = new System.Windows.Forms.RadioButton();
             this.pbxSeparador1 = new System.Windows.Forms.PictureBox();
@@ -45,7 +45,7 @@
             this.rbtAdminDeUsuarios = new System.Windows.Forms.RadioButton();
             this.rbtFacturas = new System.Windows.Forms.RadioButton();
             this.rbtVentas = new System.Windows.Forms.RadioButton();
-            this.rbtReportes = new System.Windows.Forms.RadioButton();
+            this.rbtCaja = new System.Windows.Forms.RadioButton();
             this.rbtClientes = new System.Windows.Forms.RadioButton();
             this.rbtProveedores = new System.Windows.Forms.RadioButton();
             this.rbtAlmacen = new System.Windows.Forms.RadioButton();
@@ -56,7 +56,9 @@
             this.pbxSeparador2 = new System.Windows.Forms.PictureBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.pbxImagenPerfil = new System.Windows.Forms.PictureBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblCajaDisponible = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSIGALSW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -66,7 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenPerfil)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // plContenedor
@@ -163,7 +165,7 @@
             // plMenuLateral
             // 
             this.plMenuLateral.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.Primary_Dark;
-            this.plMenuLateral.Controls.Add(this.rbtEstadisticas);
+            this.plMenuLateral.Controls.Add(this.rbtGastos);
             this.plMenuLateral.Controls.Add(this.btnConfiguracion);
             this.plMenuLateral.Controls.Add(this.rbtRegistroVentas);
             this.plMenuLateral.Controls.Add(this.rbtRegistro);
@@ -172,7 +174,7 @@
             this.plMenuLateral.Controls.Add(this.rbtAdminDeUsuarios);
             this.plMenuLateral.Controls.Add(this.rbtFacturas);
             this.plMenuLateral.Controls.Add(this.rbtVentas);
-            this.plMenuLateral.Controls.Add(this.rbtReportes);
+            this.plMenuLateral.Controls.Add(this.rbtCaja);
             this.plMenuLateral.Controls.Add(this.rbtClientes);
             this.plMenuLateral.Controls.Add(this.rbtProveedores);
             this.plMenuLateral.Controls.Add(this.rbtAlmacen);
@@ -188,29 +190,29 @@
             this.plMenuLateral.Size = new System.Drawing.Size(191, 716);
             this.plMenuLateral.TabIndex = 0;
             // 
-            // rbtEstadisticas
+            // rbtGastos
             // 
-            this.rbtEstadisticas.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbtEstadisticas.BackColor = System.Drawing.Color.Transparent;
-            this.rbtEstadisticas.FlatAppearance.BorderSize = 0;
-            this.rbtEstadisticas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
-            this.rbtEstadisticas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
-            this.rbtEstadisticas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
-            this.rbtEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtEstadisticas.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtEstadisticas.ForeColor = System.Drawing.Color.White;
-            this.rbtEstadisticas.Image = global::SistemaGestionInventario.Properties.Resources.stats___1366_;
-            this.rbtEstadisticas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rbtEstadisticas.Location = new System.Drawing.Point(0, 570);
-            this.rbtEstadisticas.Name = "rbtEstadisticas";
-            this.rbtEstadisticas.Size = new System.Drawing.Size(191, 29);
-            this.rbtEstadisticas.TabIndex = 8;
-            this.rbtEstadisticas.Text = "Estadisticas";
-            this.rbtEstadisticas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbtEstadisticas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rbtEstadisticas.UseVisualStyleBackColor = false;
-            this.rbtEstadisticas.CheckedChanged += new System.EventHandler(this.rbtEstadisticas_CheckedChanged);
-            this.rbtEstadisticas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtEstadisticas_MouseDown);
+            this.rbtGastos.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtGastos.BackColor = System.Drawing.Color.Transparent;
+            this.rbtGastos.FlatAppearance.BorderSize = 0;
+            this.rbtGastos.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtGastos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.rbtGastos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtGastos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtGastos.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtGastos.ForeColor = System.Drawing.Color.White;
+            this.rbtGastos.Image = global::SistemaGestionInventario.Properties.Resources.money___1182_;
+            this.rbtGastos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtGastos.Location = new System.Drawing.Point(0, 570);
+            this.rbtGastos.Name = "rbtGastos";
+            this.rbtGastos.Size = new System.Drawing.Size(191, 29);
+            this.rbtGastos.TabIndex = 8;
+            this.rbtGastos.Text = "Gastos";
+            this.rbtGastos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtGastos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtGastos.UseVisualStyleBackColor = false;
+            this.rbtGastos.CheckedChanged += new System.EventHandler(this.rbtGastos_CheckedChanged);
+            this.rbtGastos.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtGastos_MouseDown);
             // 
             // rbtRegistroVentas
             // 
@@ -367,29 +369,29 @@
             this.rbtVentas.CheckedChanged += new System.EventHandler(this.rbtVentas_CheckedChanged);
             this.rbtVentas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtVentas_MouseDown);
             // 
-            // rbtReportes
+            // rbtCaja
             // 
-            this.rbtReportes.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbtReportes.BackColor = System.Drawing.Color.Transparent;
-            this.rbtReportes.FlatAppearance.BorderSize = 0;
-            this.rbtReportes.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
-            this.rbtReportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
-            this.rbtReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
-            this.rbtReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtReportes.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtReportes.ForeColor = System.Drawing.Color.White;
-            this.rbtReportes.Image = global::SistemaGestionInventario.Properties.Resources.chart_fill___1291_;
-            this.rbtReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rbtReportes.Location = new System.Drawing.Point(0, 444);
-            this.rbtReportes.Name = "rbtReportes";
-            this.rbtReportes.Size = new System.Drawing.Size(191, 29);
-            this.rbtReportes.TabIndex = 5;
-            this.rbtReportes.Text = "Reportes";
-            this.rbtReportes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbtReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rbtReportes.UseVisualStyleBackColor = false;
-            this.rbtReportes.CheckedChanged += new System.EventHandler(this.rbtReportes_CheckedChanged);
-            this.rbtReportes.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtReportes_MouseDown);
+            this.rbtCaja.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtCaja.BackColor = System.Drawing.Color.Transparent;
+            this.rbtCaja.FlatAppearance.BorderSize = 0;
+            this.rbtCaja.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtCaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.rbtCaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtCaja.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtCaja.ForeColor = System.Drawing.Color.White;
+            this.rbtCaja.Image = global::SistemaGestionInventario.Properties.Resources.dollar___1189_1;
+            this.rbtCaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtCaja.Location = new System.Drawing.Point(0, 444);
+            this.rbtCaja.Name = "rbtCaja";
+            this.rbtCaja.Size = new System.Drawing.Size(191, 29);
+            this.rbtCaja.TabIndex = 5;
+            this.rbtCaja.Text = "Caja";
+            this.rbtCaja.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtCaja.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtCaja.UseVisualStyleBackColor = false;
+            this.rbtCaja.CheckedChanged += new System.EventHandler(this.rbtReportes_CheckedChanged);
+            this.rbtCaja.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtReportes_MouseDown);
             // 
             // rbtClientes
             // 
@@ -570,25 +572,46 @@
             this.pbxImagenPerfil.TabIndex = 0;
             this.pbxImagenPerfil.TabStop = false;
             // 
-            // groupBox1
+            // panel1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(156)))), ((int)(((byte)(169)))));
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(318, 27);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(162, 72);
-            this.groupBox1.TabIndex = 14;
-            this.groupBox1.TabStop = false;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(156)))), ((int)(((byte)(169)))));
+            this.panel1.Controls.Add(this.lblCajaDisponible);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(333, 13);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(143, 55);
+            this.panel1.TabIndex = 14;
+            // 
+            // lblCajaDisponible
+            // 
+            this.lblCajaDisponible.AutoSize = true;
+            this.lblCajaDisponible.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCajaDisponible.Location = new System.Drawing.Point(17, 33);
+            this.lblCajaDisponible.Name = "lblCajaDisponible";
+            this.lblCajaDisponible.Size = new System.Drawing.Size(35, 18);
+            this.lblCajaDisponible.TabIndex = 3;
+            this.lblCajaDisponible.Text = "NaN";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(5, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(17, 19);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "$";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 23);
+            this.label1.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 18);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Disponible en caja:";
             // 
             // frmAdministrador
             // 
@@ -598,7 +621,7 @@
             this.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.Primary;
             this.ClientSize = new System.Drawing.Size(1025, 716);
             this.ControlBox = false;
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pbxSIGALSW);
             this.Controls.Add(this.plContenedor);
@@ -619,8 +642,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenPerfil)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -641,10 +664,10 @@
         private System.Windows.Forms.PictureBox pbxSeparador4;
         private System.Windows.Forms.RadioButton rbtAcercaDe;
         private System.Windows.Forms.RadioButton rbtAdminDeUsuarios;
-        private System.Windows.Forms.RadioButton rbtEstadisticas;
+        private System.Windows.Forms.RadioButton rbtGastos;
         private System.Windows.Forms.RadioButton rbtFacturas;
         private System.Windows.Forms.RadioButton rbtVentas;
-        private System.Windows.Forms.RadioButton rbtReportes;
+        private System.Windows.Forms.RadioButton rbtCaja;
         private System.Windows.Forms.RadioButton rbtClientes;
         private System.Windows.Forms.RadioButton rbtProveedores;
         private System.Windows.Forms.RadioButton rbtAlmacen;
@@ -654,7 +677,9 @@
         private System.Windows.Forms.Button btnConfiguracion;
         private System.Windows.Forms.RadioButton rbtRegistro;
         private System.Windows.Forms.RadioButton rbtRegistroVentas;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblCajaDisponible;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
     }
 }
