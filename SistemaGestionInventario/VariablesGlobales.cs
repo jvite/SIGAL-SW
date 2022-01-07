@@ -7,5 +7,6 @@ namespace SistemaGestionInventario
         public static bool EstadoSesion = false;
         public static bool ModificacionesRealizadas = false;
         public static bool ModificacionEnCurso = false;
+        public static bool AperturaCaja = false;
     }
 }

@@ -390,8 +390,8 @@
             this.rbtCaja.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbtCaja.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtCaja.UseVisualStyleBackColor = false;
-            this.rbtCaja.CheckedChanged += new System.EventHandler(this.rbtReportes_CheckedChanged);
-            this.rbtCaja.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtReportes_MouseDown);
+            this.rbtCaja.CheckedChanged += new System.EventHandler(this.rbtCaja_CheckedChanged);
+            this.rbtCaja.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtCaja_MouseDown);
             // 
             // rbtClientes
             // 
