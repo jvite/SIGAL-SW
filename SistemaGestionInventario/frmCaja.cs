@@ -16,5 +16,18 @@ namespace SistemaGestionInventario
         {
             InitializeComponent();
         }
+
+        private void btnAperturar_Click(object sender, EventArgs e)
+        {
+            if (txtMontoInicial.Text == "" || Convert.ToInt32(txtMontoInicial.Text)<=0)
+            {
+                MessageBox.Show("Ingrese una cantidad numerica válida.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                txtHora.Text = DateTime.Now.ToShortTimeString();
+                lblEstadoCaja.Text = "Caja Aperturada";
+            }
+        }
     }
 }

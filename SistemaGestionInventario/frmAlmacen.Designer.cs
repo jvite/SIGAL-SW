@@ -72,14 +72,14 @@
             // 
             // lblTitulo
             // 
-            this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(265, -2);
+            this.lblTitulo.Location = new System.Drawing.Point(-1, 1);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(112, 33);
+            this.lblTitulo.Size = new System.Drawing.Size(783, 33);
             this.lblTitulo.TabIndex = 4;
             this.lblTitulo.Text = "Almacén";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtBusqueda
             // 
@@ -87,7 +87,7 @@
             this.txtBusqueda.Location = new System.Drawing.Point(90, 307);
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(287, 26);
-            this.txtBusqueda.TabIndex = 5;
+            this.txtBusqueda.TabIndex = 11;
             // 
             // label1
             // 
@@ -118,7 +118,7 @@
             this.cbxCriterio.Location = new System.Drawing.Point(507, 307);
             this.cbxCriterio.Name = "cbxCriterio";
             this.cbxCriterio.Size = new System.Drawing.Size(121, 26);
-            this.cbxCriterio.TabIndex = 8;
+            this.cbxCriterio.TabIndex = 12;
             // 
             // dgvTabla
             // 
@@ -127,14 +127,14 @@
             this.dgvTabla.Name = "dgvTabla";
             this.dgvTabla.ReadOnly = true;
             this.dgvTabla.Size = new System.Drawing.Size(757, 216);
-            this.dgvTabla.TabIndex = 10;
+            this.dgvTabla.TabIndex = 14;
             // 
             // lblID
             // 
             this.lblID.AutoSize = true;
             this.lblID.BackColor = System.Drawing.Color.Transparent;
             this.lblID.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(10, 42);
+            this.lblID.Location = new System.Drawing.Point(10, 58);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(26, 18);
             this.lblID.TabIndex = 15;
@@ -144,17 +144,17 @@
             // 
             this.txtID.Enabled = false;
             this.txtID.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(42, 38);
+            this.txtID.Location = new System.Drawing.Point(42, 54);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(65, 26);
-            this.txtID.TabIndex = 14;
+            this.txtID.TabIndex = 1;
             // 
             // lblArticulo
             // 
             this.lblArticulo.AutoSize = true;
             this.lblArticulo.BackColor = System.Drawing.Color.Transparent;
             this.lblArticulo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArticulo.Location = new System.Drawing.Point(10, 72);
+            this.lblArticulo.Location = new System.Drawing.Point(10, 88);
             this.lblArticulo.Name = "lblArticulo";
             this.lblArticulo.Size = new System.Drawing.Size(61, 18);
             this.lblArticulo.TabIndex = 17;
@@ -163,16 +163,16 @@
             // txtArticulo
             // 
             this.txtArticulo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArticulo.Location = new System.Drawing.Point(71, 67);
+            this.txtArticulo.Location = new System.Drawing.Point(71, 83);
             this.txtArticulo.Name = "txtArticulo";
             this.txtArticulo.Size = new System.Drawing.Size(163, 26);
-            this.txtArticulo.TabIndex = 16;
+            this.txtArticulo.TabIndex = 2;
             // 
             // lblDestalles
             // 
             this.lblDestalles.BackColor = System.Drawing.Color.Transparent;
             this.lblDestalles.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDestalles.Location = new System.Drawing.Point(9, 155);
+            this.lblDestalles.Location = new System.Drawing.Point(9, 171);
             this.lblDestalles.Name = "lblDestalles";
             this.lblDestalles.Size = new System.Drawing.Size(192, 21);
             this.lblDestalles.TabIndex = 19;
@@ -182,19 +182,19 @@
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(12, 177);
+            this.txtDescripcion.Location = new System.Drawing.Point(12, 193);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtDescripcion.Size = new System.Drawing.Size(226, 76);
-            this.txtDescripcion.TabIndex = 18;
+            this.txtDescripcion.TabIndex = 5;
             // 
             // lblProveedor
             // 
             this.lblProveedor.AutoSize = true;
             this.lblProveedor.BackColor = System.Drawing.Color.Transparent;
             this.lblProveedor.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProveedor.Location = new System.Drawing.Point(307, 38);
+            this.lblProveedor.Location = new System.Drawing.Point(307, 54);
             this.lblProveedor.Name = "lblProveedor";
             this.lblProveedor.Size = new System.Drawing.Size(82, 19);
             this.lblProveedor.TabIndex = 21;
@@ -205,7 +205,7 @@
             this.lblEnExistencia.AutoSize = true;
             this.lblEnExistencia.BackColor = System.Drawing.Color.Transparent;
             this.lblEnExistencia.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnExistencia.Location = new System.Drawing.Point(307, 101);
+            this.lblEnExistencia.Location = new System.Drawing.Point(307, 117);
             this.lblEnExistencia.Name = "lblEnExistencia";
             this.lblEnExistencia.Size = new System.Drawing.Size(137, 19);
             this.lblEnExistencia.TabIndex = 23;
@@ -214,17 +214,17 @@
             // txtEnExistencia
             // 
             this.txtEnExistencia.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnExistencia.Location = new System.Drawing.Point(446, 96);
+            this.txtEnExistencia.Location = new System.Drawing.Point(446, 112);
             this.txtEnExistencia.Name = "txtEnExistencia";
             this.txtEnExistencia.Size = new System.Drawing.Size(127, 28);
-            this.txtEnExistencia.TabIndex = 22;
+            this.txtEnExistencia.TabIndex = 8;
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
             this.lblEstado.BackColor = System.Drawing.Color.Transparent;
             this.lblEstado.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(381, 163);
+            this.lblEstado.Location = new System.Drawing.Point(381, 179);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(60, 19);
             this.lblEstado.TabIndex = 24;
@@ -237,17 +237,17 @@
             this.cbxEstado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.cbxEstado.Location = new System.Drawing.Point(446, 158);
+            this.cbxEstado.Location = new System.Drawing.Point(446, 174);
             this.cbxEstado.Name = "cbxEstado";
             this.cbxEstado.Size = new System.Drawing.Size(144, 27);
-            this.cbxEstado.TabIndex = 25;
+            this.cbxEstado.TabIndex = 10;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(307, 132);
+            this.label4.Location = new System.Drawing.Point(307, 148);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(128, 19);
             this.label4.TabIndex = 27;
@@ -258,18 +258,18 @@
             this.dtpFechaEntrada.CalendarFont = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaEntrada.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaEntrada.Location = new System.Drawing.Point(446, 127);
+            this.dtpFechaEntrada.Location = new System.Drawing.Point(446, 143);
             this.dtpFechaEntrada.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpFechaEntrada.Name = "dtpFechaEntrada";
             this.dtpFechaEntrada.Size = new System.Drawing.Size(144, 27);
-            this.dtpFechaEntrada.TabIndex = 28;
+            this.dtpFechaEntrada.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(307, 70);
+            this.label5.Location = new System.Drawing.Point(307, 86);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(136, 19);
             this.label5.TabIndex = 49;
@@ -284,17 +284,17 @@
             "Kilogramos (Kg)",
             "Metros (M)",
             "Litros (L)"});
-            this.cbxUnidadMedida.Location = new System.Drawing.Point(446, 66);
+            this.cbxUnidadMedida.Location = new System.Drawing.Point(446, 82);
             this.cbxUnidadMedida.Name = "cbxUnidadMedida";
             this.cbxUnidadMedida.Size = new System.Drawing.Size(148, 27);
-            this.cbxUnidadMedida.TabIndex = 50;
+            this.cbxUnidadMedida.TabIndex = 7;
             // 
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
             this.lblMarca.BackColor = System.Drawing.Color.Transparent;
             this.lblMarca.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(10, 100);
+            this.lblMarca.Location = new System.Drawing.Point(10, 116);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(50, 18);
             this.lblMarca.TabIndex = 52;
@@ -303,17 +303,17 @@
             // txtMarca
             // 
             this.txtMarca.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMarca.Location = new System.Drawing.Point(71, 96);
+            this.txtMarca.Location = new System.Drawing.Point(71, 112);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(163, 26);
-            this.txtMarca.TabIndex = 51;
+            this.txtMarca.TabIndex = 3;
             // 
             // lblModelo
             // 
             this.lblModelo.AutoSize = true;
             this.lblModelo.BackColor = System.Drawing.Color.Transparent;
             this.lblModelo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModelo.Location = new System.Drawing.Point(10, 129);
+            this.lblModelo.Location = new System.Drawing.Point(10, 145);
             this.lblModelo.Name = "lblModelo";
             this.lblModelo.Size = new System.Drawing.Size(58, 18);
             this.lblModelo.TabIndex = 54;
@@ -322,10 +322,10 @@
             // txtModelo
             // 
             this.txtModelo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModelo.Location = new System.Drawing.Point(72, 125);
+            this.txtModelo.Location = new System.Drawing.Point(72, 141);
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(163, 26);
-            this.txtModelo.TabIndex = 53;
+            this.txtModelo.TabIndex = 4;
             // 
             // cbxProveedor
             // 
@@ -336,10 +336,10 @@
             "Kilogramos (Kg)",
             "Metros (M)",
             "Litros (L)"});
-            this.cbxProveedor.Location = new System.Drawing.Point(446, 35);
+            this.cbxProveedor.Location = new System.Drawing.Point(446, 51);
             this.cbxProveedor.Name = "cbxProveedor";
             this.cbxProveedor.Size = new System.Drawing.Size(148, 27);
-            this.cbxProveedor.TabIndex = 62;
+            this.cbxProveedor.TabIndex = 6;
             // 
             // pictureBox1
             // 
@@ -361,7 +361,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(658, 158);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(111, 33);
-            this.btnCancelar.TabIndex = 60;
+            this.btnCancelar.TabIndex = 19;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -377,7 +377,7 @@
             this.btnEditar.Location = new System.Drawing.Point(658, 47);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(111, 33);
-            this.btnEditar.TabIndex = 47;
+            this.btnEditar.TabIndex = 16;
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEditar.UseVisualStyleBackColor = true;
@@ -392,7 +392,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(662, 306);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(107, 26);
-            this.btnBuscar.TabIndex = 9;
+            this.btnBuscar.TabIndex = 13;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -407,7 +407,7 @@
             this.btnActualizar.Location = new System.Drawing.Point(658, 195);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(111, 33);
-            this.btnActualizar.TabIndex = 3;
+            this.btnActualizar.TabIndex = 20;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -423,7 +423,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(658, 84);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(111, 33);
-            this.btnGuardar.TabIndex = 2;
+            this.btnGuardar.TabIndex = 17;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -439,7 +439,7 @@
             this.btnEliminar.Location = new System.Drawing.Point(658, 121);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(111, 33);
-            this.btnEliminar.TabIndex = 1;
+            this.btnEliminar.TabIndex = 18;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -455,7 +455,7 @@
             this.btnNuevo.Location = new System.Drawing.Point(658, 10);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(111, 33);
-            this.btnNuevo.TabIndex = 0;
+            this.btnNuevo.TabIndex = 15;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -482,7 +482,7 @@
             this.btnLimpiar.Location = new System.Drawing.Point(658, 232);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(111, 33);
-            this.btnLimpiar.TabIndex = 63;
+            this.btnLimpiar.TabIndex = 21;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -494,6 +494,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(782, 562);
+            this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.cbxProveedor);
             this.Controls.Add(this.pictureBox1);
@@ -528,7 +529,6 @@
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAlmacen";

@@ -89,7 +89,7 @@
             this.btnConfiguracion.ForeColor = System.Drawing.Color.White;
             this.btnConfiguracion.Image = global::SistemaGestionInventario.Properties.Resources.star___1260_1;
             this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConfiguracion.Location = new System.Drawing.Point(30, 664);
+            this.btnConfiguracion.Location = new System.Drawing.Point(46, 664);
             this.btnConfiguracion.Name = "btnConfiguracion";
             this.btnConfiguracion.Size = new System.Drawing.Size(91, 40);
             this.btnConfiguracion.TabIndex = 15;
@@ -203,7 +203,7 @@
             this.rbtGastos.ForeColor = System.Drawing.Color.White;
             this.rbtGastos.Image = global::SistemaGestionInventario.Properties.Resources.money___1182_;
             this.rbtGastos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rbtGastos.Location = new System.Drawing.Point(0, 570);
+            this.rbtGastos.Location = new System.Drawing.Point(0, 538);
             this.rbtGastos.Name = "rbtGastos";
             this.rbtGastos.Size = new System.Drawing.Size(191, 29);
             this.rbtGastos.TabIndex = 8;
@@ -286,7 +286,7 @@
             this.rbtAcercaDe.ForeColor = System.Drawing.Color.White;
             this.rbtAcercaDe.Image = global::SistemaGestionInventario.Properties.Resources.information___1446_;
             this.rbtAcercaDe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rbtAcercaDe.Location = new System.Drawing.Point(0, 630);
+            this.rbtAcercaDe.Location = new System.Drawing.Point(0, 598);
             this.rbtAcercaDe.Name = "rbtAcercaDe";
             this.rbtAcercaDe.Size = new System.Drawing.Size(191, 29);
             this.rbtAcercaDe.TabIndex = 10;
@@ -342,6 +342,7 @@
             this.rbtFacturas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbtFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbtFacturas.UseVisualStyleBackColor = false;
+            this.rbtFacturas.Visible = false;
             this.rbtFacturas.CheckedChanged += new System.EventHandler(this.rbtFacturas_CheckedChanged);
             this.rbtFacturas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtFacturas_MouseDown);
             // 
@@ -518,7 +519,7 @@
             // 
             this.pbxSeparador4.BackColor = System.Drawing.Color.Transparent;
             this.pbxSeparador4.Image = global::SistemaGestionInventario.Properties.Resources.linea;
-            this.pbxSeparador4.Location = new System.Drawing.Point(-1, 603);
+            this.pbxSeparador4.Location = new System.Drawing.Point(-1, 570);
             this.pbxSeparador4.Name = "pbxSeparador4";
             this.pbxSeparador4.Size = new System.Drawing.Size(192, 25);
             this.pbxSeparador4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

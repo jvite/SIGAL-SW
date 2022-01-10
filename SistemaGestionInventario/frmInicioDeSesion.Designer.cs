@@ -109,9 +109,9 @@
             // 
             this.btnAcceder.BackColor = System.Drawing.Color.Transparent;
             this.btnAcceder.FlatAppearance.BorderSize = 0;
-            this.btnAcceder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnAcceder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAcceder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.btnAcceder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcceder.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcceder.Image = global::SistemaGestionInventario.Properties.Resources.arrow_in_right___385_;
             this.btnAcceder.Location = new System.Drawing.Point(203, 372);
@@ -127,6 +127,8 @@
             // 
             this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
             this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Image = global::SistemaGestionInventario.Properties.Resources.shut_down___1431_;
             this.btnCerrar.Location = new System.Drawing.Point(428, 12);
