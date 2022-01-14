@@ -35,6 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtMontoInicial = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtHora = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.txtMonto = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.dtpFechaApertura = new System.Windows.Forms.DateTimePicker();
@@ -52,8 +54,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.txtHora = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.txtHoraCierre = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.gbxCaja.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -93,7 +95,7 @@
             // 
             this.lblEstadoCaja.AutoSize = true;
             this.lblEstadoCaja.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstadoCaja.Location = new System.Drawing.Point(60, 76);
+            this.lblEstadoCaja.Location = new System.Drawing.Point(61, 91);
             this.lblEstadoCaja.Name = "lblEstadoCaja";
             this.lblEstadoCaja.Size = new System.Drawing.Size(157, 23);
             this.lblEstadoCaja.TabIndex = 3;
@@ -149,6 +151,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles de apertura";
             // 
+            // txtHora
+            // 
+            this.txtHora.Enabled = false;
+            this.txtHora.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHora.Location = new System.Drawing.Point(127, 87);
+            this.txtHora.Name = "txtHora";
+            this.txtHora.Size = new System.Drawing.Size(142, 26);
+            this.txtHora.TabIndex = 5;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(6, 91);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(77, 18);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Hora inicio:";
+            // 
             // txtMonto
             // 
             this.txtMonto.Enabled = false;
@@ -183,9 +204,9 @@
             this.label5.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 123);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 18);
+            this.label5.Size = new System.Drawing.Size(90, 18);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Monto:";
+            this.label5.Text = "Monto inicial:";
             // 
             // label4
             // 
@@ -209,6 +230,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtHoraCierre);
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.btnReporteCierreCaja);
             this.groupBox2.Controls.Add(this.dtpFechaCierre);
             this.groupBox2.Controls.Add(this.txtTotalVentas);
@@ -221,7 +244,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(12, 253);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(444, 236);
+            this.groupBox2.Size = new System.Drawing.Size(417, 297);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Detalles de cierre de caja";
@@ -233,7 +256,7 @@
             this.btnReporteCierreCaja.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReporteCierreCaja.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporteCierreCaja.Image = global::SistemaGestionInventario.Properties.Resources.file___1677_;
-            this.btnReporteCierreCaja.Location = new System.Drawing.Point(159, 168);
+            this.btnReporteCierreCaja.Location = new System.Drawing.Point(10, 188);
             this.btnReporteCierreCaja.Name = "btnReporteCierreCaja";
             this.btnReporteCierreCaja.Size = new System.Drawing.Size(120, 62);
             this.btnReporteCierreCaja.TabIndex = 11;
@@ -252,7 +275,7 @@
             // txtTotalVentas
             // 
             this.txtTotalVentas.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalVentas.Location = new System.Drawing.Point(159, 54);
+            this.txtTotalVentas.Location = new System.Drawing.Point(159, 85);
             this.txtTotalVentas.Name = "txtTotalVentas";
             this.txtTotalVentas.Size = new System.Drawing.Size(142, 26);
             this.txtTotalVentas.TabIndex = 8;
@@ -260,7 +283,7 @@
             // txtTotal
             // 
             this.txtTotal.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(159, 86);
+            this.txtTotal.Location = new System.Drawing.Point(159, 117);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(142, 26);
             this.txtTotal.TabIndex = 9;
@@ -268,7 +291,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(159, 118);
+            this.textBox2.Location = new System.Drawing.Point(159, 149);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(142, 26);
             this.textBox2.TabIndex = 10;
@@ -277,7 +300,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(7, 121);
+            this.label9.Location = new System.Drawing.Point(7, 152);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(146, 18);
             this.label9.TabIndex = 6;
@@ -287,7 +310,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 90);
+            this.label8.Location = new System.Drawing.Point(6, 121);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(103, 18);
             this.label8.TabIndex = 5;
@@ -297,7 +320,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 59);
+            this.label7.Location = new System.Drawing.Point(6, 90);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 18);
             this.label7.TabIndex = 4;
@@ -324,24 +347,24 @@
             this.lblTitulo.Text = "Caja";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtHora
+            // txtHoraCierre
             // 
-            this.txtHora.Enabled = false;
-            this.txtHora.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHora.Location = new System.Drawing.Point(127, 87);
-            this.txtHora.Name = "txtHora";
-            this.txtHora.Size = new System.Drawing.Size(142, 26);
-            this.txtHora.TabIndex = 5;
+            this.txtHoraCierre.Enabled = false;
+            this.txtHoraCierre.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoraCierre.Location = new System.Drawing.Point(159, 54);
+            this.txtHoraCierre.Name = "txtHoraCierre";
+            this.txtHoraCierre.Size = new System.Drawing.Size(142, 26);
+            this.txtHoraCierre.TabIndex = 12;
             // 
-            // label10
+            // label2
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 91);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 18);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Hora:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 18);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Hora cierre:";
             // 
             // frmCaja
             // 
@@ -394,5 +417,7 @@
         private System.Windows.Forms.Button btnReporteCierreCaja;
         private System.Windows.Forms.TextBox txtHora;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtHoraCierre;
+        private System.Windows.Forms.Label label2;
     }
 }

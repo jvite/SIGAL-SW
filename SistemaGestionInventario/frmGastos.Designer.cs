@@ -120,7 +120,7 @@
             this.txtDescripcion.Location = new System.Drawing.Point(148, 126);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(225, 67);
+            this.txtDescripcion.Size = new System.Drawing.Size(247, 67);
             this.txtDescripcion.TabIndex = 24;
             // 
             // lblCantidad
@@ -154,7 +154,7 @@
             "Alimentacion"});
             this.cbxUnidadMedida.Location = new System.Drawing.Point(148, 93);
             this.cbxUnidadMedida.Name = "cbxUnidadMedida";
-            this.cbxUnidadMedida.Size = new System.Drawing.Size(225, 27);
+            this.cbxUnidadMedida.Size = new System.Drawing.Size(247, 27);
             this.cbxUnidadMedida.TabIndex = 51;
             // 
             // btnLimpiar
