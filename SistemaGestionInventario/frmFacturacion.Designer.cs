@@ -49,7 +49,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
@@ -63,8 +62,11 @@
             this.cbxCriterio = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dtpFechaEntrada = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtSerie = new System.Windows.Forms.TextBox();
+            this.txtNumeroFactura = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -74,7 +76,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(9, 208);
+            this.label7.Location = new System.Drawing.Point(9, 272);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(38, 18);
             this.label7.TabIndex = 76;
@@ -83,7 +85,7 @@
             // txtRFC
             // 
             this.txtRFC.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRFC.Location = new System.Drawing.Point(89, 204);
+            this.txtRFC.Location = new System.Drawing.Point(89, 268);
             this.txtRFC.Name = "txtRFC";
             this.txtRFC.Size = new System.Drawing.Size(199, 26);
             this.txtRFC.TabIndex = 75;
@@ -93,7 +95,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(9, 144);
+            this.label5.Location = new System.Drawing.Point(9, 208);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 18);
             this.label5.TabIndex = 72;
@@ -102,7 +104,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(89, 140);
+            this.txtTelefono.Location = new System.Drawing.Point(89, 204);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(199, 26);
             this.txtTelefono.TabIndex = 71;
@@ -112,7 +114,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 176);
+            this.label4.Location = new System.Drawing.Point(9, 240);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 18);
             this.label4.TabIndex = 70;
@@ -121,7 +123,7 @@
             // txtDomicilio
             // 
             this.txtDomicilio.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDomicilio.Location = new System.Drawing.Point(89, 172);
+            this.txtDomicilio.Location = new System.Drawing.Point(89, 236);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(199, 26);
             this.txtDomicilio.TabIndex = 69;
@@ -131,7 +133,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 112);
+            this.label3.Location = new System.Drawing.Point(9, 148);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 18);
             this.label3.TabIndex = 68;
@@ -141,9 +143,9 @@
             // txtRazonSocial
             // 
             this.txtRazonSocial.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRazonSocial.Location = new System.Drawing.Point(89, 108);
+            this.txtRazonSocial.Location = new System.Drawing.Point(12, 169);
             this.txtRazonSocial.Name = "txtRazonSocial";
-            this.txtRazonSocial.Size = new System.Drawing.Size(199, 26);
+            this.txtRazonSocial.Size = new System.Drawing.Size(251, 26);
             this.txtRazonSocial.TabIndex = 67;
             // 
             // lblID
@@ -151,7 +153,7 @@
             this.lblID.AutoSize = true;
             this.lblID.BackColor = System.Drawing.Color.Transparent;
             this.lblID.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(9, 81);
+            this.lblID.Location = new System.Drawing.Point(9, 26);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(26, 18);
             this.lblID.TabIndex = 66;
@@ -160,7 +162,7 @@
             // txtID
             // 
             this.txtID.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(89, 76);
+            this.txtID.Location = new System.Drawing.Point(60, 23);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(74, 26);
             this.txtID.TabIndex = 65;
@@ -168,9 +170,9 @@
             // dgvTabla
             // 
             this.dgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTabla.Location = new System.Drawing.Point(12, 337);
+            this.dgvTabla.Location = new System.Drawing.Point(12, 379);
             this.dgvTabla.Name = "dgvTabla";
-            this.dgvTabla.Size = new System.Drawing.Size(757, 216);
+            this.dgvTabla.Size = new System.Drawing.Size(757, 174);
             this.dgvTabla.TabIndex = 63;
             // 
             // label1
@@ -178,7 +180,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 311);
+            this.label1.Location = new System.Drawing.Point(12, 350);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 18);
             this.label1.TabIndex = 59;
@@ -187,7 +189,7 @@
             // txtBusqueda
             // 
             this.txtBusqueda.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusqueda.Location = new System.Drawing.Point(90, 307);
+            this.txtBusqueda.Location = new System.Drawing.Point(90, 346);
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(287, 26);
             this.txtBusqueda.TabIndex = 58;
@@ -265,21 +267,11 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(9, 241);
+            this.label10.Location = new System.Drawing.Point(9, 92);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 18);
+            this.label10.Size = new System.Drawing.Size(117, 18);
             this.label10.TabIndex = 85;
-            this.label10.Text = "Fecha:";
-            // 
-            // pbxLogo
-            // 
-            this.pbxLogo.Image = global::SistemaGestionInventario.Properties.Resources.file___1677_;
-            this.pbxLogo.Location = new System.Drawing.Point(64, 5);
-            this.pbxLogo.Name = "pbxLogo";
-            this.pbxLogo.Size = new System.Drawing.Size(55, 65);
-            this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxLogo.TabIndex = 82;
-            this.pbxLogo.TabStop = false;
+            this.label10.Text = "Fecha de emisión:";
             // 
             // btnEditar
             // 
@@ -302,7 +294,7 @@
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscar.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(662, 306);
+            this.btnBuscar.Location = new System.Drawing.Point(662, 345);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(107, 27);
             this.btnBuscar.TabIndex = 62;
@@ -376,7 +368,7 @@
             this.pictureBox1.Image = global::SistemaGestionInventario.Properties.Resources.linea_vertical;
             this.pictureBox1.Location = new System.Drawing.Point(283, 47);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 220);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 258);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 83;
             this.pictureBox1.TabStop = false;
@@ -415,7 +407,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::SistemaGestionInventario.Properties.Resources.linea;
-            this.pictureBox3.Location = new System.Drawing.Point(-1, 272);
+            this.pictureBox3.Location = new System.Drawing.Point(-1, 311);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(783, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -426,7 +418,7 @@
             // 
             this.cbxCriterio.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxCriterio.FormattingEnabled = true;
-            this.cbxCriterio.Location = new System.Drawing.Point(507, 307);
+            this.cbxCriterio.Location = new System.Drawing.Point(507, 346);
             this.cbxCriterio.Name = "cbxCriterio";
             this.cbxCriterio.Size = new System.Drawing.Size(121, 26);
             this.cbxCriterio.TabIndex = 96;
@@ -436,7 +428,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(443, 311);
+            this.label6.Location = new System.Drawing.Point(443, 350);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 18);
             this.label6.TabIndex = 95;
@@ -445,13 +437,52 @@
             // dtpFechaEntrada
             // 
             this.dtpFechaEntrada.CalendarFont = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaEntrada.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaEntrada.Location = new System.Drawing.Point(90, 236);
+            this.dtpFechaEntrada.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaEntrada.Location = new System.Drawing.Point(12, 113);
             this.dtpFechaEntrada.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpFechaEntrada.Name = "dtpFechaEntrada";
-            this.dtpFechaEntrada.Size = new System.Drawing.Size(198, 27);
+            this.dtpFechaEntrada.Size = new System.Drawing.Size(308, 23);
             this.dtpFechaEntrada.TabIndex = 97;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(9, 58);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(42, 18);
+            this.label11.TabIndex = 99;
+            this.label11.Text = "Serie:";
+            // 
+            // txtSerie
+            // 
+            this.txtSerie.Enabled = false;
+            this.txtSerie.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSerie.Location = new System.Drawing.Point(60, 55);
+            this.txtSerie.Name = "txtSerie";
+            this.txtSerie.Size = new System.Drawing.Size(60, 26);
+            this.txtSerie.TabIndex = 98;
+            // 
+            // txtNumeroFactura
+            // 
+            this.txtNumeroFactura.Enabled = false;
+            this.txtNumeroFactura.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroFactura.Location = new System.Drawing.Point(136, 55);
+            this.txtNumeroFactura.Name = "txtNumeroFactura";
+            this.txtNumeroFactura.Size = new System.Drawing.Size(60, 26);
+            this.txtNumeroFactura.TabIndex = 100;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(122, 60);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(12, 18);
+            this.label12.TabIndex = 101;
+            this.label12.Text = "/";
             // 
             // frmFacturacion
             // 
@@ -459,6 +490,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(782, 562);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtNumeroFactura);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtSerie);
             this.Controls.Add(this.dtpFechaEntrada);
             this.Controls.Add(this.cbxCriterio);
             this.Controls.Add(this.label6);
@@ -473,7 +508,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.pbxLogo);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtRFC);
@@ -498,7 +532,6 @@
             this.Name = "frmFacturacion";
             this.Text = "Facturacion";
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
@@ -507,8 +540,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pbxLogo;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtRFC;
@@ -543,5 +574,9 @@
         private System.Windows.Forms.ComboBox cbxCriterio;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dtpFechaEntrada;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtSerie;
+        private System.Windows.Forms.TextBox txtNumeroFactura;
+        private System.Windows.Forms.Label label12;
     }
 }

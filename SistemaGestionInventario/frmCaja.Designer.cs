@@ -44,6 +44,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtHoraCierre = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnReporteCierreCaja = new System.Windows.Forms.Button();
             this.dtpFechaCierre = new System.Windows.Forms.DateTimePicker();
             this.txtTotalVentas = new System.Windows.Forms.TextBox();
@@ -54,8 +56,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.txtHoraCierre = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.gbxCaja.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -249,6 +249,25 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Detalles de cierre de caja";
             // 
+            // txtHoraCierre
+            // 
+            this.txtHoraCierre.Enabled = false;
+            this.txtHoraCierre.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoraCierre.Location = new System.Drawing.Point(159, 54);
+            this.txtHoraCierre.Name = "txtHoraCierre";
+            this.txtHoraCierre.Size = new System.Drawing.Size(142, 26);
+            this.txtHoraCierre.TabIndex = 12;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 18);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Hora cierre:";
+            // 
             // btnReporteCierreCaja
             // 
             this.btnReporteCierreCaja.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color4;
@@ -263,6 +282,7 @@
             this.btnReporteCierreCaja.Text = "Generar Reporte";
             this.btnReporteCierreCaja.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReporteCierreCaja.UseVisualStyleBackColor = true;
+            this.btnReporteCierreCaja.Click += new System.EventHandler(this.btnReporteCierreCaja_Click);
             // 
             // dtpFechaCierre
             // 
@@ -346,25 +366,6 @@
             this.lblTitulo.TabIndex = 5;
             this.lblTitulo.Text = "Caja";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtHoraCierre
-            // 
-            this.txtHoraCierre.Enabled = false;
-            this.txtHoraCierre.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoraCierre.Location = new System.Drawing.Point(159, 54);
-            this.txtHoraCierre.Name = "txtHoraCierre";
-            this.txtHoraCierre.Size = new System.Drawing.Size(142, 26);
-            this.txtHoraCierre.TabIndex = 12;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 18);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Hora cierre:";
             // 
             // frmCaja
             // 

@@ -28,7 +28,7 @@ namespace SistemaGestionInventario
             txtNombres.Enabled = true;
             txtApellidos.Enabled = true;
             txtEmpresa.Enabled = true;
-            txtDomicilio.Enabled = true;
+            txtCalle.Enabled = true;
             txtCiudad.Enabled = true;
             txtEstado.Enabled = true;
             txtCodigoPostal.Enabled = true;
@@ -44,7 +44,7 @@ namespace SistemaGestionInventario
             txtNombres.Enabled = false;
             txtApellidos.Enabled = false;
             txtEmpresa.Enabled = false;
-            txtDomicilio.Enabled = false;
+            txtCalle.Enabled = false;
             txtCiudad.Enabled = false;
             txtEstado.Enabled = false;
             txtCodigoPostal.Enabled = false;
@@ -60,7 +60,7 @@ namespace SistemaGestionInventario
             txtNombres.Text = "";
             txtApellidos.Text = "";
             txtEmpresa.Text = "";
-            txtDomicilio.Text = "";
+            txtCalle.Text = "";
             txtCiudad.Text = "";
             txtEstado.Text = "";
             txtCodigoPostal.Text = "";

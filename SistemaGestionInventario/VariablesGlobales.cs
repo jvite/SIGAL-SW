@@ -12,6 +12,8 @@ namespace SistemaGestionInventario
         public static float Caja = 0;
         public static float TotalVentas = 0;
         public static float TotalGastos = 0;
+        public static float Descuentos = 0;
+        public static float Impuestos = 0;
 
     }
 }

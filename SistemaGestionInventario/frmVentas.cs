@@ -16,5 +16,15 @@ namespace SistemaGestionInventario
         {
             InitializeComponent();
         }
+
+        private void btnPagar_Click(object sender, EventArgs e)
+        {
+            if (cbxFormaDePago.SelectedIndex == 1)
+            {
+                MessageBox.Show("Será redirigido a la sección de facturación.", "SIGAL SW", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frmFacturacion factura = new frmFacturacion();
+                factura.ShowDialog();
+            }
+        }
     }
 }

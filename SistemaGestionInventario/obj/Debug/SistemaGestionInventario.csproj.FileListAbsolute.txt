@@ -42,3 +42,5 @@ C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInvent
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmRegistroVentas.resources
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmGastos.resources
 C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmCaja.resources
+C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmConfiguracionGeneral.resources
+C:\Users\vite_\Documents\Tesis\SistemaDeGestionDeInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmReporte.resources

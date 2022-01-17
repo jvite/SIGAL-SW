@@ -26,7 +26,7 @@ namespace SistemaGestionInventario
             
         }
 
-        private void abrirForm(object formHija) //Metodo para abrir un formulario dentro de un panel
+        public void abrirForm(object formHija) //Metodo para abrir un formulario dentro de un panel
         {
             if (plContenedor.Controls.Count > 0) //Si hay mas de un control en en contenedor
             {
@@ -141,6 +141,11 @@ namespace SistemaGestionInventario
         private void rbtGastos_CheckedChanged(object sender, EventArgs e)
         {
             abrirForm(new frmGastos());
+        }
+
+        private void rbtConfiguracion_CheckedChanged(object sender, EventArgs e)
+        {
+            abrirForm(new frmConfiguracionGeneral());
         }
 
         private void rbtAcercaDe_CheckedChanged(object sender, EventArgs e)//ACERCA DE
@@ -278,6 +283,14 @@ namespace SistemaGestionInventario
         private void rbtCaja_MouseDown(object sender, MouseEventArgs e)
         {
             if (rbtCaja.Checked == false)
+            {
+                Advertencia();
+            }
+        }
+
+        private void rbtConfiguracion_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (rbtConfiguracion.Checked == false)
             {
                 Advertencia();
             }

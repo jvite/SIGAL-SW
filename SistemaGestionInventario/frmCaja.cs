@@ -29,5 +29,11 @@ namespace SistemaGestionInventario
                 lblEstadoCaja.Text = "Caja Aperturada";
             }
         }
+
+        private void btnReporteCierreCaja_Click(object sender, EventArgs e)
+        {
+            frmReporte reporte = new frmReporte();
+            reporte.Show();
+        }
     }
 }

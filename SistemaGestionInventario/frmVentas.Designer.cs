@@ -50,26 +50,26 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.lblCliente = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCliente = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnPagar = new System.Windows.Forms.Button();
             this.cbxFormaDePago = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbxCredito = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.cbxComprobante = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.gbxDatosVenta.SuspendLayout();
@@ -97,7 +97,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(9, 220);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(222, 252);
+            this.dataGridView1.Size = new System.Drawing.Size(222, 324);
             this.dataGridView1.TabIndex = 23;
             // 
             // txtBusqueda
@@ -125,7 +125,7 @@
             this.dataGridView2.Location = new System.Drawing.Point(8, 20);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(222, 242);
+            this.dataGridView2.Size = new System.Drawing.Size(222, 314);
             this.dataGridView2.TabIndex = 72;
             // 
             // gbxDatosVenta
@@ -320,52 +320,29 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.lblCliente);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtCliente);
-            this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(278, 65);
+            this.groupBox1.Location = new System.Drawing.Point(278, 45);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(492, 139);
+            this.groupBox1.Size = new System.Drawing.Size(492, 159);
             this.groupBox1.TabIndex = 77;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cliente";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(121, 107);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(52, 18);
-            this.label17.TabIndex = 101;
-            this.label17.Text = "000.00";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(109, 107);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(16, 18);
-            this.label18.TabIndex = 100;
-            this.label18.Text = "$";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(92, 83);
+            this.label15.Location = new System.Drawing.Point(92, 120);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(52, 18);
             this.label15.TabIndex = 99;
@@ -376,7 +353,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(80, 83);
+            this.label16.Location = new System.Drawing.Point(80, 120);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(16, 18);
             this.label16.TabIndex = 98;
@@ -388,7 +365,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(309, 25);
+            this.button3.Location = new System.Drawing.Point(309, 23);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(70, 26);
             this.button3.TabIndex = 97;
@@ -401,7 +378,7 @@
             this.lblCliente.AutoSize = true;
             this.lblCliente.BackColor = System.Drawing.Color.Transparent;
             this.lblCliente.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.Location = new System.Drawing.Point(78, 60);
+            this.lblCliente.Location = new System.Drawing.Point(78, 76);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(72, 18);
             this.lblCliente.TabIndex = 96;
@@ -411,39 +388,28 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 60);
+            this.label2.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(18, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 18);
+            this.label2.Size = new System.Drawing.Size(59, 18);
             this.label2.TabIndex = 95;
             this.label2.Text = "Cliente:";
             // 
             // txtCliente
             // 
-            this.txtCliente.Location = new System.Drawing.Point(21, 25);
+            this.txtCliente.Location = new System.Drawing.Point(21, 23);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(272, 26);
             this.txtCliente.TabIndex = 94;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(18, 107);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 18);
-            this.label14.TabIndex = 93;
-            this.label14.Text = "Ultimo Pago:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(18, 83);
+            this.label8.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(18, 120);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 18);
+            this.label8.Size = new System.Drawing.Size(54, 18);
             this.label8.TabIndex = 92;
             this.label8.Text = "Deuda:";
             // 
@@ -453,9 +419,9 @@
             this.groupBox2.Controls.Add(this.txtBusqueda);
             this.groupBox2.Controls.Add(this.cbxCriterio);
             this.groupBox2.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(3, 65);
+            this.groupBox2.Location = new System.Drawing.Point(4, 45);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(234, 485);
+            this.groupBox2.Size = new System.Drawing.Size(234, 505);
             this.groupBox2.TabIndex = 78;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Busqueda articulo";
@@ -476,10 +442,11 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Controls.Add(this.cbxComprobante);
+            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.btnPagar);
             this.groupBox3.Controls.Add(this.cbxFormaDePago);
             this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Controls.Add(this.cbxCredito);
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.gbxDatosVenta);
@@ -492,26 +459,27 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Venta";
             // 
-            // button4
+            // btnPagar
             // 
-            this.button4.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color4;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(246, 268);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 50);
-            this.button4.TabIndex = 100;
-            this.button4.Text = "Pagar";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnPagar.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color4;
+            this.btnPagar.FlatAppearance.BorderSize = 0;
+            this.btnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPagar.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPagar.Location = new System.Drawing.Point(304, 301);
+            this.btnPagar.Name = "btnPagar";
+            this.btnPagar.Size = new System.Drawing.Size(115, 33);
+            this.btnPagar.TabIndex = 100;
+            this.btnPagar.Text = "Pagar";
+            this.btnPagar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPagar.UseVisualStyleBackColor = true;
+            this.btnPagar.Click += new System.EventHandler(this.btnPagar_Click);
             // 
             // cbxFormaDePago
             // 
             this.cbxFormaDePago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxFormaDePago.FormattingEnabled = true;
             this.cbxFormaDePago.Items.AddRange(new object[] {
-            "Contado",
+            "Efectivo",
             "Tarjeta Credito/Debito"});
             this.cbxFormaDePago.Location = new System.Drawing.Point(246, 207);
             this.cbxFormaDePago.Name = "cbxFormaDePago";
@@ -528,16 +496,6 @@
             this.label1.Size = new System.Drawing.Size(104, 18);
             this.label1.TabIndex = 98;
             this.label1.Text = "Forma de pago:";
-            // 
-            // cbxCredito
-            // 
-            this.cbxCredito.AutoSize = true;
-            this.cbxCredito.Location = new System.Drawing.Point(246, 240);
-            this.cbxCredito.Name = "cbxCredito";
-            this.cbxCredito.Size = new System.Drawing.Size(118, 22);
-            this.cbxCredito.TabIndex = 77;
-            this.cbxCredito.Text = "Venta a credito";
-            this.cbxCredito.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -580,6 +538,51 @@
             this.btnAgregar.TabIndex = 73;
             this.btnAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAgregar.UseVisualStyleBackColor = true;
+            // 
+            // cbxComprobante
+            // 
+            this.cbxComprobante.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxComprobante.FormattingEnabled = true;
+            this.cbxComprobante.Items.AddRange(new object[] {
+            "Ticket",
+            "Factura"});
+            this.cbxComprobante.Location = new System.Drawing.Point(246, 262);
+            this.cbxComprobante.Name = "cbxComprobante";
+            this.cbxComprobante.Size = new System.Drawing.Size(157, 26);
+            this.cbxComprobante.TabIndex = 102;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(243, 241);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(97, 18);
+            this.label19.TabIndex = 101;
+            this.label19.Text = "Comprobante:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(123, 99);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(66, 18);
+            this.label20.TabIndex = 103;
+            this.label20.Text = "<codigo>";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(18, 99);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(105, 18);
+            this.label21.TabIndex = 102;
+            this.label21.Text = "Codigo cliente:";
             // 
             // frmVentas
             // 
@@ -643,18 +646,18 @@
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCliente;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnPagar;
         private System.Windows.Forms.ComboBox cbxFormaDePago;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox cbxCredito;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ComboBox cbxComprobante;
+        private System.Windows.Forms.Label label19;
     }
 }
