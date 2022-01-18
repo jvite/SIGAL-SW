@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcercaDe.Designer.cs">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCaja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -552,6 +558,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\money [#1182].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_plus [#1682].png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
