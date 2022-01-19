@@ -65,6 +65,8 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbxUbicacion = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -205,7 +207,7 @@
             this.lblEnExistencia.AutoSize = true;
             this.lblEnExistencia.BackColor = System.Drawing.Color.Transparent;
             this.lblEnExistencia.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnExistencia.Location = new System.Drawing.Point(307, 117);
+            this.lblEnExistencia.Location = new System.Drawing.Point(307, 118);
             this.lblEnExistencia.Name = "lblEnExistencia";
             this.lblEnExistencia.Size = new System.Drawing.Size(137, 19);
             this.lblEnExistencia.TabIndex = 23;
@@ -214,7 +216,7 @@
             // txtEnExistencia
             // 
             this.txtEnExistencia.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnExistencia.Location = new System.Drawing.Point(446, 112);
+            this.txtEnExistencia.Location = new System.Drawing.Point(446, 113);
             this.txtEnExistencia.Name = "txtEnExistencia";
             this.txtEnExistencia.Size = new System.Drawing.Size(127, 28);
             this.txtEnExistencia.TabIndex = 8;
@@ -224,7 +226,7 @@
             this.lblEstado.AutoSize = true;
             this.lblEstado.BackColor = System.Drawing.Color.Transparent;
             this.lblEstado.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(381, 179);
+            this.lblEstado.Location = new System.Drawing.Point(381, 212);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(60, 19);
             this.lblEstado.TabIndex = 24;
@@ -237,7 +239,7 @@
             this.cbxEstado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.cbxEstado.Location = new System.Drawing.Point(446, 174);
+            this.cbxEstado.Location = new System.Drawing.Point(446, 207);
             this.cbxEstado.Name = "cbxEstado";
             this.cbxEstado.Size = new System.Drawing.Size(144, 27);
             this.cbxEstado.TabIndex = 10;
@@ -247,7 +249,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(307, 148);
+            this.label4.Location = new System.Drawing.Point(307, 181);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(128, 19);
             this.label4.TabIndex = 27;
@@ -258,7 +260,7 @@
             this.dtpFechaEntrada.CalendarFont = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaEntrada.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaEntrada.Location = new System.Drawing.Point(446, 143);
+            this.dtpFechaEntrada.Location = new System.Drawing.Point(446, 176);
             this.dtpFechaEntrada.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpFechaEntrada.Name = "dtpFechaEntrada";
             this.dtpFechaEntrada.Size = new System.Drawing.Size(144, 27);
@@ -488,12 +490,37 @@
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(307, 149);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 19);
+            this.label3.TabIndex = 63;
+            this.label3.Text = "Ubicación:";
+            // 
+            // cbxUbicacion
+            // 
+            this.cbxUbicacion.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxUbicacion.FormattingEnabled = true;
+            this.cbxUbicacion.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.cbxUbicacion.Location = new System.Drawing.Point(446, 145);
+            this.cbxUbicacion.Name = "cbxUbicacion";
+            this.cbxUbicacion.Size = new System.Drawing.Size(144, 27);
+            this.cbxUbicacion.TabIndex = 64;
+            // 
             // frmAlmacen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(782, 562);
+            this.Controls.Add(this.cbxUbicacion);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.cbxProveedor);
@@ -579,5 +606,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox cbxProveedor;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cbxUbicacion;
     }
 }
