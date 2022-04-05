@@ -36,6 +36,7 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.plMenuContactos = new System.Windows.Forms.Panel();
             this.plMenuLateral = new System.Windows.Forms.Panel();
+            this.rbtConfiguracion = new System.Windows.Forms.RadioButton();
             this.rbtGastos = new System.Windows.Forms.RadioButton();
             this.rbtRegistroVentas = new System.Windows.Forms.RadioButton();
             this.rbtRegistro = new System.Windows.Forms.RadioButton();
@@ -53,13 +54,12 @@
             this.pbxSeparador4 = new System.Windows.Forms.PictureBox();
             this.pbxSeparador3 = new System.Windows.Forms.PictureBox();
             this.pbxSeparador2 = new System.Windows.Forms.PictureBox();
-            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.pbxImagenPerfil = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblCajaDisponible = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.rbtConfiguracion = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSIGALSW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.plMenuLateral.SuspendLayout();
@@ -74,9 +74,9 @@
             // plContenedor
             // 
             this.plContenedor.BackColor = System.Drawing.Color.Transparent;
-            this.plContenedor.Location = new System.Drawing.Point(199, 147);
+            this.plContenedor.Location = new System.Drawing.Point(199, 108);
             this.plContenedor.Name = "plContenedor";
-            this.plContenedor.Size = new System.Drawing.Size(782, 562);
+            this.plContenedor.Size = new System.Drawing.Size(818, 582);
             this.plContenedor.TabIndex = 4;
             // 
             // pbxSIGALSW
@@ -84,7 +84,7 @@
             this.pbxSIGALSW.BackColor = System.Drawing.Color.Transparent;
             this.pbxSIGALSW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxSIGALSW.Image = global::SistemaGestionInventario.Properties.Resources.SIGAL_SW_LOGO_WHITE_fw;
-            this.pbxSIGALSW.Location = new System.Drawing.Point(498, 0);
+            this.pbxSIGALSW.Location = new System.Drawing.Point(514, 0);
             this.pbxSIGALSW.Name = "pbxSIGALSW";
             this.pbxSIGALSW.Size = new System.Drawing.Size(218, 68);
             this.pbxSIGALSW.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -95,7 +95,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::SistemaGestionInventario.Properties.Resources.linea;
-            this.pictureBox3.Location = new System.Drawing.Point(200, 121);
+            this.pictureBox3.Location = new System.Drawing.Point(200, 82);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(782, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -128,7 +128,7 @@
             this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Image = global::SistemaGestionInventario.Properties.Resources.shut_down___1431_;
-            this.btnCerrar.Location = new System.Drawing.Point(930, 0);
+            this.btnCerrar.Location = new System.Drawing.Point(967, 0);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(50, 51);
             this.btnCerrar.TabIndex = 12;
@@ -138,9 +138,9 @@
             // plMenuContactos
             // 
             this.plMenuContactos.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.Primary_Dark;
-            this.plMenuContactos.Location = new System.Drawing.Point(986, 0);
+            this.plMenuContactos.Location = new System.Drawing.Point(1023, 0);
             this.plMenuContactos.Name = "plMenuContactos";
-            this.plMenuContactos.Size = new System.Drawing.Size(39, 716);
+            this.plMenuContactos.Size = new System.Drawing.Size(39, 742);
             this.plMenuContactos.TabIndex = 1;
             // 
             // plMenuLateral
@@ -164,12 +164,36 @@
             this.plMenuLateral.Controls.Add(this.pbxSeparador4);
             this.plMenuLateral.Controls.Add(this.pbxSeparador3);
             this.plMenuLateral.Controls.Add(this.pbxSeparador2);
-            this.plMenuLateral.Controls.Add(this.lblNombre);
+            this.plMenuLateral.Controls.Add(this.lblUsuario);
             this.plMenuLateral.Controls.Add(this.pbxImagenPerfil);
             this.plMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.plMenuLateral.Name = "plMenuLateral";
-            this.plMenuLateral.Size = new System.Drawing.Size(191, 716);
+            this.plMenuLateral.Size = new System.Drawing.Size(191, 706);
             this.plMenuLateral.TabIndex = 0;
+            // 
+            // rbtConfiguracion
+            // 
+            this.rbtConfiguracion.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtConfiguracion.BackColor = System.Drawing.Color.Transparent;
+            this.rbtConfiguracion.FlatAppearance.BorderSize = 0;
+            this.rbtConfiguracion.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtConfiguracion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
+            this.rbtConfiguracion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
+            this.rbtConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtConfiguracion.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtConfiguracion.ForeColor = System.Drawing.Color.White;
+            this.rbtConfiguracion.Image = global::SistemaGestionInventario.Properties.Resources.star___1260_1;
+            this.rbtConfiguracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtConfiguracion.Location = new System.Drawing.Point(0, 623);
+            this.rbtConfiguracion.Name = "rbtConfiguracion";
+            this.rbtConfiguracion.Size = new System.Drawing.Size(191, 29);
+            this.rbtConfiguracion.TabIndex = 17;
+            this.rbtConfiguracion.Text = "Configuración";
+            this.rbtConfiguracion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rbtConfiguracion.UseVisualStyleBackColor = false;
+            this.rbtConfiguracion.CheckedChanged += new System.EventHandler(this.rbtConfiguracion_CheckedChanged);
+            this.rbtConfiguracion.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtConfiguracion_MouseDown);
             // 
             // rbtGastos
             // 
@@ -528,17 +552,17 @@
             this.pbxSeparador2.TabIndex = 4;
             this.pbxSeparador2.TabStop = false;
             // 
-            // lblNombre
+            // lblUsuario
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
-            this.lblNombre.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(42, 116);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(111, 23);
-            this.lblNombre.TabIndex = 1;
-            this.lblNombre.Text = "<<usuario>>";
+            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsuario.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.White;
+            this.lblUsuario.Location = new System.Drawing.Point(0, 116);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(192, 23);
+            this.lblUsuario.TabIndex = 1;
+            this.lblUsuario.Text = "<<usuario>>";
+            this.lblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbxImagenPerfil
             // 
@@ -594,37 +618,13 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Disponible en caja:";
             // 
-            // rbtConfiguracion
-            // 
-            this.rbtConfiguracion.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbtConfiguracion.BackColor = System.Drawing.Color.Transparent;
-            this.rbtConfiguracion.FlatAppearance.BorderSize = 0;
-            this.rbtConfiguracion.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
-            this.rbtConfiguracion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
-            this.rbtConfiguracion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
-            this.rbtConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtConfiguracion.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtConfiguracion.ForeColor = System.Drawing.Color.White;
-            this.rbtConfiguracion.Image = global::SistemaGestionInventario.Properties.Resources.star___1260_1;
-            this.rbtConfiguracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rbtConfiguracion.Location = new System.Drawing.Point(0, 623);
-            this.rbtConfiguracion.Name = "rbtConfiguracion";
-            this.rbtConfiguracion.Size = new System.Drawing.Size(191, 29);
-            this.rbtConfiguracion.TabIndex = 17;
-            this.rbtConfiguracion.Text = "Configuración";
-            this.rbtConfiguracion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbtConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rbtConfiguracion.UseVisualStyleBackColor = false;
-            this.rbtConfiguracion.CheckedChanged += new System.EventHandler(this.rbtConfiguracion_CheckedChanged);
-            this.rbtConfiguracion.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rbtConfiguracion_MouseDown);
-            // 
             // frmAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.Primary;
-            this.ClientSize = new System.Drawing.Size(1025, 716);
+            this.ClientSize = new System.Drawing.Size(1062, 700);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox3);
@@ -641,7 +641,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxSIGALSW)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.plMenuLateral.ResumeLayout(false);
-            this.plMenuLateral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador3)).EndInit();
@@ -656,7 +655,7 @@
         #endregion
 
         private System.Windows.Forms.Panel plMenuLateral;
-        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.PictureBox pbxImagenPerfil;
         private System.Windows.Forms.PictureBox pbxSeparador2;
         private System.Windows.Forms.PictureBox pbxSeparador3;

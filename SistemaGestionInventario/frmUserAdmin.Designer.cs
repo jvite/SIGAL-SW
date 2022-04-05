@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUserAdmin));
-            this.lblID = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.dgvTabla = new System.Windows.Forms.DataGridView();
             this.cbxCriterio = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -73,39 +71,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblID
-            // 
-            this.lblID.AutoSize = true;
-            this.lblID.BackColor = System.Drawing.Color.Transparent;
-            this.lblID.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(9, 39);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(26, 18);
-            this.lblID.TabIndex = 29;
-            this.lblID.Text = "ID:";
-            // 
-            // txtID
-            // 
-            this.txtID.Enabled = false;
-            this.txtID.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(95, 39);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(61, 26);
-            this.txtID.TabIndex = 28;
-            // 
             // dgvTabla
             // 
             this.dgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTabla.Location = new System.Drawing.Point(12, 337);
+            this.dgvTabla.Location = new System.Drawing.Point(13, 355);
             this.dgvTabla.Name = "dgvTabla";
-            this.dgvTabla.Size = new System.Drawing.Size(756, 215);
+            this.dgvTabla.Size = new System.Drawing.Size(794, 215);
             this.dgvTabla.TabIndex = 26;
             // 
             // cbxCriterio
             // 
             this.cbxCriterio.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxCriterio.FormattingEnabled = true;
-            this.cbxCriterio.Location = new System.Drawing.Point(490, 304);
+            this.cbxCriterio.Location = new System.Drawing.Point(490, 323);
             this.cbxCriterio.Name = "cbxCriterio";
             this.cbxCriterio.Size = new System.Drawing.Size(121, 26);
             this.cbxCriterio.TabIndex = 24;
@@ -115,7 +93,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(427, 309);
+            this.label2.Location = new System.Drawing.Point(427, 328);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 18);
             this.label2.TabIndex = 23;
@@ -126,7 +104,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 308);
+            this.label1.Location = new System.Drawing.Point(16, 327);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 18);
             this.label1.TabIndex = 22;
@@ -135,7 +113,7 @@
             // txtBusqueda
             // 
             this.txtBusqueda.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusqueda.Location = new System.Drawing.Point(99, 305);
+            this.txtBusqueda.Location = new System.Drawing.Point(99, 324);
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(287, 26);
             this.txtBusqueda.TabIndex = 21;
@@ -156,7 +134,7 @@
             this.lblApellidos.AutoSize = true;
             this.lblApellidos.BackColor = System.Drawing.Color.Transparent;
             this.lblApellidos.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellidos.Location = new System.Drawing.Point(10, 100);
+            this.lblApellidos.Location = new System.Drawing.Point(10, 82);
             this.lblApellidos.Name = "lblApellidos";
             this.lblApellidos.Size = new System.Drawing.Size(68, 18);
             this.lblApellidos.TabIndex = 31;
@@ -165,9 +143,9 @@
             // txtApellidos
             // 
             this.txtApellidos.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidos.Location = new System.Drawing.Point(95, 97);
+            this.txtApellidos.Location = new System.Drawing.Point(95, 79);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(145, 26);
+            this.txtApellidos.Size = new System.Drawing.Size(186, 26);
             this.txtApellidos.TabIndex = 30;
             this.txtApellidos.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
@@ -176,7 +154,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(9, 72);
+            this.lblNombre.Location = new System.Drawing.Point(9, 51);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(78, 18);
             this.lblNombre.TabIndex = 33;
@@ -185,9 +163,9 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(95, 68);
+            this.txtNombre.Location = new System.Drawing.Point(95, 47);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(145, 26);
+            this.txtNombre.Size = new System.Drawing.Size(186, 26);
             this.txtNombre.TabIndex = 32;
             this.txtNombre.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
@@ -196,7 +174,7 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblUsuario.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(7, 216);
+            this.lblUsuario.Location = new System.Drawing.Point(7, 210);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(59, 18);
             this.lblUsuario.TabIndex = 35;
@@ -205,9 +183,9 @@
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(95, 213);
+            this.txtUsuario.Location = new System.Drawing.Point(95, 207);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(145, 26);
+            this.txtUsuario.Size = new System.Drawing.Size(186, 26);
             this.txtUsuario.TabIndex = 34;
             this.txtUsuario.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
@@ -216,7 +194,7 @@
             this.lblContrasena.AutoSize = true;
             this.lblContrasena.BackColor = System.Drawing.Color.Transparent;
             this.lblContrasena.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContrasena.Location = new System.Drawing.Point(7, 246);
+            this.lblContrasena.Location = new System.Drawing.Point(7, 243);
             this.lblContrasena.Name = "lblContrasena";
             this.lblContrasena.Size = new System.Drawing.Size(82, 18);
             this.lblContrasena.TabIndex = 37;
@@ -225,9 +203,9 @@
             // txtContrasena
             // 
             this.txtContrasena.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContrasena.Location = new System.Drawing.Point(95, 242);
+            this.txtContrasena.Location = new System.Drawing.Point(95, 239);
             this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.Size = new System.Drawing.Size(145, 26);
+            this.txtContrasena.Size = new System.Drawing.Size(186, 26);
             this.txtContrasena.TabIndex = 36;
             this.txtContrasena.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
@@ -236,7 +214,7 @@
             this.lblRol.AutoSize = true;
             this.lblRol.BackColor = System.Drawing.Color.Transparent;
             this.lblRol.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRol.Location = new System.Drawing.Point(310, 50);
+            this.lblRol.Location = new System.Drawing.Point(402, 50);
             this.lblRol.Name = "lblRol";
             this.lblRol.Size = new System.Drawing.Size(32, 18);
             this.lblRol.TabIndex = 39;
@@ -247,7 +225,7 @@
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.BackColor = System.Drawing.Color.Transparent;
             this.lblCorreo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorreo.Location = new System.Drawing.Point(9, 159);
+            this.lblCorreo.Location = new System.Drawing.Point(9, 147);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(54, 18);
             this.lblCorreo.TabIndex = 42;
@@ -256,9 +234,9 @@
             // txtCorreo
             // 
             this.txtCorreo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.Location = new System.Drawing.Point(95, 155);
+            this.txtCorreo.Location = new System.Drawing.Point(95, 143);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(145, 26);
+            this.txtCorreo.Size = new System.Drawing.Size(186, 26);
             this.txtCorreo.TabIndex = 41;
             this.txtCorreo.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
@@ -267,7 +245,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 188);
+            this.label3.Location = new System.Drawing.Point(9, 179);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 18);
             this.label3.TabIndex = 44;
@@ -276,9 +254,9 @@
             // txtTelefono
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(95, 184);
+            this.txtTelefono.Location = new System.Drawing.Point(95, 175);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(145, 26);
+            this.txtTelefono.Size = new System.Drawing.Size(186, 26);
             this.txtTelefono.TabIndex = 43;
             this.txtTelefono.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
@@ -292,9 +270,9 @@
             "Seleccionar...",
             "Administrador",
             "Empleado"});
-            this.cbxRol.Location = new System.Drawing.Point(363, 47);
+            this.cbxRol.Location = new System.Drawing.Point(455, 47);
             this.cbxRol.Name = "cbxRol";
-            this.cbxRol.Size = new System.Drawing.Size(142, 26);
+            this.cbxRol.Size = new System.Drawing.Size(156, 26);
             this.cbxRol.TabIndex = 47;
             this.cbxRol.SelectedIndexChanged += new System.EventHandler(this.CamposModificados);
             // 
@@ -303,7 +281,7 @@
             this.lblSexo.AutoSize = true;
             this.lblSexo.BackColor = System.Drawing.Color.Transparent;
             this.lblSexo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSexo.Location = new System.Drawing.Point(9, 130);
+            this.lblSexo.Location = new System.Drawing.Point(9, 115);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(42, 18);
             this.lblSexo.TabIndex = 49;
@@ -318,7 +296,7 @@
             "Seleccionar...",
             "Masculino",
             "Femenino"});
-            this.cbxSexo.Location = new System.Drawing.Point(95, 126);
+            this.cbxSexo.Location = new System.Drawing.Point(95, 111);
             this.cbxSexo.Name = "cbxSexo";
             this.cbxSexo.Size = new System.Drawing.Size(145, 26);
             this.cbxSexo.TabIndex = 50;
@@ -327,7 +305,7 @@
             // 
             this.lblInformacion.BackColor = System.Drawing.Color.Transparent;
             this.lblInformacion.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInformacion.Location = new System.Drawing.Point(308, 220);
+            this.lblInformacion.Location = new System.Drawing.Point(346, 214);
             this.lblInformacion.Name = "lblInformacion";
             this.lblInformacion.Size = new System.Drawing.Size(332, 49);
             this.lblInformacion.TabIndex = 56;
@@ -339,7 +317,7 @@
             // 
             this.lblInfo.BackColor = System.Drawing.Color.Transparent;
             this.lblInfo.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfo.Location = new System.Drawing.Point(308, 170);
+            this.lblInfo.Location = new System.Drawing.Point(346, 164);
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(332, 49);
             this.lblInfo.TabIndex = 57;
@@ -357,9 +335,9 @@
             "Seleccionar...",
             "Activo",
             "Inactivo"});
-            this.cbxEstatus.Location = new System.Drawing.Point(364, 76);
+            this.cbxEstatus.Location = new System.Drawing.Point(455, 79);
             this.cbxEstatus.Name = "cbxEstatus";
-            this.cbxEstatus.Size = new System.Drawing.Size(141, 26);
+            this.cbxEstatus.Size = new System.Drawing.Size(156, 26);
             this.cbxEstatus.TabIndex = 59;
             // 
             // lblEstatus
@@ -367,7 +345,7 @@
             this.lblEstatus.AutoSize = true;
             this.lblEstatus.BackColor = System.Drawing.Color.Transparent;
             this.lblEstatus.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstatus.Location = new System.Drawing.Point(310, 80);
+            this.lblEstatus.Location = new System.Drawing.Point(401, 83);
             this.lblEstatus.Name = "lblEstatus";
             this.lblEstatus.Size = new System.Drawing.Size(57, 18);
             this.lblEstatus.TabIndex = 58;
@@ -380,7 +358,7 @@
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLimpiar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.Image = global::SistemaGestionInventario.Properties.Resources.file___1699_;
-            this.btnLimpiar.Location = new System.Drawing.Point(657, 230);
+            this.btnLimpiar.Location = new System.Drawing.Point(695, 228);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(111, 33);
             this.btnLimpiar.TabIndex = 60;
@@ -396,7 +374,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = global::SistemaGestionInventario.Properties.Resources.close___1511_1;
-            this.btnCancelar.Location = new System.Drawing.Point(657, 156);
+            this.btnCancelar.Location = new System.Drawing.Point(695, 154);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(111, 33);
             this.btnCancelar.TabIndex = 55;
@@ -408,7 +386,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(263, 39);
+            this.pictureBox1.Location = new System.Drawing.Point(306, 39);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 232);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -422,7 +400,7 @@
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEditar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Image = global::SistemaGestionInventario.Properties.Resources.edit___1483_1;
-            this.btnEditar.Location = new System.Drawing.Point(657, 45);
+            this.btnEditar.Location = new System.Drawing.Point(695, 43);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(111, 33);
             this.btnEditar.TabIndex = 46;
@@ -438,14 +416,14 @@
             this.btnReestablecerContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReestablecerContrasena.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReestablecerContrasena.Image = global::SistemaGestionInventario.Properties.Resources.lock_open_round___708_1;
-            this.btnReestablecerContrasena.Location = new System.Drawing.Point(364, 115);
+            this.btnReestablecerContrasena.Location = new System.Drawing.Point(418, 118);
             this.btnReestablecerContrasena.Name = "btnReestablecerContrasena";
             this.btnReestablecerContrasena.Size = new System.Drawing.Size(184, 33);
             this.btnReestablecerContrasena.TabIndex = 45;
             this.btnReestablecerContrasena.Text = "Reestablecer contraseña";
             this.btnReestablecerContrasena.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReestablecerContrasena.UseVisualStyleBackColor = true;
-            this.btnReestablecerContrasena.Click += new System.EventHandler(this.button1_Click);
+            this.btnReestablecerContrasena.Click += new System.EventHandler(this.btnReestablecerContrasena_Click);
             // 
             // btnBuscar
             // 
@@ -453,7 +431,7 @@
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscar.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(661, 303);
+            this.btnBuscar.Location = new System.Drawing.Point(695, 322);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(107, 26);
             this.btnBuscar.TabIndex = 25;
@@ -468,13 +446,14 @@
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnActualizar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.Image = global::SistemaGestionInventario.Properties.Resources.arrow_repeat___235_;
-            this.btnActualizar.Location = new System.Drawing.Point(657, 193);
+            this.btnActualizar.Location = new System.Drawing.Point(695, 191);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(111, 33);
             this.btnActualizar.TabIndex = 19;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnGuardar
             // 
@@ -483,7 +462,7 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = global::SistemaGestionInventario.Properties.Resources.save_item___1409_;
-            this.btnGuardar.Location = new System.Drawing.Point(657, 82);
+            this.btnGuardar.Location = new System.Drawing.Point(695, 80);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(111, 33);
             this.btnGuardar.TabIndex = 18;
@@ -499,7 +478,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Image = global::SistemaGestionInventario.Properties.Resources.delete___1487_1;
-            this.btnEliminar.Location = new System.Drawing.Point(657, 119);
+            this.btnEliminar.Location = new System.Drawing.Point(695, 117);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(111, 33);
             this.btnEliminar.TabIndex = 17;
@@ -515,7 +494,7 @@
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNuevo.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Image = global::SistemaGestionInventario.Properties.Resources.plus_circle___1425_1;
-            this.btnNuevo.Location = new System.Drawing.Point(657, 8);
+            this.btnNuevo.Location = new System.Drawing.Point(695, 6);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnNuevo.Size = new System.Drawing.Size(111, 33);
@@ -529,9 +508,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::SistemaGestionInventario.Properties.Resources.linea;
-            this.pictureBox3.Location = new System.Drawing.Point(-1, 272);
+            this.pictureBox3.Location = new System.Drawing.Point(-1, 291);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(784, 25);
+            this.pictureBox3.Size = new System.Drawing.Size(819, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 27;
             this.pictureBox3.TabStop = false;
@@ -541,7 +520,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
-            this.ClientSize = new System.Drawing.Size(782, 562);
+            this.ClientSize = new System.Drawing.Size(818, 582);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.cbxEstatus);
             this.Controls.Add(this.lblEstatus);
@@ -567,8 +546,6 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblApellidos);
             this.Controls.Add(this.txtApellidos);
-            this.Controls.Add(this.lblID);
-            this.Controls.Add(this.txtID);
             this.Controls.Add(this.dgvTabla);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.cbxCriterio);
@@ -593,9 +570,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblID;
-        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.DataGridView dgvTabla;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.ComboBox cbxCriterio;

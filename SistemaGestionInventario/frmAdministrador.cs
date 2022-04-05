@@ -18,6 +18,7 @@ namespace SistemaGestionInventario
         {
             InitializeComponent();
             VariablesGlobales.EstadoSesion = true;
+            lblUsuario.Text = VariablesGlobales.usuario;
             abrirForm(new frmDashboard());
         }
 

@@ -50,6 +50,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -60,16 +62,14 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cbxComprobante = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.btnPagar = new System.Windows.Forms.Button();
             this.cbxFormaDePago = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.cbxComprobante = new System.Windows.Forms.ComboBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.gbxDatosVenta.SuspendLayout();
@@ -94,10 +94,10 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 220);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 230);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(222, 324);
+            this.dataGridView1.Size = new System.Drawing.Size(262, 314);
             this.dataGridView1.TabIndex = 23;
             // 
             // txtBusqueda
@@ -105,7 +105,7 @@
             this.txtBusqueda.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBusqueda.Location = new System.Drawing.Point(6, 60);
             this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(146, 26);
+            this.txtBusqueda.Size = new System.Drawing.Size(172, 26);
             this.txtBusqueda.TabIndex = 68;
             // 
             // cbxCriterio
@@ -114,7 +114,7 @@
             this.cbxCriterio.FormattingEnabled = true;
             this.cbxCriterio.Location = new System.Drawing.Point(6, 99);
             this.cbxCriterio.Name = "cbxCriterio";
-            this.cbxCriterio.Size = new System.Drawing.Size(146, 26);
+            this.cbxCriterio.Size = new System.Drawing.Size(172, 26);
             this.cbxCriterio.TabIndex = 71;
             // 
             // dataGridView2
@@ -330,12 +330,34 @@
             this.groupBox1.Controls.Add(this.txtCliente);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(278, 45);
+            this.groupBox1.Location = new System.Drawing.Point(322, 45);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(492, 159);
             this.groupBox1.TabIndex = 77;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cliente";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(123, 99);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(66, 18);
+            this.label20.TabIndex = 103;
+            this.label20.Text = "<codigo>";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(18, 99);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(105, 18);
+            this.label21.TabIndex = 102;
+            this.label21.Text = "Codigo cliente:";
             // 
             // label15
             // 
@@ -421,7 +443,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(4, 45);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(234, 505);
+            this.groupBox2.Size = new System.Drawing.Size(276, 525);
             this.groupBox2.TabIndex = 78;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Busqueda articulo";
@@ -432,7 +454,7 @@
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscar.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(158, 60);
+            this.btnBuscar.Location = new System.Drawing.Point(200, 60);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(70, 26);
             this.btnBuscar.TabIndex = 70;
@@ -452,12 +474,35 @@
             this.groupBox3.Controls.Add(this.gbxDatosVenta);
             this.groupBox3.Controls.Add(this.dataGridView2);
             this.groupBox3.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(278, 210);
+            this.groupBox3.Location = new System.Drawing.Point(322, 210);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(492, 340);
+            this.groupBox3.Size = new System.Drawing.Size(492, 360);
             this.groupBox3.TabIndex = 79;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Venta";
+            // 
+            // cbxComprobante
+            // 
+            this.cbxComprobante.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxComprobante.FormattingEnabled = true;
+            this.cbxComprobante.Items.AddRange(new object[] {
+            "Ticket",
+            "Factura"});
+            this.cbxComprobante.Location = new System.Drawing.Point(246, 262);
+            this.cbxComprobante.Name = "cbxComprobante";
+            this.cbxComprobante.Size = new System.Drawing.Size(157, 26);
+            this.cbxComprobante.TabIndex = 102;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(243, 241);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(97, 18);
+            this.label19.TabIndex = 101;
+            this.label19.Text = "Comprobante:";
             // 
             // btnPagar
             // 
@@ -532,64 +577,19 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgregar.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Image = global::SistemaGestionInventario.Properties.Resources.arrow_right___333_1;
-            this.btnAgregar.Location = new System.Drawing.Point(242, 321);
+            this.btnAgregar.Location = new System.Drawing.Point(286, 321);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(32, 50);
             this.btnAgregar.TabIndex = 73;
             this.btnAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // cbxComprobante
-            // 
-            this.cbxComprobante.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxComprobante.FormattingEnabled = true;
-            this.cbxComprobante.Items.AddRange(new object[] {
-            "Ticket",
-            "Factura"});
-            this.cbxComprobante.Location = new System.Drawing.Point(246, 262);
-            this.cbxComprobante.Name = "cbxComprobante";
-            this.cbxComprobante.Size = new System.Drawing.Size(157, 26);
-            this.cbxComprobante.TabIndex = 102;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(243, 241);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(97, 18);
-            this.label19.TabIndex = 101;
-            this.label19.Text = "Comprobante:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(123, 99);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(66, 18);
-            this.label20.TabIndex = 103;
-            this.label20.Text = "<codigo>";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(18, 99);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(105, 18);
-            this.label21.TabIndex = 102;
-            this.label21.Text = "Codigo cliente:";
-            // 
             // frmVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
-            this.ClientSize = new System.Drawing.Size(782, 562);
+            this.ClientSize = new System.Drawing.Size(818, 582);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dataGridView1);

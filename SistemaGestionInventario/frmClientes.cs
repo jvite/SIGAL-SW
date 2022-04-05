@@ -16,6 +16,7 @@ namespace SistemaGestionInventario
         {
             InitializeComponent();
             deshabilitarCajasDeTexto();
+            cbxEstatus.Enabled = false;
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
             btnLimpiar.Enabled = false;
@@ -27,9 +28,12 @@ namespace SistemaGestionInventario
         {
             txtNombres.Enabled = true;
             txtApellidos.Enabled = true;
-            txtEmpresa.Enabled = true;
+            txtRazonSocial.Enabled = true;
             txtCalle.Enabled = true;
-            txtCiudad.Enabled = true;
+            txtNumeroInterior.Enabled = true;
+            txtNumeroExterior.Enabled = true;
+            txtColonia.Enabled = true;
+            txtMunicipio.Enabled = true;
             txtEstado.Enabled = true;
             txtCodigoPostal.Enabled = true;
             txtTelefono.Enabled = true;
@@ -43,9 +47,9 @@ namespace SistemaGestionInventario
         {
             txtNombres.Enabled = false;
             txtApellidos.Enabled = false;
-            txtEmpresa.Enabled = false;
+            txtRazonSocial.Enabled = false;
             txtCalle.Enabled = false;
-            txtCiudad.Enabled = false;
+            txtMunicipio.Enabled = false;
             txtEstado.Enabled = false;
             txtCodigoPostal.Enabled = false;
             txtTelefono.Enabled = false;
@@ -59,9 +63,9 @@ namespace SistemaGestionInventario
         {
             txtNombres.Text = "";
             txtApellidos.Text = "";
-            txtEmpresa.Text = "";
+            txtRazonSocial.Text = "";
             txtCalle.Text = "";
-            txtCiudad.Text = "";
+            txtMunicipio.Text = "";
             txtEstado.Text = "";
             txtCodigoPostal.Text = "";
             txtTelefono.Text = "";
@@ -71,17 +75,30 @@ namespace SistemaGestionInventario
             txtRFC.Text = "";
         }
 
+        private void CamposModificados(object sender, EventArgs e)
+        {
+            if (VariablesGlobales.ModificacionesRealizadas == false)
+            {
+                VariablesGlobales.ModificacionesRealizadas = true;
+            }
+        }
+
+        //////////////////////////////////////////////////////////////////////////////
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             habilitarCajasDeTexto();
+            limpiarFormulario();
 
+            btnNuevo.Enabled = false;
             btnActualizar.Enabled = false;
             btnEditar.Enabled = false;
-            btnNuevo.Enabled = false;
             btnGuardar.Enabled = true;
+            btnEliminar.Enabled = false;
             btnCancelar.Enabled = true;
             btnLimpiar.Enabled = true;
             btnBuscar.Enabled = false;
+
+            dgvTabla.Enabled = false;
 
             VariablesGlobales.ModificacionEnCurso = true;
         }
@@ -95,9 +112,11 @@ namespace SistemaGestionInventario
             btnActualizar.Enabled = false;
             btnGuardar.Enabled = true;
             btnCancelar.Enabled = true;
-            btnLimpiar.Enabled = true;
+            btnLimpiar.Enabled = false;
             btnEliminar.Enabled = false;
             btnBuscar.Enabled = false;
+
+            dgvTabla.Enabled = false;
 
             VariablesGlobales.ModificacionEnCurso = true;
         }
@@ -107,12 +126,15 @@ namespace SistemaGestionInventario
             deshabilitarCajasDeTexto();
 
             btnGuardar.Enabled = false;
-            btnEditar.Enabled = true;
-            btnActualizar.Enabled = true;
             btnNuevo.Enabled = true;
+            btnEditar.Enabled = true;
+            btnEliminar.Enabled = true;
             btnCancelar.Enabled = false;
+            btnActualizar.Enabled = true;
             btnLimpiar.Enabled = false;
             btnBuscar.Enabled = true;
+
+            dgvTabla.Enabled = true;
 
             VariablesGlobales.ModificacionesRealizadas = false;
             VariablesGlobales.ModificacionEnCurso = false;
@@ -131,40 +153,31 @@ namespace SistemaGestionInventario
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            limpiarFormulario();
             deshabilitarCajasDeTexto();
 
+            btnCancelar.Enabled = false;
             btnGuardar.Enabled = false;
             btnNuevo.Enabled = true;
             btnEditar.Enabled = true;
             btnEliminar.Enabled = true;
-            btnCancelar.Enabled = false;
             btnActualizar.Enabled = true;
             btnLimpiar.Enabled = false;
             btnBuscar.Enabled = true;
+
+            dgvTabla.Enabled = true;
 
             VariablesGlobales.ModificacionEnCurso = false;
             VariablesGlobales.ModificacionesRealizadas = false;
         }
 
-        private void btnActualizar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             limpiarFormulario();
-            VariablesGlobales.ModificacionEnCurso = true;
-            VariablesGlobales.ModificacionesRealizadas = true;
         }
 
-        private void CamposModificados(object sender, EventArgs e)
+        private void btnActualizar_Click(object sender, EventArgs e)
         {
-            if (VariablesGlobales.ModificacionesRealizadas == false)
-            {
-                VariablesGlobales.ModificacionesRealizadas = true;
-            }
+
         }
     }
 }

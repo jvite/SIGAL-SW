@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.lblConceptoGasto = new System.Windows.Forms.Label();
-            this.lblID = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.dgvTabla = new System.Windows.Forms.DataGridView();
             this.lblDescripcion = new System.Windows.Forms.Label();
@@ -57,42 +55,22 @@
             this.lblConceptoGasto.AutoSize = true;
             this.lblConceptoGasto.BackColor = System.Drawing.Color.Transparent;
             this.lblConceptoGasto.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConceptoGasto.Location = new System.Drawing.Point(12, 97);
+            this.lblConceptoGasto.Location = new System.Drawing.Point(24, 93);
             this.lblConceptoGasto.Name = "lblConceptoGasto";
             this.lblConceptoGasto.Size = new System.Drawing.Size(130, 18);
             this.lblConceptoGasto.TabIndex = 21;
             this.lblConceptoGasto.Text = "Concepto del gasto:";
             // 
-            // lblID
-            // 
-            this.lblID.AutoSize = true;
-            this.lblID.BackColor = System.Drawing.Color.Transparent;
-            this.lblID.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(12, 65);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(26, 18);
-            this.lblID.TabIndex = 19;
-            this.lblID.Text = "ID:";
-            // 
-            // txtID
-            // 
-            this.txtID.Enabled = false;
-            this.txtID.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(148, 62);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(65, 26);
-            this.txtID.TabIndex = 18;
-            // 
             // lblTitulo
             // 
-            this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(332, 9);
+            this.lblTitulo.Location = new System.Drawing.Point(0, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(91, 33);
+            this.lblTitulo.Size = new System.Drawing.Size(818, 33);
             this.lblTitulo.TabIndex = 22;
             this.lblTitulo.Text = "Gastos";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dgvTabla
             // 
@@ -108,7 +86,7 @@
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.BackColor = System.Drawing.Color.Transparent;
             this.lblDescripcion.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(12, 129);
+            this.lblDescripcion.Location = new System.Drawing.Point(24, 125);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(84, 18);
             this.lblDescripcion.TabIndex = 25;
@@ -117,10 +95,11 @@
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(148, 126);
+            this.txtDescripcion.Location = new System.Drawing.Point(160, 122);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(247, 67);
+            this.txtDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtDescripcion.Size = new System.Drawing.Size(464, 86);
             this.txtDescripcion.TabIndex = 24;
             // 
             // lblCantidad
@@ -128,18 +107,18 @@
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.BackColor = System.Drawing.Color.Transparent;
             this.lblCantidad.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(12, 202);
+            this.lblCantidad.Location = new System.Drawing.Point(24, 217);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(67, 18);
+            this.lblCantidad.Size = new System.Drawing.Size(125, 18);
             this.lblCantidad.TabIndex = 27;
-            this.lblCantidad.Text = "Cantidad:";
+            this.lblCantidad.Text = "Cantidad del gasto:";
             // 
             // txtCantidad
             // 
             this.txtCantidad.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidad.Location = new System.Drawing.Point(148, 199);
+            this.txtCantidad.Location = new System.Drawing.Point(160, 214);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(163, 26);
+            this.txtCantidad.Size = new System.Drawing.Size(140, 26);
             this.txtCantidad.TabIndex = 26;
             // 
             // cbxUnidadMedida
@@ -151,10 +130,11 @@
             "Utileria",
             "Mercancia",
             "Proveedores",
-            "Alimentacion"});
-            this.cbxUnidadMedida.Location = new System.Drawing.Point(148, 93);
+            "Alimentacion",
+            "Otros (Especificar en descripción)"});
+            this.cbxUnidadMedida.Location = new System.Drawing.Point(160, 89);
             this.cbxUnidadMedida.Name = "cbxUnidadMedida";
-            this.cbxUnidadMedida.Size = new System.Drawing.Size(247, 27);
+            this.cbxUnidadMedida.Size = new System.Drawing.Size(287, 27);
             this.cbxUnidadMedida.TabIndex = 51;
             // 
             // btnLimpiar
@@ -164,7 +144,7 @@
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLimpiar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.Image = global::SistemaGestionInventario.Properties.Resources.file___1699_;
-            this.btnLimpiar.Location = new System.Drawing.Point(658, 232);
+            this.btnLimpiar.Location = new System.Drawing.Point(695, 228);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(111, 33);
             this.btnLimpiar.TabIndex = 70;
@@ -179,7 +159,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = global::SistemaGestionInventario.Properties.Resources.close___1511_1;
-            this.btnCancelar.Location = new System.Drawing.Point(658, 158);
+            this.btnCancelar.Location = new System.Drawing.Point(695, 154);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(111, 33);
             this.btnCancelar.TabIndex = 69;
@@ -194,7 +174,7 @@
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEditar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Image = global::SistemaGestionInventario.Properties.Resources.edit___1483_1;
-            this.btnEditar.Location = new System.Drawing.Point(658, 47);
+            this.btnEditar.Location = new System.Drawing.Point(695, 43);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(111, 33);
             this.btnEditar.TabIndex = 68;
@@ -209,7 +189,7 @@
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnActualizar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.Image = global::SistemaGestionInventario.Properties.Resources.arrow_repeat___235_;
-            this.btnActualizar.Location = new System.Drawing.Point(658, 195);
+            this.btnActualizar.Location = new System.Drawing.Point(695, 191);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(111, 33);
             this.btnActualizar.TabIndex = 67;
@@ -224,7 +204,7 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = global::SistemaGestionInventario.Properties.Resources.save_item___1409_;
-            this.btnGuardar.Location = new System.Drawing.Point(658, 84);
+            this.btnGuardar.Location = new System.Drawing.Point(695, 80);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(111, 33);
             this.btnGuardar.TabIndex = 66;
@@ -239,7 +219,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Image = global::SistemaGestionInventario.Properties.Resources.delete___1487_1;
-            this.btnEliminar.Location = new System.Drawing.Point(658, 121);
+            this.btnEliminar.Location = new System.Drawing.Point(695, 117);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(111, 33);
             this.btnEliminar.TabIndex = 65;
@@ -254,7 +234,7 @@
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNuevo.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Image = global::SistemaGestionInventario.Properties.Resources.plus_circle___1425_1;
-            this.btnNuevo.Location = new System.Drawing.Point(658, 10);
+            this.btnNuevo.Location = new System.Drawing.Point(695, 6);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(111, 33);
             this.btnNuevo.TabIndex = 64;
@@ -299,7 +279,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
-            this.ClientSize = new System.Drawing.Size(782, 562);
+            this.ClientSize = new System.Drawing.Size(818, 582);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.dtpFechaEntrada);
@@ -319,8 +299,6 @@
             this.Controls.Add(this.dgvTabla);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.lblConceptoGasto);
-            this.Controls.Add(this.lblID);
-            this.Controls.Add(this.txtID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGastos";
             this.Text = "Gastos";
@@ -334,8 +312,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblConceptoGasto;
-        private System.Windows.Forms.Label lblID;
-        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.DataGridView dgvTabla;
         private System.Windows.Forms.Label lblDescripcion;

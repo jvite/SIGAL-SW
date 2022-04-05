@@ -17,11 +17,12 @@ namespace SistemaGestionInventario
         public string telefono { get; set; }
         public string usuario { get; set; }
         public string contrasena { get; set; }
+        public string rol { get; set; }
         public string estatus { get; set; }
 
         public Usuarios(){}
 
-        public Usuarios(int id, int idpermiso, string nombre, string apellidos, string sexo, string correo, string telefono, string usuario, string contrasena, string estatus)
+        public Usuarios(int id, int idpermiso, string nombre, string apellidos, string sexo, string correo, string telefono, string usuario, string contrasena, string rol, string estatus)
         {
             this.id = id;
             this.idpermiso = idpermiso;
@@ -32,6 +33,7 @@ namespace SistemaGestionInventario
             this.telefono = telefono;
             this.usuario = usuario;
             this.contrasena = contrasena;
+            this.rol = rol;
             this.estatus = estatus;
         }
     }

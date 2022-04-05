@@ -37,7 +37,7 @@
             this.btnAcceder = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblMensaje = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,7 +122,7 @@
             this.btnAcceder.Text = "Acceder";
             this.btnAcceder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnAcceder.UseVisualStyleBackColor = false;
-            this.btnAcceder.Click += new System.EventHandler(this.button1_Click);
+            this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
             // btnCerrar
             // 
@@ -153,17 +153,18 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Ayuda";
             // 
-            // label2
+            // lblMensaje
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(47, 449);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 21);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Error de conexión.";
+            this.lblMensaje.BackColor = System.Drawing.Color.Transparent;
+            this.lblMensaje.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMensaje.ForeColor = System.Drawing.Color.White;
+            this.lblMensaje.Location = new System.Drawing.Point(0, 450);
+            this.lblMensaje.Name = "lblMensaje";
+            this.lblMensaje.Size = new System.Drawing.Size(490, 21);
+            this.lblMensaje.TabIndex = 9;
+            this.lblMensaje.Text = "-";
+            this.lblMensaje.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMensaje.Visible = false;
             // 
             // frmInicioDeSesion
             // 
@@ -172,7 +173,7 @@
             this.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.Primary_Dark;
             this.ClientSize = new System.Drawing.Size(490, 553);
             this.ControlBox = false;
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnAcceder);
@@ -203,6 +204,6 @@
         private System.Windows.Forms.Button btnAcceder;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblMensaje;
     }
 }

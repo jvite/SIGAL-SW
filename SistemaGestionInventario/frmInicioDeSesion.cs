@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaGestionInventario.Datos;
 
 namespace SistemaGestionInventario
 {
@@ -23,11 +24,32 @@ namespace SistemaGestionInventario
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAcceder_Click(object sender, EventArgs e)
         {
-            frmAdministrador frm = new frmAdministrador();
-            frm.Show();
-            this.Hide();
+           
+            if (txtUsuario.Text!="" & txtContrasena.Text!="")
+            {
+                VariablesGlobales.usuario = txtUsuario.Text.ToString();
+                frmAdministrador frm = new frmAdministrador();
+                frm.Show();
+                this.Hide();
+            }
+            else if(txtUsuario.ToString()=="")
+            {
+                lblMensaje.Visible = true;
+                lblMensaje.Text = "El usuario esta vacío.";
+            }
+            else if (txtContrasena.ToString() == "")
+            {
+                lblMensaje.Visible = true;
+                lblMensaje.Text = "La contraseña esta vacía.";
+            }
+            else
+            {
+                lblMensaje.Visible = true;
+                lblMensaje.Text = "Datos incorrectos. Intente de nuevo.";
+            }
+            
         }
     }
 }

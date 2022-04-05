@@ -43,8 +43,6 @@
             this.lblSexo = new System.Windows.Forms.Label();
             this.cbxRol = new System.Windows.Forms.ComboBox();
             this.lblRol = new System.Windows.Forms.Label();
-            this.lblID = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.cbxEstatus = new System.Windows.Forms.ComboBox();
             this.lblEstatus = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -71,7 +69,7 @@
             this.txtNombre.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(328, 135);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(227, 26);
+            this.txtNombre.Size = new System.Drawing.Size(258, 26);
             this.txtNombre.TabIndex = 32;
             this.txtNombre.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
@@ -91,7 +89,7 @@
             this.txtApellidos.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidos.Location = new System.Drawing.Point(328, 166);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(227, 26);
+            this.txtApellidos.Size = new System.Drawing.Size(258, 26);
             this.txtApellidos.TabIndex = 34;
             this.txtApellidos.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
@@ -131,7 +129,7 @@
             this.txtCorreo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.Location = new System.Drawing.Point(328, 259);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(167, 26);
+            this.txtCorreo.Size = new System.Drawing.Size(217, 26);
             this.txtCorreo.TabIndex = 41;
             // 
             // label6
@@ -156,14 +154,14 @@
             // 
             // lblTitulo
             // 
-            this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(291, 29);
+            this.lblTitulo.Location = new System.Drawing.Point(0, 29);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(204, 33);
+            this.lblTitulo.Size = new System.Drawing.Size(818, 33);
             this.lblTitulo.TabIndex = 54;
-            this.lblTitulo.Text = "Datos del usuario";
+            this.lblTitulo.Text = "Datos del perfil";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cbxSexo
             // 
@@ -215,26 +213,6 @@
             this.lblRol.TabIndex = 60;
             this.lblRol.Text = "Rol:";
             // 
-            // lblID
-            // 
-            this.lblID.AutoSize = true;
-            this.lblID.BackColor = System.Drawing.Color.Transparent;
-            this.lblID.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(250, 107);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(26, 18);
-            this.lblID.TabIndex = 63;
-            this.lblID.Text = "ID:";
-            // 
-            // txtID
-            // 
-            this.txtID.Enabled = false;
-            this.txtID.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(328, 104);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(72, 26);
-            this.txtID.TabIndex = 62;
-            // 
             // cbxEstatus
             // 
             this.cbxEstatus.Enabled = false;
@@ -268,7 +246,7 @@
             this.btnCancelar.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = global::SistemaGestionInventario.Properties.Resources.close___1511_1;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(626, 243);
+            this.btnCancelar.Location = new System.Drawing.Point(687, 245);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(96, 33);
             this.btnCancelar.TabIndex = 64;
@@ -284,7 +262,7 @@
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEditar.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Image = global::SistemaGestionInventario.Properties.Resources.edit___1483_1;
-            this.btnEditar.Location = new System.Drawing.Point(625, 152);
+            this.btnEditar.Location = new System.Drawing.Point(686, 154);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(97, 33);
             this.btnEditar.TabIndex = 56;
@@ -300,7 +278,7 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = global::SistemaGestionInventario.Properties.Resources.save_item___1409_;
-            this.btnGuardar.Location = new System.Drawing.Point(625, 197);
+            this.btnGuardar.Location = new System.Drawing.Point(686, 199);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(97, 33);
             this.btnGuardar.TabIndex = 45;
@@ -317,7 +295,7 @@
             this.btnCambiarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCambiarContrasena.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCambiarContrasena.Image = global::SistemaGestionInventario.Properties.Resources.lock_open_round___708_1;
-            this.btnCambiarContrasena.Location = new System.Drawing.Point(626, 291);
+            this.btnCambiarContrasena.Location = new System.Drawing.Point(687, 293);
             this.btnCambiarContrasena.Name = "btnCambiarContrasena";
             this.btnCambiarContrasena.Size = new System.Drawing.Size(96, 49);
             this.btnCambiarContrasena.TabIndex = 17;
@@ -330,9 +308,9 @@
             // 
             this.pbxImagenPerfil.BackColor = System.Drawing.Color.Transparent;
             this.pbxImagenPerfil.Image = global::SistemaGestionInventario.Properties.Resources.e4b72ecbb7c98f492629cbeee66435e8;
-            this.pbxImagenPerfil.Location = new System.Drawing.Point(46, 107);
+            this.pbxImagenPerfil.Location = new System.Drawing.Point(22, 135);
             this.pbxImagenPerfil.Name = "pbxImagenPerfil";
-            this.pbxImagenPerfil.Size = new System.Drawing.Size(150, 150);
+            this.pbxImagenPerfil.Size = new System.Drawing.Size(175, 175);
             this.pbxImagenPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxImagenPerfil.TabIndex = 1;
             this.pbxImagenPerfil.TabStop = false;
@@ -342,12 +320,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
-            this.ClientSize = new System.Drawing.Size(782, 562);
+            this.ClientSize = new System.Drawing.Size(818, 582);
             this.Controls.Add(this.cbxEstatus);
             this.Controls.Add(this.lblEstatus);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.lblID);
-            this.Controls.Add(this.txtID);
             this.Controls.Add(this.cbxRol);
             this.Controls.Add(this.lblRol);
             this.Controls.Add(this.cbxSexo);
@@ -397,8 +373,6 @@
         private System.Windows.Forms.Label lblSexo;
         private System.Windows.Forms.ComboBox cbxRol;
         private System.Windows.Forms.Label lblRol;
-        private System.Windows.Forms.Label lblID;
-        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ComboBox cbxEstatus;
         private System.Windows.Forms.Label lblEstatus;
