@@ -15,6 +15,9 @@ namespace SistemaGestionInventario
         public frmCaja()
         {
             InitializeComponent();
+
+            btnCerrarCaja.Enabled = false;
+            btnReporteCierreCaja.Enabled = false;
         }
 
         private void btnAperturar_Click(object sender, EventArgs e)
@@ -25,6 +28,7 @@ namespace SistemaGestionInventario
             }
             else
             {
+                VariablesGlobales.AperturaCaja = true;
                 txtHora.Text = DateTime.Now.ToShortTimeString();
                 lblEstadoCaja.Text = "Caja Aperturada";
             }
@@ -32,8 +36,13 @@ namespace SistemaGestionInventario
 
         private void btnReporteCierreCaja_Click(object sender, EventArgs e)
         {
-            frmReporte reporte = new frmReporte();
-            reporte.Show();
+            //Aqui se generar el reporte del cierre de la caja
+        }
+
+        private void btnCerrarCaja_Click(object sender, EventArgs e)
+        {
+            VariablesGlobales.AperturaCaja = false;
+            //Aqui se cerrara la caja y se calcularan los gastos y las demas weas
         }
     }
 }

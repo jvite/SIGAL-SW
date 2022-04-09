@@ -195,10 +195,10 @@
             // 
             // txtEnExistencia
             // 
-            this.txtEnExistencia.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnExistencia.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEnExistencia.Location = new System.Drawing.Point(487, 122);
             this.txtEnExistencia.Name = "txtEnExistencia";
-            this.txtEnExistencia.Size = new System.Drawing.Size(159, 28);
+            this.txtEnExistencia.Size = new System.Drawing.Size(159, 26);
             this.txtEnExistencia.TabIndex = 8;
             // 
             // lblEstado
@@ -214,14 +214,14 @@
             // 
             // cbxEstado
             // 
-            this.cbxEstado.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxEstado.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxEstado.FormattingEnabled = true;
             this.cbxEstado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
             this.cbxEstado.Location = new System.Drawing.Point(487, 222);
             this.cbxEstado.Name = "cbxEstado";
-            this.cbxEstado.Size = new System.Drawing.Size(159, 27);
+            this.cbxEstado.Size = new System.Drawing.Size(159, 26);
             this.cbxEstado.TabIndex = 10;
             // 
             // label4
@@ -238,12 +238,12 @@
             // dtpFechaEntrada
             // 
             this.dtpFechaEntrada.CalendarFont = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaEntrada.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaEntrada.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaEntrada.Location = new System.Drawing.Point(487, 189);
             this.dtpFechaEntrada.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpFechaEntrada.Name = "dtpFechaEntrada";
-            this.dtpFechaEntrada.Size = new System.Drawing.Size(159, 27);
+            this.dtpFechaEntrada.Size = new System.Drawing.Size(159, 26);
             this.dtpFechaEntrada.TabIndex = 9;
             // 
             // label5
@@ -259,7 +259,7 @@
             // 
             // cbxUnidadMedida
             // 
-            this.cbxUnidadMedida.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxUnidadMedida.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxUnidadMedida.FormattingEnabled = true;
             this.cbxUnidadMedida.Items.AddRange(new object[] {
             "N/A",
@@ -268,7 +268,7 @@
             "Litros (L)"});
             this.cbxUnidadMedida.Location = new System.Drawing.Point(487, 89);
             this.cbxUnidadMedida.Name = "cbxUnidadMedida";
-            this.cbxUnidadMedida.Size = new System.Drawing.Size(159, 27);
+            this.cbxUnidadMedida.Size = new System.Drawing.Size(159, 26);
             this.cbxUnidadMedida.TabIndex = 7;
             // 
             // lblMarca
@@ -311,7 +311,7 @@
             // 
             // cbxProveedor
             // 
-            this.cbxProveedor.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxProveedor.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxProveedor.FormattingEnabled = true;
             this.cbxProveedor.Items.AddRange(new object[] {
             "N/A",
@@ -320,7 +320,7 @@
             "Litros (L)"});
             this.cbxProveedor.Location = new System.Drawing.Point(90, 87);
             this.cbxProveedor.Name = "cbxProveedor";
-            this.cbxProveedor.Size = new System.Drawing.Size(159, 27);
+            this.cbxProveedor.Size = new System.Drawing.Size(159, 26);
             this.cbxProveedor.TabIndex = 6;
             // 
             // pictureBox1
@@ -483,14 +483,14 @@
             // 
             // cbxUbicacion
             // 
-            this.cbxUbicacion.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxUbicacion.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxUbicacion.FormattingEnabled = true;
             this.cbxUbicacion.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
             this.cbxUbicacion.Location = new System.Drawing.Point(489, 156);
             this.cbxUbicacion.Name = "cbxUbicacion";
-            this.cbxUbicacion.Size = new System.Drawing.Size(159, 27);
+            this.cbxUbicacion.Size = new System.Drawing.Size(159, 26);
             this.cbxUbicacion.TabIndex = 64;
             // 
             // label6

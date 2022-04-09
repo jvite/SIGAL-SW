@@ -94,6 +94,8 @@ namespace SistemaGestionInventario
             btnLimpiar.Enabled = true;
             btnBuscar.Enabled = false;
 
+            dgvTabla.Enabled = false;
+
             VariablesGlobales.ModificacionEnCurso = true;
         }
 
@@ -110,6 +112,8 @@ namespace SistemaGestionInventario
             btnEliminar.Enabled = false;
             btnBuscar.Enabled = false;
 
+            dgvTabla.Enabled = false;
+
             VariablesGlobales.ModificacionEnCurso = true;
         }
 
@@ -125,6 +129,8 @@ namespace SistemaGestionInventario
             btnActualizar.Enabled = true;
             btnLimpiar.Enabled = false;
             btnBuscar.Enabled = true;
+
+            dgvTabla.Enabled = true;
 
             VariablesGlobales.ModificacionEnCurso = false;
         }
@@ -154,6 +160,8 @@ namespace SistemaGestionInventario
             btnLimpiar.Enabled = false;
             btnBuscar.Enabled = true;
 
+            dgvTabla.Enabled = true;
+
             VariablesGlobales.ModificacionEnCurso = false;
             VariablesGlobales.ModificacionesRealizadas = false;
         }
@@ -167,6 +175,7 @@ namespace SistemaGestionInventario
 
         private void btnActualizar_Click(object sender, EventArgs e)//BOTON ACTUALIZAR
         {
+            //Aqui se volveran a cargar los datos de la tabla
             //Aqui se volveran a cargar los datos de la tabla
         }
 

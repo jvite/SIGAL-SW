@@ -15,11 +15,15 @@ namespace SistemaGestionInventario
         public frmClientes()
         {
             InitializeComponent();
+
             deshabilitarCajasDeTexto();
+
             cbxEstatus.Enabled = false;
+
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
             btnLimpiar.Enabled = false;
+
             VariablesGlobales.ModificacionEnCurso = false;
             VariablesGlobales.ModificacionesRealizadas = false;
         }
@@ -29,6 +33,7 @@ namespace SistemaGestionInventario
             txtNombres.Enabled = true;
             txtApellidos.Enabled = true;
             txtRazonSocial.Enabled = true;
+            txtRubroGiro.Enabled = true;
             txtCalle.Enabled = true;
             txtNumeroInterior.Enabled = true;
             txtNumeroExterior.Enabled = true;
@@ -48,7 +53,11 @@ namespace SistemaGestionInventario
             txtNombres.Enabled = false;
             txtApellidos.Enabled = false;
             txtRazonSocial.Enabled = false;
+            txtRubroGiro.Enabled = false;
             txtCalle.Enabled = false;
+            txtNumeroInterior.Enabled = false;
+            txtNumeroExterior.Enabled = false;
+            txtColonia.Enabled = false;
             txtMunicipio.Enabled = false;
             txtEstado.Enabled = false;
             txtCodigoPostal.Enabled = false;
@@ -64,7 +73,11 @@ namespace SistemaGestionInventario
             txtNombres.Text = "";
             txtApellidos.Text = "";
             txtRazonSocial.Text = "";
+            txtRubroGiro.Text = "";
             txtCalle.Text = "";
+            txtNumeroInterior.Text = "";
+            txtNumeroExterior.Text = "";
+            txtColonia.Text = "";
             txtMunicipio.Text = "";
             txtEstado.Text = "";
             txtCodigoPostal.Text = "";
@@ -75,11 +88,38 @@ namespace SistemaGestionInventario
             txtRFC.Text = "";
         }
 
+        bool ValidarCamposVacios()// Validar si las cajas de texto estan vacios
+        {
+            foreach (Control c in this.Controls) //ciclo for donce c es un control que recorrera todo el formulario
+            {
+                if (c is TextBox & (string)c.Tag == "formulario") //Si c es un textbox y tiene el tag de formulario
+                {
+                    if (string.IsNullOrWhiteSpace(((TextBox)c).Text))//Si el textobox esta vacio
+                    {
+                        MessageBox.Show("Rellene los espacios en blanco por favor", "SIGALSW", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return false;
+                    }
+                }
+                else if (c is ComboBox & (string)c.Tag == "formulario")//Si c es un cobobox y tiene el tag de formulario
+                {
+                    if (c.Text == string.Empty)//Si el combobox esta vacio
+                    {
+                        MessageBox.Show("Rellene los espacios en blanco por favor", "SIGALSW", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
         private void CamposModificados(object sender, EventArgs e)
         {
-            if (VariablesGlobales.ModificacionesRealizadas == false)
+            if (dgvTabla.Enabled == false)//Cuando se esta agregando o modificando un elemento del formulario
             {
-                VariablesGlobales.ModificacionesRealizadas = true;
+                if (VariablesGlobales.ModificacionesRealizadas == false)
+                {
+                    VariablesGlobales.ModificacionesRealizadas = true;
+                }
             }
         }
 
@@ -123,21 +163,24 @@ namespace SistemaGestionInventario
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            deshabilitarCajasDeTexto();
+            if (ValidarCamposVacios())//VALIDAR SI LOS CAMPOS NO ESTAN VACIOOS
+            {
+                deshabilitarCajasDeTexto();
 
-            btnGuardar.Enabled = false;
-            btnNuevo.Enabled = true;
-            btnEditar.Enabled = true;
-            btnEliminar.Enabled = true;
-            btnCancelar.Enabled = false;
-            btnActualizar.Enabled = true;
-            btnLimpiar.Enabled = false;
-            btnBuscar.Enabled = true;
+                btnGuardar.Enabled = false;
+                btnNuevo.Enabled = true;
+                btnEditar.Enabled = true;
+                btnEliminar.Enabled = true;
+                btnCancelar.Enabled = false;
+                btnActualizar.Enabled = true;
+                btnLimpiar.Enabled = false;
+                btnBuscar.Enabled = true;
 
-            dgvTabla.Enabled = true;
+                dgvTabla.Enabled = true;
 
-            VariablesGlobales.ModificacionesRealizadas = false;
-            VariablesGlobales.ModificacionEnCurso = false;
+                VariablesGlobales.ModificacionesRealizadas = false;
+                VariablesGlobales.ModificacionEnCurso = false;
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -177,7 +220,7 @@ namespace SistemaGestionInventario
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-
+            //Aqui va van a volver a cargar los datos de la tabla
         }
     }
 }

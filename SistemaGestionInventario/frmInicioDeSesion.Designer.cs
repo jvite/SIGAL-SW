@@ -58,6 +58,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(158, 28);
             this.txtUsuario.TabIndex = 1;
+            this.txtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.teclaEnter);
             // 
             // txtContrasena
             // 
@@ -67,6 +68,7 @@
             this.txtContrasena.Size = new System.Drawing.Size(158, 28);
             this.txtContrasena.TabIndex = 2;
             this.txtContrasena.UseSystemPasswordChar = true;
+            this.txtContrasena.KeyDown += new System.Windows.Forms.KeyEventHandler(this.teclaEnter);
             // 
             // lblUsuario
             // 
@@ -102,7 +104,7 @@
             this.lblRecuperarP.Location = new System.Drawing.Point(12, 523);
             this.lblRecuperarP.Name = "lblRecuperarP";
             this.lblRecuperarP.Size = new System.Drawing.Size(169, 21);
-            this.lblRecuperarP.TabIndex = 5;
+            this.lblRecuperarP.TabIndex = 4;
             this.lblRecuperarP.TabStop = true;
             this.lblRecuperarP.Text = "¿Olvidó su contraseña?";
             // 
@@ -118,7 +120,7 @@
             this.btnAcceder.Location = new System.Drawing.Point(203, 372);
             this.btnAcceder.Name = "btnAcceder";
             this.btnAcceder.Size = new System.Drawing.Size(77, 75);
-            this.btnAcceder.TabIndex = 6;
+            this.btnAcceder.TabIndex = 3;
             this.btnAcceder.Text = "Acceder";
             this.btnAcceder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnAcceder.UseVisualStyleBackColor = false;
@@ -135,7 +137,7 @@
             this.btnCerrar.Location = new System.Drawing.Point(428, 12);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(50, 51);
-            this.btnCerrar.TabIndex = 7;
+            this.btnCerrar.TabIndex = 0;
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
@@ -149,7 +151,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(423, 523);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(55, 21);
-            this.linkLabel1.TabIndex = 8;
+            this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Ayuda";
             // 

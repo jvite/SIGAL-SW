@@ -17,6 +17,7 @@ namespace SistemaGestionInventario
             InitializeComponent();
 
             deshabilitarCajasDeTexto();
+
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
 
@@ -49,7 +50,7 @@ namespace SistemaGestionInventario
             txtNombre.Text = "";
             txtApellidos.Text = "";
             txtTelefono.Text = "";
-            cbxSexo.SelectedIndex = 0;
+            cbxSexo.SelectedIndex = -1;
             txtCorreo.Text = "";
             txtUsuario.Text = "";
         }
@@ -67,12 +68,16 @@ namespace SistemaGestionInventario
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            btnGuardar.Enabled = false;
-            btnCancelar.Enabled = false;
-            btnEditar.Enabled = true;
+            if (ValidarCamposVacios())
+            {
+                deshabilitarCajasDeTexto();
+                btnGuardar.Enabled = false;
+                btnCancelar.Enabled = false;
+                btnEditar.Enabled = true;
 
-            VariablesGlobales.ModificacionEnCurso = false;
-            VariablesGlobales.ModificacionesRealizadas = false;
+                VariablesGlobales.ModificacionEnCurso = false;
+                VariablesGlobales.ModificacionesRealizadas = false;
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -83,6 +88,30 @@ namespace SistemaGestionInventario
 
             VariablesGlobales.ModificacionEnCurso = false;
             VariablesGlobales.ModificacionesRealizadas = false;
+        }
+
+        bool ValidarCamposVacios()// Validar si las cajas de texto estan vacios
+        {
+            foreach (Control c in this.Controls) //ciclo for donce c es un control que recorrera todo el formulario
+            {
+                if (c is TextBox & (string)c.Tag == "formulario") //Si c es un textbox y tiene el tag de formulario
+                {
+                    if (string.IsNullOrWhiteSpace(((TextBox)c).Text))//Si el textobox esta vacio
+                    {
+                        MessageBox.Show("Rellene los espacios en blanco por favor", "SIGALSW", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return false;
+                    }
+                }
+                else if (c is ComboBox & (string)c.Tag == "formulario")//Si c es un cobobox y tiene el tag de formulario
+                {
+                    if (c.Text == string.Empty)//Si el combobox esta vacio
+                    {
+                        MessageBox.Show("Rellene los espacios en blanco por favor", "SIGALSW", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return false;
+                    }
+                }
+            }
+            return true;
         }
 
         private void CamposModificados(object sender, EventArgs e)//Si se modifico algun campo del formulario

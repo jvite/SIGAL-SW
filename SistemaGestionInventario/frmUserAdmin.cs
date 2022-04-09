@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using SistemaGestionInventario;
+using SistemaGestionInventario.Datos;
 
 
 namespace SistemaGestionInventario
@@ -19,10 +12,6 @@ namespace SistemaGestionInventario
             InitializeComponent();
 
             deshabilitarCajasDeTexto();
-
-            cbxRol.SelectedIndex = 0;
-            cbxSexo.SelectedIndex = 0;
-            cbxEstatus.SelectedIndex = 0;
 
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
@@ -68,16 +57,52 @@ namespace SistemaGestionInventario
             txtTelefono.Text = "";
             txtUsuario.Text = "";
             txtContrasena.Text = "";
-            cbxSexo.SelectedIndex = 0;
-            cbxRol.SelectedIndex = 0;
-            cbxEstatus.SelectedIndex = 0;
+            cbxSexo.SelectedIndex = -1;
+            cbxRol.SelectedIndex = -1;
+            cbxEstatus.SelectedIndex = -1;
+        }
+        void SeleccionarDatos()//Metodo para poner el formulario con los datos que estan seleccionados
+        {
+            txtNombre.Text = dgvTabla.CurrentRow.Cells[1].Value.ToString();
+            txtApellidos.Text = dgvTabla.CurrentRow.Cells[2].Value.ToString();
+            cbxSexo.Text= dgvTabla.CurrentRow.Cells[3].Value.ToString();
+            txtCorreo.Text = dgvTabla.CurrentRow.Cells[4].Value.ToString();
+            txtUsuario.Text = dgvTabla.CurrentRow.Cells[5].Value.ToString();
+            cbxRol.Text = dgvTabla.CurrentRow.Cells[6].Value.ToString();
+            cbxEstatus.Text = dgvTabla.CurrentRow.Cells[7].Value.ToString();
+        }
+
+        bool ValidarCamposVacios()// Validar si las cajas de texto estan vacios
+        {
+            foreach(Control c in this.Controls) //ciclo for donce c es un control que recorrera todo el formulario
+            {
+                if(c is TextBox & (string)c.Tag == "formulario") //Si c es un textbox y tiene el tag de formulario
+                {
+                    if (string.IsNullOrWhiteSpace(((TextBox)c).Text))//Si el textobox esta vacio
+                    {
+                        MessageBox.Show("Rellene los espacios en blanco por favor", "SIGALSW", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return false;
+                    }
+                }else if(c is ComboBox & (string)c.Tag == "formulario")//Si c es un cobobox y tiene el tag de formulario
+                {
+                    if(c.Text == string.Empty)//Si el combobox esta vacio
+                    {
+                        MessageBox.Show("Rellene los espacios en blanco por favor", "SIGALSW", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return false;
+                    }
+                }
+            }
+            return true;
         }
 
         private void CamposModificados(object sender, EventArgs e)//Si se modifico algun campo del formulario
         {
-            if (VariablesGlobales.ModificacionesRealizadas == false)
+            if (dgvTabla.Enabled == false)//Cuando se esta agregando o modificando un elemento del formulario
             {
-                VariablesGlobales.ModificacionesRealizadas = true;
+                if (VariablesGlobales.ModificacionesRealizadas == false)
+                {
+                    VariablesGlobales.ModificacionesRealizadas = true;
+                }
             }
         }
 
@@ -125,23 +150,26 @@ namespace SistemaGestionInventario
 
         private void btnGuardar_Click(object sender, EventArgs e)//GUARDAR
         {
-            deshabilitarCajasDeTexto();
+            if (ValidarCamposVacios())//VALIDAR SI LOS CAMPOS NO ESTAN VACIOOS
+            {
+                deshabilitarCajasDeTexto();
 
-            btnGuardar.Enabled = false;
-            btnNuevo.Enabled = true;
-            btnEditar.Enabled = true;
-            btnEliminar.Enabled = true;
-            btnCancelar.Enabled = false;
-            btnActualizar.Enabled = true;
-            btnLimpiar.Enabled = false;
-            btnBuscar.Enabled = true;
+                btnGuardar.Enabled = false;
+                btnNuevo.Enabled = true;
+                btnEditar.Enabled = true;
+                btnEliminar.Enabled = true;
+                btnCancelar.Enabled = false;
+                btnActualizar.Enabled = true;
+                btnLimpiar.Enabled = false;
+                btnBuscar.Enabled = true;
 
-            btnReestablecerContrasena.Enabled = false;
+                btnReestablecerContrasena.Enabled = false;
 
-            dgvTabla.Enabled = true;
+                dgvTabla.Enabled = true;
 
-            VariablesGlobales.ModificacionesRealizadas = false;
-            VariablesGlobales.ModificacionEnCurso = false;
+                VariablesGlobales.ModificacionesRealizadas = false;
+                VariablesGlobales.ModificacionEnCurso = false;
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)//ELIMINAR
@@ -158,6 +186,7 @@ namespace SistemaGestionInventario
 
         private void btnCancelar_Click(object sender, EventArgs e)//CANCELAR
         {
+            SeleccionarDatos();
             deshabilitarCajasDeTexto();
 
             btnCancelar.Enabled = false;

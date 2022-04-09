@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SistemaGestionInventario
+﻿namespace SistemaGestionInventario
 {
     public class Usuarios
     {
@@ -19,22 +13,5 @@ namespace SistemaGestionInventario
         public string contrasena { get; set; }
         public string rol { get; set; }
         public string estatus { get; set; }
-
-        public Usuarios(){}
-
-        public Usuarios(int id, int idpermiso, string nombre, string apellidos, string sexo, string correo, string telefono, string usuario, string contrasena, string rol, string estatus)
-        {
-            this.id = id;
-            this.idpermiso = idpermiso;
-            this.nombre = nombre;
-            this.apellidos = apellidos;
-            this.sexo = sexo;
-            this.correo = correo;
-            this.telefono = telefono;
-            this.usuario = usuario;
-            this.contrasena = contrasena;
-            this.rol = rol;
-            this.estatus = estatus;
-        }
     }
 }

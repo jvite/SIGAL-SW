@@ -19,21 +19,5 @@ namespace SistemaGestionInventario.Datos
         public string totalgastos { get; set; }
         public string impuestosrecaudados { get; set; }
         public string totalcierrecaja { get; set; }
-
-        public Caja() { }
-
-        public Caja(int id, int idusuario, string montoinicial, string fechainicio, string horainicio, string fechacierre, string horacierre, string totalventas, string totalgastos, string impuestosrecaudados, string totalcierrecaja) {
-            this.id = id;
-            this.idusuario = idusuario;
-            this.montoinicial = montoinicial;
-            this.fechainicio = fechainicio;
-            this.horainicio = horainicio;
-            this.fechacierre = fechacierre;
-            this.horacierre = horacierre;
-            this.totalventas = totalventas;
-            this.totalgastos = totalgastos;
-            this.impuestosrecaudados = impuestosrecaudados;
-            this.totalcierrecaja = totalcierrecaja;
-        }
     }
 }

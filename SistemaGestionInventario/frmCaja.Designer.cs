@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.gbxCaja = new System.Windows.Forms.GroupBox();
-            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnCerrarCaja = new System.Windows.Forms.Button();
             this.lblEstadoCaja = new System.Windows.Forms.Label();
             this.btnAperturar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,6 +56,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.txtImpuestosRecaudados = new System.Windows.Forms.TextBox();
+            this.lblImpuestos = new System.Windows.Forms.Label();
             this.gbxCaja.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -63,7 +65,7 @@
             // 
             // gbxCaja
             // 
-            this.gbxCaja.Controls.Add(this.btnEliminar);
+            this.gbxCaja.Controls.Add(this.btnCerrarCaja);
             this.gbxCaja.Controls.Add(this.lblEstadoCaja);
             this.gbxCaja.Controls.Add(this.btnAperturar);
             this.gbxCaja.Controls.Add(this.label1);
@@ -76,20 +78,21 @@
             this.gbxCaja.TabStop = false;
             this.gbxCaja.Text = "Apertura de caja";
             // 
-            // btnEliminar
+            // btnCerrarCaja
             // 
-            this.btnEliminar.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color3;
-            this.btnEliminar.Enabled = false;
-            this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEliminar.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(262, 76);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(85, 26);
-            this.btnEliminar.TabIndex = 2;
-            this.btnEliminar.Text = "Cerrar caja";
-            this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnCerrarCaja.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color3;
+            this.btnCerrarCaja.Enabled = false;
+            this.btnCerrarCaja.FlatAppearance.BorderSize = 0;
+            this.btnCerrarCaja.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCerrarCaja.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarCaja.Location = new System.Drawing.Point(262, 76);
+            this.btnCerrarCaja.Name = "btnCerrarCaja";
+            this.btnCerrarCaja.Size = new System.Drawing.Size(85, 26);
+            this.btnCerrarCaja.TabIndex = 2;
+            this.btnCerrarCaja.Text = "Cerrar caja";
+            this.btnCerrarCaja.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCerrarCaja.UseVisualStyleBackColor = true;
+            this.btnCerrarCaja.Click += new System.EventHandler(this.btnCerrarCaja_Click);
             // 
             // lblEstadoCaja
             // 
@@ -230,6 +233,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtImpuestosRecaudados);
+            this.groupBox2.Controls.Add(this.lblImpuestos);
             this.groupBox2.Controls.Add(this.txtHoraCierre);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.btnReporteCierreCaja);
@@ -275,7 +280,7 @@
             this.btnReporteCierreCaja.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReporteCierreCaja.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporteCierreCaja.Image = global::SistemaGestionInventario.Properties.Resources.file___1677_;
-            this.btnReporteCierreCaja.Location = new System.Drawing.Point(10, 188);
+            this.btnReporteCierreCaja.Location = new System.Drawing.Point(10, 229);
             this.btnReporteCierreCaja.Name = "btnReporteCierreCaja";
             this.btnReporteCierreCaja.Size = new System.Drawing.Size(120, 62);
             this.btnReporteCierreCaja.TabIndex = 11;
@@ -286,6 +291,7 @@
             // 
             // dtpFechaCierre
             // 
+            this.dtpFechaCierre.Enabled = false;
             this.dtpFechaCierre.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaCierre.Location = new System.Drawing.Point(159, 25);
             this.dtpFechaCierre.Name = "dtpFechaCierre";
@@ -294,6 +300,7 @@
             // 
             // txtTotalVentas
             // 
+            this.txtTotalVentas.Enabled = false;
             this.txtTotalVentas.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalVentas.Location = new System.Drawing.Point(159, 85);
             this.txtTotalVentas.Name = "txtTotalVentas";
@@ -302,6 +309,7 @@
             // 
             // txtTotal
             // 
+            this.txtTotal.Enabled = false;
             this.txtTotal.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.Location = new System.Drawing.Point(159, 117);
             this.txtTotal.Name = "txtTotal";
@@ -310,8 +318,9 @@
             // 
             // textBox2
             // 
+            this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(159, 149);
+            this.textBox2.Location = new System.Drawing.Point(159, 181);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(142, 26);
             this.textBox2.TabIndex = 10;
@@ -320,7 +329,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(7, 152);
+            this.label9.Location = new System.Drawing.Point(7, 184);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(146, 18);
             this.label9.TabIndex = 6;
@@ -367,6 +376,25 @@
             this.lblTitulo.Text = "Caja";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // txtImpuestosRecaudados
+            // 
+            this.txtImpuestosRecaudados.Enabled = false;
+            this.txtImpuestosRecaudados.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImpuestosRecaudados.Location = new System.Drawing.Point(159, 149);
+            this.txtImpuestosRecaudados.Name = "txtImpuestosRecaudados";
+            this.txtImpuestosRecaudados.Size = new System.Drawing.Size(142, 26);
+            this.txtImpuestosRecaudados.TabIndex = 15;
+            // 
+            // lblImpuestos
+            // 
+            this.lblImpuestos.AutoSize = true;
+            this.lblImpuestos.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImpuestos.Location = new System.Drawing.Point(7, 152);
+            this.lblImpuestos.Name = "lblImpuestos";
+            this.lblImpuestos.Size = new System.Drawing.Size(150, 18);
+            this.lblImpuestos.TabIndex = 14;
+            this.lblImpuestos.Text = "Impuestos recaudados:";
+            // 
             // frmCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -404,7 +432,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnCerrarCaja;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DateTimePicker dtpFechaCierre;
         private System.Windows.Forms.TextBox txtTotalVentas;
@@ -420,5 +448,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtHoraCierre;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtImpuestosRecaudados;
+        private System.Windows.Forms.Label lblImpuestos;
     }
 }

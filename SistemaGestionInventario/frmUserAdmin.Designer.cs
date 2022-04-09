@@ -87,6 +87,7 @@
             this.cbxCriterio.Name = "cbxCriterio";
             this.cbxCriterio.Size = new System.Drawing.Size(121, 26);
             this.cbxCriterio.TabIndex = 24;
+            this.cbxCriterio.Tag = "busqueda";
             // 
             // label2
             // 
@@ -117,13 +118,14 @@
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(287, 26);
             this.txtBusqueda.TabIndex = 21;
+            this.txtBusqueda.Tag = "busqueda";
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(234, 4);
+            this.lblTitulo.Location = new System.Drawing.Point(234, 3);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(242, 33);
             this.lblTitulo.TabIndex = 20;
@@ -147,6 +149,7 @@
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(186, 26);
             this.txtApellidos.TabIndex = 30;
+            this.txtApellidos.Tag = "formulario";
             this.txtApellidos.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
             // lblNombre
@@ -167,6 +170,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(186, 26);
             this.txtNombre.TabIndex = 32;
+            this.txtNombre.Tag = "formulario";
             this.txtNombre.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
             // lblUsuario
@@ -187,6 +191,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(186, 26);
             this.txtUsuario.TabIndex = 34;
+            this.txtUsuario.Tag = "formulario";
             this.txtUsuario.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
             // lblContrasena
@@ -207,6 +212,7 @@
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.Size = new System.Drawing.Size(186, 26);
             this.txtContrasena.TabIndex = 36;
+            this.txtContrasena.Tag = "formulario";
             this.txtContrasena.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
             // lblRol
@@ -238,6 +244,7 @@
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(186, 26);
             this.txtCorreo.TabIndex = 41;
+            this.txtCorreo.Tag = "formulario";
             this.txtCorreo.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
             // label3
@@ -258,6 +265,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(186, 26);
             this.txtTelefono.TabIndex = 43;
+            this.txtTelefono.Tag = "formulario";
             this.txtTelefono.TextChanged += new System.EventHandler(this.CamposModificados);
             // 
             // cbxRol
@@ -267,13 +275,13 @@
             this.cbxRol.FormattingEnabled = true;
             this.cbxRol.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cbxRol.Items.AddRange(new object[] {
-            "Seleccionar...",
             "Administrador",
             "Empleado"});
             this.cbxRol.Location = new System.Drawing.Point(455, 47);
             this.cbxRol.Name = "cbxRol";
             this.cbxRol.Size = new System.Drawing.Size(156, 26);
             this.cbxRol.TabIndex = 47;
+            this.cbxRol.Tag = "formulario";
             this.cbxRol.SelectedIndexChanged += new System.EventHandler(this.CamposModificados);
             // 
             // lblSexo
@@ -289,17 +297,19 @@
             // 
             // cbxSexo
             // 
+            this.cbxSexo.DisplayMember = "formulario";
             this.cbxSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxSexo.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxSexo.FormattingEnabled = true;
             this.cbxSexo.Items.AddRange(new object[] {
-            "Seleccionar...",
             "Masculino",
             "Femenino"});
             this.cbxSexo.Location = new System.Drawing.Point(95, 111);
             this.cbxSexo.Name = "cbxSexo";
             this.cbxSexo.Size = new System.Drawing.Size(145, 26);
             this.cbxSexo.TabIndex = 50;
+            this.cbxSexo.Tag = "formulario";
+            this.cbxSexo.ValueMember = "formulario";
             // 
             // lblInformacion
             // 
@@ -332,13 +342,13 @@
             this.cbxEstatus.FormattingEnabled = true;
             this.cbxEstatus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cbxEstatus.Items.AddRange(new object[] {
-            "Seleccionar...",
             "Activo",
             "Inactivo"});
             this.cbxEstatus.Location = new System.Drawing.Point(455, 79);
             this.cbxEstatus.Name = "cbxEstatus";
             this.cbxEstatus.Size = new System.Drawing.Size(156, 26);
             this.cbxEstatus.TabIndex = 59;
+            this.cbxEstatus.Tag = "formulario";
             // 
             // lblEstatus
             // 
@@ -386,7 +396,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(306, 39);
+            this.pictureBox1.Location = new System.Drawing.Point(306, 41);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 232);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -521,31 +531,31 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(818, 582);
-            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.txtContrasena);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.txtCorreo);
+            this.Controls.Add(this.cbxSexo);
+            this.Controls.Add(this.txtApellidos);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.cbxRol);
             this.Controls.Add(this.cbxEstatus);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.lblEstatus);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.lblInformacion);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.cbxSexo);
             this.Controls.Add(this.lblSexo);
-            this.Controls.Add(this.cbxRol);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnReestablecerContrasena);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.lblCorreo);
-            this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.lblRol);
             this.Controls.Add(this.lblContrasena);
-            this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.lblUsuario);
-            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblApellidos);
-            this.Controls.Add(this.txtApellidos);
             this.Controls.Add(this.dgvTabla);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.cbxCriterio);
